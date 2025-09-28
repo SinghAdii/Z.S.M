@@ -1,125 +1,136 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://www.ziostechsolutions.com/</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/about</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/services</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/projects</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/faq</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/contact</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/ai-ml-projects</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/aixpersites</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/cyber-security</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/data-security</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/personal-software</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/web-app-upgradation</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/web-developement</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/developement</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/clouds</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/testing</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/containerization</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/uiux</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/big-data</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/data-visualisation</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/dataOps</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/smart-bot</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/platform-services</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://www.ziostechsolutions.com/cms-ecommerce</loc>
-	<lastmod>2025-09-16T15:25:48+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<!-- created with www.mysitemapgenerator.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+		<loc>https://www.ziostechsolutions.com/</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/about</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/services</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/projects</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/products</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/faq</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/contact</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/blog</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/ai-ml-projects</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/aixpersites</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/cyber-security</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/data-security</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/personal-software</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/web-app-upgradation</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/web-development</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/development</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/clouds</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/testing</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/containerization</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/uiux</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/big-data</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/data-visualisation</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/dataOps</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/smart-bot</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/platform-services</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.ziostechsolutions.com/cms-ecommerce</loc>
+		<lastmod>2025-09-16T15:25:48+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
 </urlset>
 
