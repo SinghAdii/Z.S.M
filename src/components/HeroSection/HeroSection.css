@@ -1,0 +1,155 @@
+.heroSectionContainer {
+   /* min-height:calc(100vh - 13vh); */
+    height:auto;
+    background-color: #0E1518;
+    padding:8vh 0vw 23vh 0vw;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure no wrapping happens */
+    margin-top:100px;
+}
+
+.heroSectionContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+}
+
+.heroSectionHeading {
+    font-size: 50px;
+}
+.heroSectionParagraph{
+    font-size:17px;
+    line-height:26px;
+    letter-spacing:.5px;
+}
+
+.headingHighlightedText {
+    background: linear-gradient(to left, #446CFB, #FF9800);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardImageContainer {
+    width: 500px;
+    height: 400px;
+    background-color: #0E1518;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.cardImageContainer img {
+    z-index: 1; /* Keeps the image on top */
+    width: 95%; /* Manually set the width */
+    height: 93%; /* Manually set the height */
+    border-radius: 50px; /* Optional: Add rounded corners to the image */
+}
+
+.cardImageContainer::before {
+    content: '';
+    position: absolute;
+    width: 200px; /* Adjust for border length */
+    height: 400%; /* Adjust for border height */
+    background-image: linear-gradient(90deg, #F19412, #253F9B);
+    animation: rotBGimg 4s linear infinite;
+    transform-origin: center;
+    border-radius: inherit; /* Matches the container's border radius */
+    transition: all 0.2s linear;
+}
+
+.cardImageContainer::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #0E1518;
+    border-radius: 50px; /* Inner border radius */
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width:931px) {
+    .heroSectionHeading{
+        font-size:40px;
+    }
+}
+@media (max-width: 1000px) {
+    .heroSectionContainer {
+        padding: 8vh 12vw; /* Adjust padding for medium screens */
+    }
+
+    .heroSectionContentContainer {
+        width: 400px; /* Reduce width for medium screens */
+    }
+
+    .cardImageContainer {
+        width: 450px; /* Adjust width for medium screens */
+        height: 350px; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSectionContainer {
+        padding: 6vh 6vw; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        gap: 40px; /* Reduce gap between sections */
+    }
+
+    .heroSectionContentContainer {
+        width: 100%; /* Make content container take full width */
+    }
+
+    .heroSectionHeading {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .cardImageContainer {
+        width: 80%; /* Make the image container responsive */
+        height: auto; /* Allow image height to adjust */
+    }
+}
+
+@media (max-width: 480px) {
+    .heroSectionContainer {
+        padding: 4vh 4vw; /* Further reduce padding on extra small screens */
+    }
+
+    .heroSectionContentContainer {
+        width: 100%; /* Ensure content container uses full width */
+    }
+
+    .heroSectionHeading {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .cardImageContainer {
+        width: 90%; /* Increase width on small screens */
+        height: 250px; /* Adjust height to maintain a proportional look */
+    }
+}
+@media (max-width: 1200px) {
+    .heroSectionContainer {
+        padding: 8vh 8vw; /* Adjust padding for medium screens */
+    }
+    .heroSectionParagraph{
+        line-height:25px;
+    }
+
+    
+}

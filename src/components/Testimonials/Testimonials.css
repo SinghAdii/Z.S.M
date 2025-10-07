@@ -1,0 +1,52 @@
+.testimonialMainContainer{
+  margin:60px 0;
+  text-align: center;
+  /* line-height:40px; */
+}
+.testimonialHeading span{
+  background: linear-gradient(to left, #446CFB, #FF9800);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:40px;
+}
+.testimonialHeadingPara{
+  margin:20px 0 20px 0;
+}
+.carousel {
+  /* padding:4rem 10rem; */
+  width: 100%;
+  max-width: 1300px;
+  margin: 70px auto; /* Center-align the slider */
+  padding: 0px 35px;
+}
+
+.slick-slide div {
+  /* margin: 0 0.5rem 0 1.3rem; */
+  margin:0 auto;
+}
+
+.slick-slide {
+  margin: 0 !important; /* Remove extra space between slides */
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide {
+  margin: 0 !important; /* Remove extra space between slides */
+  display: flex;
+  justify-content: center; /* Center-align cards */
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 25px !important;
+  color: white !important;
+}
+
+.slick-prev {
+  left: -45px; /* Move the left arrow closer or farther */
+}
+
+.slick-next {
+  right: -45px; /* Move the right arrow closer or farther */
+}

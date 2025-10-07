@@ -1,0 +1,236 @@
+.footer {
+    background-color: #111C21;
+    color: #FDF9FA;
+    font-family: 'Lato', sans-serif;
+    padding: 40px 97px;
+    /* height: 100vh; */
+}
+
+.footer-logo {
+    width: 214px;
+    text-align: left;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+/* Footer Links */
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* max-width: 1200px; */
+    width: 100%;
+}
+
+
+/* Logo and Description */
+
+.footer-logo-description {
+    text-align: left;
+    max-width: 30%;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FDF9FA;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    flex: 1; */
+    min-width: 150px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.footer-section ul li {
+    font-size: 14px;
+    /* margin: 8px 0; */
+    color: #b7b7b7;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.footer-section ul li:hover {
+    color: #ffffff;
+}
+
+
+/* Newsletter */
+
+.footer-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    gap: 5px;
+}
+
+.footer-newsletter {
+    text-align: left;
+    gap: 5px;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.newsletter-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.newsletter-input button {
+    /* padding: 0px 20px; */
+    background-color: #4160D9;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 41px;
+}
+
+.newsletter-input button:hover {
+    background-color: #4682b4;
+}
+
+
+/* Social Icons */
+
+.social-icons a {
+    text-align: right;
+    margin: 0 10px;
+    font-size: 40px;
+    color: #FDF9FA;
+    text-decoration: none;
+    transition: all .1s linear;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    cursor: none;
+}
+
+#linkedinIcon {
+    cursor: pointer !important;
+    color: wheat;
+    cursor: pointer;
+}
+
+
+/* Copyright */
+
+.footerLine {
+    border: 1px solid #565253;
+}
+
+.footer-copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #FDF9FA;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-industry ul {}
+
+.footer-industry ul li {
+    cursor: default;
+}
+
+.footer-industry ul li:hover {
+    color: #b7b7b7;
+}
+
+.footer-other-service ul li {
+    cursor: default;
+}
+
+.footer-other-service ul li:hover {
+    color: #b7b7b7;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 5px 25px;
+    }
+    .footer-logo {
+        width: 130px;
+        text-align: left;
+        /* margin-bottom: 20px; */
+    }
+    .footer-logo-description {
+        max-width: none;
+    }
+    .footer-links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .footer-section {
+        text-align: left;
+    }
+    #footer-links li {
+        text-align: center;
+    }
+    .footer-divider {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* .newsletter-input {
+        flex-direction: column;
+    } */
+    .newsletter-input input {
+        width: 100%;
+    }
+    .social-icons {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        /* font-size: 300px; */
+        color: #FDF9FA;
+        text-decoration: none;
+    }
+    .social-icons a {
+        font-size: 30px;
+    }
+}

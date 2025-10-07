@@ -1,0 +1,204 @@
+.serviceDetailsCardContainer {
+    width: 80%;
+    background-color: #1E2A38;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceDetailsCardContainer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.serviceHeadingTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to left, #446CFB, #FF9800);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.ServiceCardDescriptionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ServiceCardDescriptionContainer p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #D1D5DB;
+    transition: color 0.3s ease;
+}
+
+.ServiceCardDescriptionContainer p:hover {
+    color: #FFFFFF;
+}
+
+.ServiceCardDescriptionContainer img {
+    flex: 1;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ServiceCardDescriptionContainer img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.serviceTechDescriptionContainer {
+    margin-top: 2rem;
+}
+
+.serviceTechDescriptionContainer h1 {
+    font-size: 1.5rem;
+    color: #FF9800;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.serviceTechDescription {
+    background-color: #2A3C50;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-around; */
+}
+
+.serviceTechDescription:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.serviceTechDescription h1 {
+    font-size: 1.25rem;
+    color: #62C2FE;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+    /* text-decoration: underline; */
+}
+
+.serviceTechDescription h1::after {
+    bottom: -12px;
+    /* Increase or decrease this value for more or less space */
+}
+
+.serviceTechDescription ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #F3F4F6;
+    line-height: 1.8;
+}
+
+.serviceTechDescription ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.serviceTechDescription ul li::before {
+    content: "\2022";
+    color: #FF9800;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2E3B47;
+    margin: 2rem 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+    .ServiceCardDescriptionContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .serviceDetailsCardContainer {
+        padding: 1rem;
+    }
+    .serviceTechDescription {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .serviceHeadingTitle {
+        font-size: 1.5rem;
+    }
+    .ServiceCardDescriptionContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .ServiceCardDescriptionContainer p {
+        width: 100%;
+        text-align: left;
+    }
+    .ServiceCardDescriptionContainer img {
+        width: 100%;
+        max-height: 200px;
+    }
+    .serviceTechDescriptionContainer h1 {
+        font-size: 1.25rem;
+    }
+    .serviceTechDescription {
+        padding: 1rem;
+    }
+    .serviceTechDescription h1 {
+        font-size: 1rem;
+    }
+    .serviceTechDescription ul {
+        padding-left: 1rem;
+    }
+    .serviceTechDescription ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .serviceHeadingTitle {
+        font-size: 1.25rem;
+    }
+    .ServiceCardDescriptionContainer p {
+        font-size: 0.9rem;
+    }
+    .serviceTechDescription h1 {
+        font-size: 0.9rem;
+    }
+    .serviceTechDescription ul li {
+        font-size: 0.8rem;
+    }
+}

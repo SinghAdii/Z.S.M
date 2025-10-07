@@ -1,0 +1,162 @@
+/* Container */
+
+.collaboration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+
+/* Folder Background */
+
+.folder-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    /* width: 70%; */
+    max-width: 1240px;
+    max-height: 790px;
+    color: white;
+    border-radius: 20px;
+    /* object-fit: cover; */
+}
+
+.folder-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 10px
+}
+
+
+/* Folder Details */
+
+.folder-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: first baseline;
+    justify-content: first baseline;
+    width: 100%;
+    padding-left: 0%;
+}
+
+
+/* Folder Title */
+
+.folder-title {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 10px 45px 5px 0;
+    max-width: 300px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+/* Left Side - Text */
+
+.folder-text {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.points-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.arrow-icon {
+    position: relative;
+    max-height: 16px;
+    max-width: 16px;
+    border: none
+}
+
+
+/* Right Side - Image */
+
+.folder-image {
+    max-width: 400px;
+    height: auto;
+}
+
+.image-rounded {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .folder-details {
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .folder-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .arrow-icon {
+        max-height: 10px;
+        max-width: 10px;
+    }
+    .points-list {
+        gap: 1rem;
+    }
+    .folder-image {
+        max-width: 100%;
+        height: auto;
+        padding-top: 2em;
+    }
+}
+
+@media (max-width:480px) {
+    .folder-background {
+        width: 95%;
+    }
+    .folder-title {
+        padding: 10px 40px 5px 0;
+        max-width: 250px;
+        height: 70px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}

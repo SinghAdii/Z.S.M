@@ -1,0 +1,273 @@
+/* .topNavContainer {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  position: relative;
+} */
+
+.topNavContainer {
+    position: fixed;
+    top: 0;
+    left: -10px;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #010a15;
+    /* Navbar ka background */
+    z-index: 1000;
+}
+
+.closeMenuIcon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#serviceDropDownIcon {
+    font-size: 40px;
+}
+
+.servicesDropdownMenu {
+  width: 100%;
+  /* background-color:#010a15; */
+  border-radius: 20px;
+  padding:0px 10px !important;
+  height:auto;
+}
+
+.servicesDropdownMenu li {
+    /* list-style-type:circle !important; */
+    margin-left: 40px !important;
+    font-size: 15px !important;
+}
+
+.servicePopUpWrapper {
+    position: absolute;
+    top: 5px;
+    /* Adjust to match your navbar's height */
+    left: 80%;
+    /* Align it horizontally with "Services" */
+    transform: translateX(-50%);
+    z-index: 5;
+    /* Ensure it appears above other content */
+}
+
+.serviceDropDownIcon {
+    font-size: 30px;
+    /* Adjust size to fit with the text */
+    vertical-align: middle;
+    /* Align it with the text */
+    margin-left: 0px;
+    /* Add spacing between text and icon */
+    z-index: 10;
+    margin-top: 3px;
+}
+
+#serviceTopNavLink {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Rotate the icon on hover */
+    transition: transform 0.3s ease;
+    z-index: 15;
+}
+
+.serviceItem {
+    position: relative;
+    z-index: 10;
+}
+
+.ziostechLogo {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    object-fit: contain;
+    /*Ensure the logo maintains its aspect ratio*/
+}
+
+
+/* .navBarLinks {
+      display: flex;
+      gap: 25px;
+    } */
+
+.navBarLinks ul {
+    display: flex;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.navBarLinks li {
+    list-style-type: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/* .menuToggleButton {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+} */
+
+.menuToggleButton {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.closeMenuIcon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menuToggleButton.rotate {
+    transform: rotate(90deg);
+    /* Rotate the icon when the menu is open */
+}
+
+.menuToggleButton.fade {
+    opacity: 0;
+    /* Fade out the icon */
+}
+
+.container {
+    position: relative;
+}
+
+.service-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    /* Display it just below the service link */
+    left: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicePlusIcon {
+    position: absolute;
+    right: 10px;
+    font-size: 35px;
+}
+
+
+/* @media (max-width:1024px){
+  .servicePopUpWrapper{
+    top:80px;
+    left:70%;
+  }
+}
+@media (max-width:821px){
+  .servicePopUpWrapper{
+    top:0px;
+    left:65%;
+  }
+} */
+
+@media (max-width: 768px) {
+    /* Responsive Logo */
+    /* #serviceTopNavLink{
+    font-size:2px;
+  } */
+    .ziostechLogo {
+        width: 200px;
+        /* Resize logo on smaller screens */
+        height: auto;
+        /* Adjust height */
+    }
+    .serviceItem {
+        font-size: 17px;
+    }
+    /* Hide the navigation menu by default */
+    .navBarLinks {
+        height: auto;
+        display: none;
+        position: absolute;
+        /* top: 100%; */
+        top: 13vh;
+        /* right: -12px; */
+        right: 20px;
+        background-color: #0e1518;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* width: 450px; */
+        min-width: 200px;
+        width: auto;
+        max-width: 100%;
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.24);
+        z-index: 20;
+    }
+    .navBarLinks.show {
+        display: flex;
+        /* Show the menu when the "show" class is added */
+    }
+    /* Style for each menu item in the popup */
+    .navBarLinks ul {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        gap: 8px;
+        padding: 0;
+        margin: 5px 0;
+        /* overflow: scroll; */
+    }
+    .navBarLinks li {
+        font-size: 17px;
+        padding: 10px 0;
+    }
+    .menuToggleButton {
+        display: block;
+        /* Show the hamburger menu button on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navBarLinks {
+        overflow: scroll;
+    }
+    /* .serviceItem {
+    font-size: 20px;
+  } */
+  .topNavContainer {
+    margin-left: 10px;
+  }
+  .ziostechLogo {
+    width: 170px; /* Resize further for very small screens */
+    height: auto; /* Adjust height */
+    margin-left:-15px;
+  }
+}

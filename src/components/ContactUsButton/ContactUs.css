@@ -1,0 +1,18 @@
+.contactUsButton{
+  width:8em;
+  height:2.3em;
+  background-color:#253F9B;
+  border:none;
+  color:white;
+  font-weight:bold;
+  font-size:14px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactUsButton:hover{
+  background-color: #051758;
+  transition: all 0.5s;
+}

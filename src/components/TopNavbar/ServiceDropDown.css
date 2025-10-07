@@ -1,0 +1,72 @@
+.servicePopUpContainer {
+    position: absolute;
+    top: 100%; /* Position it below the Services link */
+    left: 0;
+    z-index: 10;
+    margin:100px auto;
+    width: 300px;
+    height: auto;
+    background-color: #212f3d; /* Dark background color*/
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    padding: 20px;
+    text-align: start;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    position: relative; /* For any positioning inside the container */
+    color: #fff; /* Light text color for better contrast */
+}
+
+.servicePopUpContainer::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #212f3d; /* Matching background color */
+    border-left: 2px solid #555; /* Subtle border color */
+    border-top: 2px solid #555; /* Subtle border color */
+    transform: rotate(45deg);
+}
+
+.servicePopUpContainer h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #e0e0e0; /* Lighter text color for the header */
+    text-transform: uppercase; /* For a more professional look */
+}
+
+.servicePopUpContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicePopUpContainer ul li {
+    font-size: 16px;
+    color: #d1d1d1; /* Lighter gray for list items */
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.servicePopUpContainer ul li:hover {
+    color: #ff6f61; /* Highlight color on hover */
+    transform: scale(1.05); /* Slight scale effect for hover */
+}
+
+.servicePopUpContainer ul li:active {
+    transform: scale(1); /* Reset scaling on click */
+}
+
+/* Adding some spacing between the list items */
+.servicePopUpContainer ul li:not(:last-child) {
+    border-bottom: 1px solid #444; /* Dark border between items */
+    padding-bottom: 10px;
+}
+
+.servicePopUpContainer ul li:last-child {
+    padding-bottom: 0;
+}
