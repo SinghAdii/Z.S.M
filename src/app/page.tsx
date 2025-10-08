@@ -1,11 +1,12 @@
-import Link from "next/link";
-
+import { SpotlightBackground } from "@/components/Custom/custom_components.exports";
+import React from "react";
 
 export default function Home() {
   return (
-   <>
-      <h1>Hello World!</h1>
-      <Link href={'./pages/about'}>Click Here</Link>
-   </> 
+    <>
+      <div>
+        <SpotlightBackground />
+      </div>
+    </>
   );
 }
