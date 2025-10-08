@@ -20,7 +20,7 @@ const NAV_ITEMS = [
   { title: "Home", href: "/", description: "Welcome, Overview, Landing" },
   {
     title: "Projects",
-    href: "/projects",
+    href: "./pages/projects",
     description: "Portfolio, Case Studies, Work",
   },
   {
