@@ -14,6 +14,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "@/assets/images/ziostech_logo.png";
 
 const NAV_ITEMS = [
@@ -81,14 +82,26 @@ const NAV_ITEMS = [
   },
   { title: "About", href: "/about", description: "Company, Team, Story" },
 ];
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
+  const [darkMode, setDarkMode] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const navigate = useRouter();
 
-  // --- Close dropdown when clicking outside ---
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
+  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -104,10 +117,10 @@ export default function Navbar() {
   return (
     <header
       ref={menuRef}
-      className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-xl"
+      className="fixed top-0 z-50 w-full bg-white/80 dark:bg-background backdrop-blur-xl transition-colors duration-300"
     >
-      <div className="flex items-center justify-between px-8 py-3">
-        {/* --- Left: Logo --- */}
+      <div className="flex items-center justify-between px-8 ">
+        {/* --- Logo --- */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
             src={logo}
@@ -119,7 +132,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* --- Center: Desktop Nav --- */}
+        {/* --- Desktop Nav --- */}
         <nav className="hidden md:flex items-center justify-center flex-1">
           <NavigationMenu>
             <NavigationMenuList className="flex gap-10 max-lg:gap-5">
@@ -132,17 +145,16 @@ export default function Navbar() {
                     className="relative"
                   >
                     <button
-                      className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+                      className={`flex items-center gap-1 text-md font-medium transition-colors ${
                         hoveredDropdown === item.title
-                          ? "text-white"
-                          : "text-white hover:text-primary"
+                          ? "text-blue-600 dark:text-orange-500"
+                          : "text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-orange-500"
                       }`}
                     >
                       {item.title}
                       <RiArrowDropDownLine className="text-xl" />
                     </button>
 
-                    {/* --- Dropdown --- */}
                     <AnimatePresence>
                       {hoveredDropdown === item.title && (
                         <motion.div
@@ -150,19 +162,19 @@ export default function Navbar() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.2 }}
-                          className="absolute left-1/2 -translate-x-1/2 top-full mt-3 rounded-xl border bg-popover/90 backdrop-blur-md shadow-lg p-4 w-[500px] grid grid-cols-2 gap-3"
+                          className="absolute left-1/2 -translate-x-1/2 top-full mt-3 rounded-xl border bg-white/90 dark:bg-background/80 backdrop-blur-md shadow-lg p-4 w-[500px] grid grid-cols-2 gap-3"
                         >
                           {item.subItems.map((sub) => (
                             <Link
                               key={sub.title}
                               href={sub.href}
-                              className="rounded-md p-3 hover:bg-accent transition-colors group"
+                              className="rounded-md p-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
                             >
-                              <div className="text-sm font-medium group-hover:text-primary transition-colors">
+                              <div className="text-md font-medium group-hover:text-blue-600 dark:group-hover:text-orange-500 transition-colors">
                                 {sub.title}
                               </div>
                               {sub.description && (
-                                <p className="text-xs text-muted-foreground mt-1">
+                                <p className="text-xs text-gray-500 dark:text-gray-300 mt-1">
                                   {sub.description}
                                 </p>
                               )}
@@ -177,7 +189,7 @@ export default function Navbar() {
                     <NavigationMenuLink asChild>
                       <Link
                         href={item.href!}
-                        className="text-sm font-medium text-white hover:text-primary transition-colors"
+                        className="text-[16px] font-medium text-gray-800 dark:text-gray-200 dark:hover:text-orange-500 hover:text-blue-600 transition-colors"
                       >
                         {item.title}
                       </Link>
@@ -189,24 +201,63 @@ export default function Navbar() {
           </NavigationMenu>
         </nav>
 
-        {/* --- Right: Contact Button (Desktop) --- */}
-        <div className="hidden md:flex items-center">
+        {/* --- Right: Toggle + Contact --- */}
+        <div className="hidden md:flex items-center gap-3">
+          <motion.button
+            onClick={toggleDarkMode}
+            className="w-12 h-12 flex items-center justify-center rounded-lg text-gray-800 dark:text-yellow-400 cursor-pointer"
+            whileHover={{ scale: 1.15, rotate: 10 }}
+            whileTap={{ scale: 0.9, rotate: -10 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
+            <motion.div
+              key={darkMode ? "sun" : "moon"}
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+            </motion.div>
+          </motion.button>
+
           <Button
             onClick={() => navigate.push("./pages/contact")}
-            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md bg-gradient-to-r from-blue-800 to-blue-500 
-            hover:from-blue-700 hover:to-blue-400  hover:shadow-lg transition-transform hover:cursor-pointer duration-200 hover:scale-105"
+            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md bg-gradient-to-r from-blue-600 to-blue-400 
+            hover:from-blue-700 hover:to-blue-500 hover:shadow-lg transition-transform duration-200 hover:scale-105"
           >
             Contact Us
           </Button>
         </div>
 
-        {/* --- Mobile Menu Toggle --- */}
-        <button
-          className="md:hidden text-2xl p-2 rounded-md hover:bg-accent text-white transition"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <RxCross2 /> : <HiMiniBars3CenterLeft />}
-        </button>
+        {/* Mobile Menu Toggle */}
+        <div className="flex md:hidden gap-5 items-center justify-center">
+          <div className="flex justify-between items-center mb-4">
+            <motion.button
+              onClick={toggleDarkMode}
+              className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-800 dark:text-yellow-400 cursor-pointer"
+              whileHover={{ scale: 1.15, rotate: 10 }}
+              whileTap={{ scale: 0.9, rotate: -10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <motion.div
+                key={darkMode ? "sun" : "moon"}
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: 90, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+              </motion.div>
+            </motion.button>
+            <button
+              className="md:hidden text-2xl p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 transition"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <RxCross2 /> : <HiMiniBars3CenterLeft />}
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* --- Mobile Menu --- */}
@@ -217,7 +268,7 @@ export default function Navbar() {
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden bg-transparent px-6 py-4 md:hidden"
+            className="overflow-hidden bg-white dark:bg-gray-900 px-6 py-4 md:hidden border-t border-gray-200 dark:border-gray-700"
           >
             <ul className="flex flex-col space-y-4">
               {NAV_ITEMS.map((item) => (
@@ -230,7 +281,7 @@ export default function Navbar() {
                             activeDropdown === item.title ? null : item.title
                           )
                         }
-                        className="w-full text-white flex justify-between items-center text-left text-sm font-medium"
+                        className="w-full text-gray-900 dark:text-gray-200 flex justify-between items-center text-left text-sm font-medium"
                       >
                         {item.title}
                         <RiArrowDropDownLine
@@ -245,14 +296,14 @@ export default function Navbar() {
                             initial={{ opacity: 0, y: -5 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -5 }}
-                            className="mt-5 ml-3 space-y-2 border-l pl-3 border-border"
+                            className="mt-5 ml-3 space-y-2 border-l pl-3 border-gray-200 dark:border-gray-700"
                           >
                             {item.subItems.map((sub) => (
                               <li key={sub.title}>
                                 <Link
                                   href={sub.href}
                                   onClick={() => setMenuOpen(false)}
-                                  className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                                  className="block text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors"
                                 >
                                   {sub.title}
                                 </Link>
@@ -266,7 +317,7 @@ export default function Navbar() {
                     <Link
                       href={item.href!}
                       onClick={() => setMenuOpen(false)}
-                      className="block text-white text-sm font-medium hover:text-primary transition-colors"
+                      className="block text-gray-900 dark:text-gray-200 text-sm font-medium hover:text-blue-600 transition-colors"
                     >
                       {item.title}
                     </Link>
@@ -274,15 +325,15 @@ export default function Navbar() {
                 </li>
               ))}
 
-              {/* Contact Us in Mobile */}
+              {/* Contact Us Mobile */}
               <li>
                 <Button
                   onClick={() => {
                     setMenuOpen(false);
                     navigate.push("./pages/contact");
                   }}
-                  className="block rounded-2xl w-fit px-5 py-2 text-white text-sm font-semibold bg-gradient-to-r from-blue-800 to-blue-500 
-                  hover:from-blue-700 hover:to-blue-400  hover:underline mt-2"
+                  className="block rounded-2xl w-fit px-5 py-2 text-white text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-400 
+                  hover:from-blue-700 hover:to-blue-500 mt-2"
                 >
                   Contact Us
                 </Button>
