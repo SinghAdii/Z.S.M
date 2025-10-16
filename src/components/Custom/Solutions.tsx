@@ -17,10 +17,10 @@ interface Props {
     suffix?: string;
     label: string;
   }[];
-  primaryCta: string;
-  secondaryCta: string;
-  primaryhref: string;
-  secondaryhref: string;
+  primaryCta?: string;
+  secondaryCta?: string;
+  primaryhref?: string;
+  secondaryhref?: string;
 }
 
 export default function Solutions({
@@ -73,7 +73,7 @@ export default function Solutions({
               {primaryCta && (
                 <Button
                   className="hover:cursor-pointer capitalize"
-                  onClick={() => navigate.push(primaryhref)}
+                  onClick={() => primaryhref && navigate.push(primaryhref)}
                 >
                   {primaryCta}
                 </Button>
@@ -82,7 +82,7 @@ export default function Solutions({
                 <Button
                   className="hover:cursor-pointer capitalize"
                   variant="ghost"
-                  onClick={() => navigate.push(secondaryhref)}
+                  onClick={() => secondaryhref && navigate.push(secondaryhref)}
                 >
                   {secondaryCta}
                 </Button>

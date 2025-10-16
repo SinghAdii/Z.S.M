@@ -66,10 +66,7 @@ export default function Herosectionheading({
       layoutId={`words-container-${id}`}
       animate={{ width }}
       transition={{ duration: animationDuration / 2000 }}
-      className={cn(
-        "relative inline-block rounded-lg pt-2 pb-3 text-center text-4xl font-bold md:text-7xl",
-        className
-      )}
+      className={cn("relative inline rounded-lg font-bold", className)}
       key={words[currentWordIndex]}
     >
       <motion.div

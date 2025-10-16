@@ -30,27 +30,27 @@ const NAV_ITEMS = [
     subItems: [
       {
         title: "Development",
-        href: "/development",
+        href: "/pages/services/development",
         description: "Web, Mobile, Software, Apps",
       },
       {
         title: "Cloud Services",
-        href: "/clouds",
+        href: "/pages/services/cloud-service",
         description: "AWS, Azure, Google Cloud, Hosting",
       },
       {
         title: "Platform Services",
-        href: "/platform-services",
+        href: "/pages/services/platform-service",
         description: "SaaS, PaaS, Enterprise Platforms",
       },
       {
         title: "CMS & E-commerce",
-        href: "/cms-ecommerce",
+        href: "/pages/services/cms-e-commerce",
         description: "WordPress, Shopify, Online Stores",
       },
       {
         title: "Containerisation Tools",
-        href: "/containerization",
+        href: "/pages/services/contanerization-service",
         description: "Docker, Kubernetes, DevOps",
       },
       {
@@ -222,8 +222,8 @@ export default function Navbar() {
           </motion.button>
 
           <Button
-            onClick={() => navigate.push("./pages/contact")}
-            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md bg-gradient-to-r from-blue-600 to-blue-400 
+            onClick={() => navigate.push("#contact-section")}
+            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md cursor-pointer bg-gradient-to-r from-blue-600 to-blue-400 
             hover:from-blue-700 hover:to-blue-500 hover:shadow-lg transition-transform duration-200 hover:scale-105"
           >
             Contact Us

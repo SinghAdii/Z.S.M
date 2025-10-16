@@ -24,7 +24,13 @@ export default function Home() {
           <SpotlightBackground />
         </div>
         <div className="relative pt-28 text-white">
-          <Herosection heroImage={Hero_Section_Image} />
+          <Herosection
+            heroImage={Hero_Section_Image}
+            isPrimaryButton={true}
+            isSecondaryButton={true}
+            primaryhref="#contact-section"
+            secondaryhref="/pages/services/development"
+          />
         </div>
       </div>
       <Solutions

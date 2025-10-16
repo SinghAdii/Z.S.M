@@ -8,3 +8,5 @@ export { default as Previousworks } from "./Previousworks";
 export { default as Solutions } from "./Solutions";
 export { default as Testimonials } from "./Testimonials";
 export { default as ContactUs } from "./ContactUs";
+export { default as Process } from "./Process";
+export { default as TechLogoDisplay } from "./TechLogoDisplay";
