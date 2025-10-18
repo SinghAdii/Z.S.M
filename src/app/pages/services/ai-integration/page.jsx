@@ -6,15 +6,13 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
-// Import the new data arrays you'll create in the next step
 import { aiIntegrationSteps, aiTechStack } from "@/components/Custom/Data";
-
+import { aiIntegrationHero } from "@/assets/services-hero-images/service-images-exports.js";
 export default function AIIntegrationServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={aiIntegrationHero}
         titlePrefix="Transforming Businesses With"
         words={["Automate", "Augment", "Personalize", "Accelerate"]}
         titlesuffix="AI-Powered"

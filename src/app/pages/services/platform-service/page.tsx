@@ -6,8 +6,8 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { platformSteps, platformTechStack } from "@/components/Custom/Data";
+import { platformHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function PlatformServices() {
   return (
@@ -24,7 +24,7 @@ export default function PlatformServices() {
           "text-blue-500",
           "text-orange-500",
         ]}
-        heroImage={Hero_Section_Image}
+        heroImage={platformHero}
         isPrimaryButton={true}
         primaryButtonIcon={<FaPhoneAlt />}
         primaryButtonText="Contact Us"

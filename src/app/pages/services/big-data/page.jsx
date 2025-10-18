@@ -6,14 +6,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { bigDataSteps, bigDataTechStack } from "@/components/Custom/Data";
+import { bigDataHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function BigDataServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={bigDataHero}
         titlePrefix="Harness the Power of"
         words={["Ingest", "Process", "Analyze", "Visualize"]}
         titlesuffix="Big Data"

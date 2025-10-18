@@ -47,8 +47,8 @@ export default function Home() {
       <Services />
       <Previousworks works={works} />
       <WhyChooseUs />
-      <FAQ />
       <Testimonials />
+      <FAQ />
       <ContactUs />
     </>
   );

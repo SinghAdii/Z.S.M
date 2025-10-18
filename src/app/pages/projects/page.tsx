@@ -2,8 +2,10 @@ import { Hero_Section_Image } from "@/assets/images/images.export";
 import {
   CaseStudy,
   ContactUs,
+  FAQ,
   Herosection,
   Testimonials,
+  WhyChooseUs,
 } from "@/components/Custom/custom_components.exports";
 import {
   avniChallenges,
@@ -122,8 +124,9 @@ export default function page() {
         solution={medicitySolution}
         id="medicity-hospital-unnao"
       />
-
+      <WhyChooseUs />
       <Testimonials />
+      <FAQ />
       <ContactUs />
     </>
   );

@@ -6,7 +6,7 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
+import { devHero } from "@/assets/services-hero-images/service-images-exports.js";
 import {
   developmentSteps,
   developmentTechStack,
@@ -16,7 +16,7 @@ export default function Development() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={devHero}
         titlePrefix="We Design And"
         words={["Develop", "Engineer", "Craft", "Deliver"]}
         titlesuffix="High-Impact"

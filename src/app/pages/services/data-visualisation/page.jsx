@@ -6,14 +6,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { dataVisSteps, dataVisTechStack } from "@/components/Custom/Data";
+import { dataVisualHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function DataVisualizationServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image} // Recommended: Use a data-visualization-specific image
+        heroImage={dataVisualHero}
         titlePrefix="Transforming Data into"
         words={["Clarity", "Stories", "Insights", "Action"]}
         titlesuffix="Compelling"

@@ -7,15 +7,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { uiuxSteps, uiuxTechStack } from "@/components/Custom/Data";
-
+import { uiuxHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function UIUXDesign() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={uiuxHero}
         titlePrefix="Creating Intuitive and"
         words={["Engaging", "Beautiful", "Usable", "Impactful"]}
         titlesuffix="Digital"

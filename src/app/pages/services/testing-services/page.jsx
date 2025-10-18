@@ -6,17 +6,16 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { testingSteps, testingTechStack } from "@/components/Custom/Data";
+import { testingHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 // Data for the 'Process' component
-
 
 export default function TestingServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={testingHero}
         titlePrefix="Ensuring Quality With"
         words={["Manual", "Automated", "Performance", "Security"]}
         titlesuffix="Testing"

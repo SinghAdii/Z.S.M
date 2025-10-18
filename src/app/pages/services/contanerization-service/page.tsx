@@ -6,14 +6,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { containerSteps, containerTechStack } from "@/components/Custom/Data";
+import { containerisationHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function ContainerizationServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={containerisationHero}
         titlePrefix="Empowering Teams To"
         words={["Deploy", "Scale", "Automate", "Manage"]}
         titlesuffix="Containerized"

@@ -6,14 +6,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { cmsSteps, cmsTechStack } from "@/components/Custom/Data";
+import { cmsHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function CMSEcommerce() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={cmsHero}
         titlePrefix="We Help Brands"
         words={["Build", "Customize", "Optimize", "Grow"]}
         titlesuffix="Scalable"

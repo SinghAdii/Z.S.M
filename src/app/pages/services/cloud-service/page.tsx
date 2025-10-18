@@ -6,14 +6,14 @@ import {
   TechLogoDisplay,
 } from "@/components/Custom/custom_components.exports";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Hero_Section_Image } from "@/assets/images/images.export";
 import { cloudSteps, cloudTechStack } from "@/components/Custom/Data";
+import { cloudHero } from "@/assets/services-hero-images/service-images-exports.js";
 
 export default function CloudServices() {
   return (
     <>
       <Herosection
-        heroImage={Hero_Section_Image}
+        heroImage={cloudHero}
         titlePrefix="Empowering Businesses To"
         words={["Scale", "Deploy", "Secure", "Optimize"]}
         titlesuffix="Cloud Driven"

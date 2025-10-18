@@ -18,7 +18,7 @@ export default function ServiceLayout({
   return (
     <section className="services-layout">
       <Navbar />
-      <div className="my-20">{children}</div>
+      <div className="my-20 pt-10">{children}</div>
       <Testimonials />
       <ContactUs />
     </section>
