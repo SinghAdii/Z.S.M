@@ -92,12 +92,6 @@ export default function ContactSection({
       value: contactInfo.website,
       color: "text-cyan-500",
     },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      value: contactInfo.hours,
-      color: "text-purple-500",
-    },
   ];
 
   return (

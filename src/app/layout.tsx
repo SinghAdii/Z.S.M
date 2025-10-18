@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Custom/custom_components.exports.js";
 import Footer from "@/components/Custom/Footer";
+import GlobalPageLoader from "@/components/Custom/GlobalPageLoader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light">
       <body>
+        <GlobalPageLoader />
         <Navbar />
         <div>{children}</div>
         <Footer />

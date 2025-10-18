@@ -156,30 +156,6 @@ export const statsData = [
 
 export const works = [
   {
-    imgSrc: projectimg1,
-    title: "Ekta Janch Kendra",
-    description:
-      "Ekta Janch Kendra: Healthcare website with profile management, maintenance, and reliable services.",
-    points: [
-      "User-friendly website",
-      "Profile management system",
-      "Ongoing maintenance",
-      "Reliable healthcare services",
-    ],
-  },
-  {
-    imgSrc: projectimg2,
-    title: "Medicity Hospital, Unnao",
-    description:
-      "Medicity Hospital uses our system for efficient doctor, patient, and staff management.",
-    points: [
-      "Doctor, patient & staff data management",
-      "Improved coordination",
-      "Enhanced record accuracy",
-      "Streamlined operations",
-    ],
-  },
-  {
     imgSrc: projectimg3,
     title: "Sunrise Diagnostic Services",
     description:
@@ -190,6 +166,9 @@ export const works = [
       "Maintenance for smooth performance",
       "Reliable patient info handling",
     ],
+    domain: "Web Development",
+    href: "/case-studies/sunrise-diagnostic-services",
+    testimonialName: "Sandeep Yadav",
   },
   {
     imgSrc: projectimg4,
@@ -202,6 +181,9 @@ export const works = [
       "Profile management system",
       "Ongoing website maintenance",
     ],
+    domain: "Web Development",
+    href: "/case-studies/saurabh-visionary-ventures",
+    testimonialName: "MWO Raghubh Singh",
   },
   {
     imgSrc: projectimg5,
@@ -214,6 +196,39 @@ export const works = [
       "Efficient data handling",
       "Exceptional healthcare delivery",
     ],
+    domain: "Web Development",
+    href: "/case-studies/avni-hospital",
+    testimonialName: "Narendra Singh",
+  },
+  {
+    imgSrc: projectimg1,
+    title: "Ekta Janch Kendra",
+    description:
+      "Ekta Janch Kendra: Healthcare website with profile management, maintenance, and reliable services.",
+    points: [
+      "User-friendly website",
+      "Profile management system",
+      "Ongoing maintenance",
+      "Reliable healthcare services",
+    ],
+    domain: "Web Development",
+    href: "/case-studies/ekta-janch-kendra",
+    testimonialsData: "",
+  },
+  {
+    imgSrc: projectimg2,
+    title: "Medicity Hospital, Unnao",
+    description:
+      "Medicity Hospital uses our system for efficient doctor, patient, and staff management.",
+    points: [
+      "Doctor, patient & staff data management",
+      "Improved coordination",
+      "Enhanced record accuracy",
+      "Streamlined operations",
+    ],
+    domain: "Web Development",
+    href: "/case-studies/medicity-hospital-unnao",
+    testimonialsData: "",
   },
 ];
 
@@ -226,25 +241,11 @@ export const testimonialsData = [
       "Working with Ziostech Solutions transformed our business. Their expertise, insights, and innovative solutions enhanced operations and improved project outcomes.",
   },
   {
-    img: CarlosMendez,
-    name: "Carlos Mendez",
-    title: "CEO (Mendez Enterprises)",
-    quote:
-      "Partnering with Ziostech enhanced our digital presence. Their solutions are top-notch, and their support is unparalleled.",
-  },
-  {
     img: Raghubh,
     name: "MWO Raghubh Singh",
     title: "M.D. & CEO (Saurabh Visionary Ventures)",
     quote:
       "Ziostech exceeded expectations, delivering a dynamic platform with professionalism, timely delivery, and exceptional communication. Highly recommended for innovative tech solutions.",
-  },
-  {
-    img: Aiko,
-    name: "Aiko Tanaka",
-    title: "CTO (Tanaka Innovations)",
-    quote:
-      "Ziostech's expertise transformed our platform, leading to increased user engagement. Their professionalism and insight were invaluable.",
   },
   {
     img: Narendra,
@@ -259,6 +260,21 @@ export const testimonialsData = [
     title: "Marketing Director (GlobalTech Solutions)",
     quote:
       "Ziostech's innovative approach streamlined our processes, boosting efficiency and productivity. Their team's dedication and expertise are truly commendable.",
+  },
+  {
+    img: CarlosMendez,
+    name: "Carlos Mendez",
+    title: "CEO (Mendez Enterprises)",
+    quote:
+      "Partnering with Ziostech enhanced our digital presence. Their solutions are top-notch, and their support is unparalleled.",
+  },
+  // --- Unpaired testimonials below ---
+  {
+    img: Aiko,
+    name: "Aiko Tanaka",
+    title: "CTO (Tanaka Innovations)",
+    quote:
+      "Ziostech's expertise transformed our platform, leading to increased user engagement. Their professionalism and insight were invaluable.",
   },
   {
     img: Liam,

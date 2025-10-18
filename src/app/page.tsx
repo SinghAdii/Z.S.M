@@ -6,6 +6,7 @@ import {
   Solutions,
   Testimonials,
   ContactUs,
+  WhyChooseUs,
 } from "@/components/Custom/custom_components.exports";
 import {
   cardData,
@@ -44,6 +45,7 @@ export default function Home() {
       />
       <Services />
       <Previousworks works={works} />
+      <WhyChooseUs />
       <Testimonials />
       <ContactUs />
     </>

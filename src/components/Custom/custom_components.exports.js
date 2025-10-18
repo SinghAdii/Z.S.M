@@ -10,3 +10,5 @@ export { default as Testimonials } from "./Testimonials";
 export { default as ContactUs } from "./ContactUs";
 export { default as Process } from "./Process";
 export { default as TechLogoDisplay } from "./TechLogoDisplay";
+export { default as WhyChooseUs } from "./WhyChooseUs";
+export { default as CaseStudy } from "./CaseStudySingle";

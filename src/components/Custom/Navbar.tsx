@@ -21,7 +21,7 @@ const NAV_ITEMS = [
   { title: "Home", href: "/", description: "Welcome, Overview, Landing" },
   {
     title: "Projects",
-    href: "./pages/projects",
+    href: "/pages/projects",
     description: "Portfolio, Case Studies, Work",
   },
   {
