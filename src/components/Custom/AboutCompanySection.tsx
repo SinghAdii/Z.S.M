@@ -33,11 +33,11 @@ export default function AboutCompanySection() {
         {/* === ABOUT HEADING === */}
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            About <span className="text-orange-500">Ziostech Solution</span>
+            About <span className="text-orange-500">Ziostech Solutions</span>
           </h2>
           <Separator className="mx-auto my-6 w-20 bg-blue-500 h-[2px]" />
           <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-            At <span className="font-semibold text-orange-500">Ziostech Solution</span>, we believe technology should
+            At <span className="font-semibold text-orange-500">Ziostech Solutions</span>, we believe technology should
             empower businesses to grow smarter, faster, and stronger. We’re not just a service provider — we are your
             <span className="text-blue-500 font-medium"> digital transformation partner</span>, committed to building
             scalable, secure, and intelligent solutions that drive measurable results.
@@ -55,7 +55,7 @@ export default function AboutCompanySection() {
           <div>
             <h3 className="text-3xl font-bold mb-4">Who We Are</h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Ziostech Solution is a forward-thinking IT consulting and technology services company dedicated to helping
+              Ziostech Solutions is a forward-thinking IT consulting and technology services company dedicated to helping
               organizations harness the full potential of digital innovation. From startups to global enterprises, we
               design and deliver tailored solutions that enhance efficiency, optimize performance, and create sustainable
               business value.
