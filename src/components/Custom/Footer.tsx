@@ -67,27 +67,27 @@ const NAV_ITEMS: NavItem[] = [
       },
       {
         title: "UI/UX Services",
-        href: "/uiux",
+        href: "/pages/services/uiux-design",
         description: "Design, Prototyping, User Experience",
       },
       {
         title: "Testing Services",
-        href: "/testing",
+        href: "/pages/services/testing-services",
         description: "QA, Automation, Manual Testing",
       },
       {
         title: "Big Data",
-        href: "/big-data",
+        href: "/pages/services/big-data",
         description: "Analytics, Data Processing, Hadoop",
       },
       {
         title: "Data Visualisation",
-        href: "/data-visualisation",
+        href: "/pages/services/data-visualisation",
         description: "Charts, Dashboards, Insights",
       },
       {
         title: "AI Integration",
-        href: "/smart-bot",
+        href: "/pages/services/ai-integration",
         description: "Machine Learning, Chatbots, Automation",
       },
     ],
@@ -145,15 +145,15 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
           <div className="mt-5 flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <p className="font-semibold">Email Us:</p>
-              <a href="mailto:company@gamil.com">company@gmail.com</a>
+              <a href="mailto:company@gamil.com">ceo@ziostechsolutions.com</a>
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-semibold">Call Us:</p>
-              <a href="phone:company@gamil.com">+1234568910</a>
+              <a href="phone:company@gamil.com">+91 92778-01590</a>
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-semibold">Address:</p>
-              <p>123 Innovation Drive, Silicon Valley, CA</p>
+              <p>H.No - 104A, Vinayakpur, Kanpur Nagar, Uttar Pradesh, India 208024, IN</p>
             </div>
           </div>
         </div>
