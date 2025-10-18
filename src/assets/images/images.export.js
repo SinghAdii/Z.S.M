@@ -22,6 +22,7 @@ import NareshImage from "./naresh.jpeg";
 import PranjalImage from "./pranjal.jpeg";
 import VisionMissionImage from "./vision-mission.png";
 import AboutHeadingImage from "./aboutHeading.png";
+import ShaliniDirectorImage from "./shalini_director.jpg";
 
 export {
   Hero_Section_Image,
@@ -48,4 +49,5 @@ export {
   PranjalImage,
   VisionMissionImage,
   AboutHeadingImage,
+  ShaliniDirectorImage,
 };
