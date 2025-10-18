@@ -202,7 +202,7 @@ export default function AboutCompanySection() {
               We don’t just build solutions — we build relationships. Our
               customer-centric approach ensures every project aligns with your
               vision and business goals. With a proven record of innovation and
-              excellence, Ziostech Solution stands as your trusted partner in
+              excellence, Ziostech Solutions stands as your trusted partner in
               digital transformation.
             </p>
           </div>
