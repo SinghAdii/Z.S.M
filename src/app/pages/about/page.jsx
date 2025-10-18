@@ -13,9 +13,7 @@ import { features, cardData, statsData } from "@/components/Custom/Data.js";
 import {
   AboutHeadingImage,
   AdityaImage,
-  NareshImage,
-  PranjalImage,
-  VisionMissionImage,
+  ShaliniDirectorImage,
 } from "@/assets/images/images.export.js";
 import AboutCompanySection from "@/components/Custom/AboutCompanySection";
 import { FaArrowRight } from "react-icons/fa";
@@ -43,41 +41,63 @@ export default function About() {
       </div>
       <AboutCompanySection />
 
-      {/* === OUR TEAM SECTION === */}
-      <section className="py-24 bg-[#0f0f0f] text-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-8">Meet Our Team</h2>
-          <p className="text-gray-400 max-w-3xl mx-auto mb-12">
-            Behind every successful project is a passionate team of developers,
-            designers, and innovators. Together, we combine creativity and
-            technical expertise to build next-generation digital solutions.
+      {/* ===Our Leadership Team === */}
+      <section className="relative py-16 bg-[#0f0f0f] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#111] to-[#0f0f0f] opacity-70 -z-10"></div>
+
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          The Minds Behind Ziostech
+          </h2>
+
+          {/* Motivational Quote */}
+          <p className="text-base italic text-gray-400 mb-8 max-w-2xl mx-auto">
+            “Alone we can do so little; together we can build the future of
+            technology.”
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Dummy team cards */}
+
+          <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-12 leading-relaxed">
+            At{" "}
+            <span className="text-white font-medium">Ziostech Solutions</span>,
+            our strength lies in collaboration. Every idea is nurtured by
+            creative minds, transformed by skilled developers, and refined by
+            visionary leadership — all working together to deliver innovation
+            that empowers businesses.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
             {[
-              { name: "Aditya Singh", role: "Founder & CEO", img: AdityaImage },
               {
-                name: "Naresh Kumar Makwana",
-                role: "Lead Developer",
-                img: NareshImage,
+                name: "Aditya Singh",
+                role: "Founder & CEO",
+                img: AdityaImage,
+                tagline: "Vision drives innovation.",
               },
               {
-                name: "Pranjal Das",
-                role: "Senior Web Designer",
-                img: PranjalImage,
+                name: "Shalini Singh",
+                role: "Director & Co-Founder",
+                img: ShaliniDirectorImage,
+                tagline: "Leadership with empathy and clarity.",
               },
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-[#1a1a1a] p-6 rounded-2xl hover:bg-[#222] transition-all"
+                className="group bg-[#1a1a1a]/70 backdrop-blur-md p-6 rounded-xl border border-white/10 
+                     hover:border-blue-500/40 transition-all duration-300 shadow-md hover:shadow-blue-900/30"
               >
-                <img
-                  src={member.img.src} // <-- Access the .src property here
-                  alt={member.name} // <-- It's also good practice to add an alt attribute
-                  className="w-32 h-32 mx-auto rounded-full mb-4 object-cover shadow-lg"
-                />
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-gray-400">{member.role}</p>
+                <div className="relative w-28 h-28 mx-auto mb-4">
+                  <img
+                    src={member.img.src || member.img}
+                    alt={member.name}
+                    className="w-28 h-28 mx-auto rounded-full object-cover border-2 border-[#2a2a2a] 
+                         group-hover:border-blue-500 transition-all duration-300"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
+                <p className="text-gray-400 text-sm mb-2">{member.role}</p>
+                <p className="text-xs text-blue-400 italic opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  “{member.tagline}”
+                </p>
               </div>
             ))}
           </div>
