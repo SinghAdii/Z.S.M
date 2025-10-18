@@ -61,7 +61,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300"
     >
       {/* Left Section */}
-      <div className="flex flex-col justify-center w-full md:w-1/2 px-6 md:px-12 md:ml-10">
+      <div className="flex flex-col justify-center w-full md:w-1/2 px-6 md:px-12 md:ml-10 md:pb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
