@@ -1,4 +1,5 @@
 import {
+  BarChart2,
   Box,
   Briefcase,
   CheckCircle,
@@ -9,6 +10,7 @@ import {
   Database,
   Layers,
   Layout,
+  PieChart,
   Rocket,
   Server,
   ServerCog,
@@ -55,6 +57,7 @@ import {
   FaReact,
   FaShopify,
   FaWordpress,
+
 } from "react-icons/fa";
 
 import {
@@ -85,7 +88,64 @@ import {
   SiTerraform,
   SiWoocommerce,
   SiXcode,
+  SiHuggingface,
+  SiTensorflow,
+  SiPytorch,
+  SiApachespark,
+  SiApachehadoop,
+  SiApachekafka,
+  SiApacheairflow,
+  SiTableau,
+  SiAdobepremierepro,
+  SiSelenium,
+  SiJest,
+  SiApachejmeter,
+  SiPostman,
 } from "react-icons/si";
+
+import {
+  PiOpenAiLogo,
+  PiLighthouse,
+} from "react-icons/pi";
+
+import { 
+  BiPowerOff 
+} from "react-icons/bi";
+
+import {
+  AiOutlinePython
+} from "react-icons/ai";
+
+import {
+  GrMysql
+} from "react-icons/gr";
+
+import {
+  CiGrid31
+} from "react-icons/ci";
+
+import {
+  TbBrandCypress,
+} from "react-icons/tb";
+
+
+
+import {
+  TbBrandAdobeXd,
+  TbBrandAdobePhotoshop,
+  TbBrandAdobeIllustrator,
+  TbBrandAdobeAftereffects,
+  TbBrandAdobeIndesign,
+} from "react-icons/tb";
+
+import {
+  SiAdobeaftereffects,
+  SiAdobeindesign,
+  SiAdobephotoshop,
+  SiAdobexd,
+} from "react-icons/si";
+
+
 
 import { IconApi, IconBrandAzure, IconMagnetOff } from "@tabler/icons-react";
 
@@ -512,7 +572,9 @@ export const cloudSteps = [
 
 export const cloudTechStack = {
   providers: [
-    { name: "AWS", icon: FaAws, desc: "Compute & Cloud Infrastructure" },
+    { name: "AWS", 
+      icon: FaAws, 
+      desc: "Compute & Cloud Infrastructure" },
     {
       name: "Microsoft Azure",
       icon: IconBrandAzure,
@@ -769,3 +831,396 @@ export const containerTechStack = {
     { name: "Ansible", icon: SiAnsible, desc: "Automation & Configuration" },
   ],
 };
+
+const aiIntegrationSteps = [
+  {
+    title: "Discovery & Use Case Identification",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We start by understanding your business goals and identifying{" "}
+          <span className="text-orange-500 font-semibold">
+            high-impact AI use cases
+          </span>
+          . This ensures alignment with your strategic objectives.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            We assess your data readiness and infrastructure to support AI
+            initiatives.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Wrench className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "Model Development",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We build custom models or fine-tune existing ones, ensuring they are{" "}
+          <span className="text-orange-500 font-semibold">
+            perfectly tailored
+          </span>{" "}
+          to solve your specific business challenges.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Leveraging state-of-the-art architectures for optimal performance.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <FaFigma className="w-8 h-8 text-orange-500" />,
+  },
+  {
+    title: "Integration & Deployment",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We seamlessly embed AI models into your existing apps and workflows,
+          deploying them on{" "}
+          <span className="text-orange-500 font-semibold">
+            scalable and secure infrastructure
+          </span>
+          .
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Establishing robust CI/CD pipelines for automated, reliable rollouts.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Rocket className="w-8 h-8 text-orange-500" />,
+  },
+  {
+    title: "Monitoring & Optimization",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We continuously track model performance in production, monitoring for
+          drift to ensure{" "}
+          <span className="text-orange-500 font-semibold">
+            consistent accuracy and efficiency
+          </span>
+          .
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Implementing retraining strategies to maximize your ROI.
+          </p>
+        </div>
+      </>
+    ),
+    icon:  <Cog className="w-8 h-8 text-blue-500" />,
+  },
+];
+
+const aiTechStack = [
+  { name: "OpenAI", icon: PiOpenAiLogo, desc: "LLMs & APIs" },
+  { name: "Hugging Face", icon: SiHuggingface, desc: "Transformers & Model Hub" },
+  { name: "TensorFlow", icon: SiTensorflow, desc: "Training & Serving" },
+  { name: "PyTorch", icon: SiPytorch, desc: "Research & Production" },
+];
+export { aiIntegrationSteps, aiTechStack };
+
+
+const bigDataSteps = [
+  {
+    title: "Data Architecture",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We design scalable data architectures using{" "}
+          <span className="text-orange-500 font-semibold">
+            data lakes, warehouses, and lakehouses
+          </span>
+          .
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Ensures efficient storage, retrieval, and processing of massive
+            datasets.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Database className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "ETL & Data Pipelines",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We build robust ETL processes and data pipelines using tools like{" "}
+          <span className="text-orange-500 font-semibold">
+            Apache Spark, Airflow, and Kafka
+          </span>
+          .
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Streamlines data ingestion, transformation, and loading for
+            analytics.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Server className="w-8 h-8 text-orange-500" />,
+  },
+  {
+    title: "Analytics & Visualization",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We leverage{" "}
+          <span className="text-orange-500 font-semibold">
+            BI tools and custom dashboards
+          </span>{" "}
+          to turn data into actionable insights.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Empowers data-driven decision-making across your organization.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Rocket className="w-8 h-8 text-blue-500" />,
+  },
+];
+
+const bigDataTechStack = [
+  { name: "Apache Spark", icon: SiApachespark, desc: "Big Data Processing" },
+  { name: "Hadoop", icon: SiApachehadoop, desc: "Distributed Storage" },
+  { name: "Kafka", icon: SiApachekafka, desc: "Stream Processing" },
+  { name: "Airflow", icon: SiApacheairflow, desc: "Workflow Management" },
+  { name: "Tableau", icon: SiTableau, desc: "Data Visualization" },
+  { name: "Power BI", icon: BiPowerOff, desc: "Business Analytics" },
+];
+export { bigDataSteps, bigDataTechStack };
+
+const dataVisSteps = [
+  {
+    title: "Data Visualization",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We create{" "}
+          <span className="text-orange-500 font-semibold">
+            interactive dashboards and reports
+          </span>{" "}
+          using tools like{" "}
+          <span className="text-orange-500 font-semibold">Tableau</span> and{" "}
+          <span className="text-orange-500 font-semibold">Power BI</span>.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Transforms complex data into intuitive visual formats for better
+            insights.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <BarChart2 className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "Data Analysis",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We perform{" "}
+          <span className="text-orange-500 font-semibold">
+            complex data analysis
+          </span>{" "}
+          using Python, R, and SQL to uncover trends and patterns.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Provides actionable insights to drive strategic decisions.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <PieChart className="w-8 h-8 text-orange-500" />,
+  },
+  {
+    title: "Reporting & Insights",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We deliver{" "}
+          <span className="text-orange-500 font-semibold">
+            customized reports
+          </span>{" "}
+          that highlight key metrics and KPIs relevant to your business.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Facilitates data-driven decision-making across your organization.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <BarChart2 className="w-8 h-8 text-blue-500" />
+  },
+];
+
+const dataVisTechStack = [
+  { name: "Tableau", icon: SiTableau, desc: "Data Visualization" },
+  { name: "Power BI", icon: BiPowerOff, desc: "Business Analytics" },
+  { name: "Python", icon: AiOutlinePython , desc: "Data Analysis" },
+  { name: "SQL", icon: GrMysql , desc: "Database Querying" },
+  { name: "D3.js", icon: CiGrid31, desc: "Interactive Visuals" },
+];
+export { dataVisSteps, dataVisTechStack };
+
+const uiuxSteps = [
+  {
+    title: "UI/UX Design",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We craft intuitive and visually appealing interfaces that enhance user
+          experience and align with your brand identity.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Utilizing tools like Figma and Adobe XD for prototyping and design.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Wrench className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "User Testing",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We conduct thorough user testing to gather feedback and ensure the
+          <span className="text-orange-500 font-semibold">
+            usability and effectiveness
+          </span>{" "}
+          of your product.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Iterative testing to refine and enhance the user experience.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <CheckCircle className="w-8 h-8 text-orange-500" />,
+  },
+  {
+    title: "Branding & Visual Identity",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We develop a cohesive visual identity that reflects your brand values
+          and resonates with your target audience.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            From logos to color schemes, we ensure consistency across all elements.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <FaFigma className="w-8 h-8 text-blue-500" />,
+  },
+];
+
+const uiuxTechStack = [
+  { name: "Figma", icon: FaFigma, desc: "Design & Prototyping" },
+  { name: "Adobe XD", icon: TbBrandAdobeXd, desc: "Prototyping & Design" },
+  { name: "Adobe Photoshop", icon: TbBrandAdobePhotoshop, desc: "Image Editing" },
+  { name: "Adobe Illustrator", icon: TbBrandAdobeIllustrator, desc: "Graphic Design" },
+  { name: "Adobe After Effects", icon: SiAdobeaftereffects, desc: "Video Editing" },
+  { name: "Adobe Premiere Pro", icon: SiAdobepremierepro, desc: "Video Editing" },
+  { name: "Adobe Indesign", icon: TbBrandAdobeIndesign, desc: "Layout Design" },
+];
+export { uiuxSteps, uiuxTechStack };
+
+const testingSteps = [
+  {
+    title: "Unit Testing",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We write and execute unit tests to validate individual components of
+          your application, ensuring each part functions correctly in isolation.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Utilizing frameworks like Jest and Mocha for robust testing.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "Integration Testing",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We perform integration tests to ensure that different modules and
+          services work together seamlessly within your application.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Identifying and resolving interface issues between components.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <Wrench className="w-8 h-8 text-blue-500" />,
+  },
+  {
+    title: "Performance Testing",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400">
+          We conduct performance tests to evaluate your application's speed,
+          responsiveness, and stability under various conditions.
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <CheckCircle className="text-blue-500 w-4" />
+          <p className="text-sm text-gray-500">
+            Utilizing tools like Lighthouse and JMeter for comprehensive analysis.
+          </p>
+        </div>
+      </>
+    ),
+    icon: <PieChart className="w-8 h-8 text-orange-500" />,
+  },
+];
+
+const testingTechStack = [
+  { name: "Selenium", icon: SiSelenium, desc: "Web browser automation" },
+  { name: "Cypress", icon: TbBrandCypress , desc: "Modern end-to-end testing" },
+  { name: "Jest / Vitest", icon: SiJest , desc: "JavaScript & component testing" },
+  { name: "JMeter", icon: SiApachejmeter, desc: "Performance & load testing" },
+  { name: "Postman", icon: SiPostman, desc: "API testing and automation" },
+  { name: "Lighthouse", icon: PiLighthouse, desc: "Web performance auditing" },
+];
+export { testingSteps, testingTechStack };

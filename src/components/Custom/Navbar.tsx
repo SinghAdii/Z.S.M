@@ -55,32 +55,32 @@ const NAV_ITEMS = [
       },
       {
         title: "UI/UX Services",
-        href: "/uiux",
+        href: "/pages/services/uiux-design",
         description: "Design, Prototyping, User Experience",
       },
       {
         title: "Testing Services",
-        href: "/testing",
+        href: "/pages/services/testing-services",
         description: "QA, Automation, Manual Testing",
       },
       {
         title: "Big Data",
-        href: "/big-data",
+        href: "/pages/services/big-data",
         description: "Analytics, Data Processing, Hadoop",
       },
       {
         title: "Data Visualisation",
-        href: "/data-visualisation",
+        href: "/pages/services/data-visualisation",
         description: "Charts, Dashboards, Insights",
       },
       {
         title: "AI Integration",
-        href: "/smart-bot",
+        href: "/pages/services/ai-integration",
         description: "Machine Learning, Chatbots, Automation",
       },
     ],
   },
-  { title: "About", href: "/about", description: "Company, Team, Story" },
+  { title: "About", href: "/pages/about", description: "Company, Team, Story" },
 ];
 
 export default function Navbar() {

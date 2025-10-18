@@ -39,7 +39,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     "text-orange-500",
     "text-blue-600",
   ],
-  subtitle = "A specialized IT services and business consulting solution designed to help companies optimize their technology and drive growth. From design to development end-to-end services that empower businesses to thrive in the digital world.",
+  subtitle = "Ziostech Solution delivers expert IT consulting, staffing, web & app development, and AI integration services to help businesses grow and innovate.",
   highlightText = "Experiences",
   heroImage,
   primaryButtonText = "Contact Us",

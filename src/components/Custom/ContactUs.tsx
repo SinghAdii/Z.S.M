@@ -42,10 +42,11 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   contactInfo = {
-    email: "contact@yourcompany.com",
-    phone: "+1 (800) 234-5678",
-    address: "123 Innovation Drive, Silicon Valley, CA",
-    website: "www.yourcompany.com",
+    email: "ceo.office@ziostechsolutions.com",
+    phone: "+91 92778-01590",
+    address:
+      "H.No - 104A, Vinayakpur, Kanpur Nagar, Uttar Pradesh, India 208024, IN",
+    website: "www.ziostechsolutions.com",
     hours: "Mon – Fri : 9 AM – 7 PM (IST)",
   },
 }: ContactSectionProps) {
@@ -137,9 +138,22 @@ export default function ContactSection({
                           <h4 className="font-medium text-gray-900 dark:text-gray-100">
                             {item.title}
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-400">
-                            {item.value}
-                          </p>
+
+                          {/* ✅ Make only website clickable */}
+                          {item.title === "Visit Us" ? (
+                            <a
+                              href={`https://${item.value}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-blue-600 hover:underline dark:text-blue-400"
+                            >
+                              {item.value}
+                            </a>
+                          ) : (
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                              {item.value}
+                            </p>
+                          )}
                         </div>
                       </div>
                     ))}

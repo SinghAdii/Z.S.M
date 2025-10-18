@@ -15,6 +15,13 @@ import Sofia from "./Sofia.jpeg";
 import Raj from "./RajPatel.jpg";
 import Hannah from "./Hannah.jpeg";
 import aakriti from "./aakriti.png";
+import AboutTeamImage from "./about_team_image.jpg";
+import AboutMissionImage from "./about_mission_image.jpg";
+import AdityaImage from "./aditya.jpeg";
+import NareshImage from "./naresh.jpeg";
+import PranjalImage from "./pranjal.jpeg";
+import VisionMissionImage from "./vision-mission.png";
+import AboutHeadingImage from "./aboutHeading.png";
 
 export {
   Hero_Section_Image,
@@ -34,4 +41,11 @@ export {
   Raj,
   Hannah,
   aakriti,
+  AboutTeamImage,
+  AboutMissionImage,
+  AdityaImage,
+  NareshImage,
+  PranjalImage,
+  VisionMissionImage,
+  AboutHeadingImage,
 };
