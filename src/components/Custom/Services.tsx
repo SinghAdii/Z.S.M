@@ -54,7 +54,7 @@ export default function ServicesSection() {
   const services = [
     {
       title: "Full-Stack Development",
-      href: "/development",
+      href: "/pages/services/development",
       description:
         "From concept to deployment — we build fast, scalable, and maintainable web and mobile applications.",
       icon: <IconDeviceLaptop size={28} />,
@@ -66,31 +66,31 @@ export default function ServicesSection() {
     },
     {
       title: "Cloud Services",
-      href: "/clouds",
+      href: "/pages/services/cloud-service",
       description:
         "Empowering your business with secure, scalable cloud infrastructures across major providers.",
       icon: <IconCloud size={28} />,
       techs: [
-        { icon: <FaAws />, color: "#FF9900" }, // single-color original
-        { icon: <SiGooglecloud />, color: themedColor }, // was multicolor
-        { icon: <FaMicrosoft />, color: themedColor }, // was multicolor
+        { icon: <FaAws />, color: "#FF9900" },
+        { icon: <SiGooglecloud />, color: themedColor },
+        { icon: <FaMicrosoft />, color: themedColor },
       ],
     },
     {
       title: "Platform Engineering",
-      href: "/platform-services",
+      href: "/pages/services/platform-service",
       description:
         "Design, build, and maintain your SaaS or enterprise platforms with high availability and low latency.",
       icon: <IconLayoutDashboard size={28} />,
       techs: [
-        { icon: <SiDocker />, color: "#2496ED" }, // single color
+        { icon: <SiDocker />, color: "#2496ED" },
         { icon: <SiKubernetes />, color: "#326CE5" },
         { icon: <SiNextdotjs className="dark:text-white text-black" /> },
       ],
     },
     {
       title: "E-commerce & CMS",
-      href: "/cms-ecommerce",
+      href: "/pages/services/cms-e-commerce",
       description:
         "Building custom online stores and CMS experiences that convert visitors into loyal customers.",
       icon: <IconShoppingBag size={28} />,
@@ -101,7 +101,7 @@ export default function ServicesSection() {
     },
     {
       title: "Containerization & DevOps",
-      href: "/containerization",
+      href: "/pages/services/contanerization-service",
       description:
         "Streamline your CI/CD pipelines with containerized environments and automated deployments.",
       icon: <IconBoxSeam size={28} />,
@@ -112,18 +112,18 @@ export default function ServicesSection() {
     },
     {
       title: "UI/UX Design",
-      href: "/uiux",
+      href: "/pages/services/uiux-design",
       description:
         "Crafting intuitive, beautiful, and data-driven design systems for web and mobile interfaces.",
       icon: <IconPalette size={28} />,
       techs: [
-        { icon: <SiFigma />, color: themedColor }, // multicolor adjusted
+        { icon: <SiFigma />, color: themedColor },
         { icon: <SiAdobe />, color: "#FF0000" },
       ],
     },
     {
       title: "Testing & QA",
-      href: "/testing",
+      href: "/pages/services/testing-services",
       description:
         "Ensuring reliability through automation testing, bug tracking, and performance benchmarking.",
       icon: <IconBug size={28} />,
@@ -134,7 +134,7 @@ export default function ServicesSection() {
     },
     {
       title: "Big Data & Analytics",
-      href: "/big-data",
+      href: "/pages/services/big-data",
       description:
         "Unlock insights from data lakes and warehouses using modern data analytics tools.",
       icon: <IconDatabase size={28} />,
@@ -145,7 +145,7 @@ export default function ServicesSection() {
     },
     {
       title: "AI & Automation",
-      href: "/ai-integration",
+      href: "/pages/services/ai-integration",
       description:
         "Integrate chatbots, predictive models, and generative AI to automate and innovate faster.",
       icon: <IconRobot size={28} />,
@@ -156,7 +156,7 @@ export default function ServicesSection() {
     },
     {
       title: "Mobile App Development",
-      href: "/mobile-dev",
+      href: "/pages/services/development",
       description:
         "Native and cross-platform mobile applications built with cutting-edge frameworks.",
       icon: <IconDeviceLaptop size={28} />,
@@ -168,7 +168,7 @@ export default function ServicesSection() {
     },
     {
       title: "Data Visualization",
-      href: "/data-visualisation",
+      href: "/pages/services/data-visualisation",
       description:
         "Turn complex data into meaningful insights using interactive charts and dashboards.",
       icon: <IconChartBar size={28} />,
@@ -179,7 +179,7 @@ export default function ServicesSection() {
     },
     {
       title: "Cybersecurity & Infrastructure",
-      href: "/cybersecurity",
+      href: "/pages/services/cybersecurity",
       description:
         "Advanced protection and monitoring to keep your digital assets secure and compliant.",
       icon: <IconShieldCheck size={28} />,

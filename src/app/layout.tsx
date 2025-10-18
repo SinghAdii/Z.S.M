@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Custom/custom_components.exports.js";
 import Footer from "@/components/Custom/Footer";
 import GlobalPageLoader from "@/components/Custom/GlobalPageLoader";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navbar />
         <div>{children}</div>
         <Footer />
+        <Toaster position="top-right" richColors closeButton duration={4000} />
       </body>
     </html>
   );

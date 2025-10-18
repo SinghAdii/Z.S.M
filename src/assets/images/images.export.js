@@ -3,7 +3,7 @@ import projectimg1 from "./ekta.png";
 import projectimg2 from "./medicityHospital.jpg";
 import projectimg3 from "./sunrise.jpg";
 import projectimg4 from "./saurabh_visionary.jpg";
-import projectimg5 from "./saurabh_visionary.jpg";
+import projectimg5 from "./avni hospital.jpg";
 import sandeep from "./sandeep.jpg";
 import CarlosMendez from "./CarlosMendez.jpeg";
 import Raghubh from "./RajPatel.jpg";

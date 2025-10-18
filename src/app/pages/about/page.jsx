@@ -18,6 +18,7 @@ import {
   VisionMissionImage,
 } from "@/assets/images/images.export.js";
 import AboutCompanySection from "@/components/Custom/AboutCompanySection";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -34,16 +35,14 @@ export default function About() {
             subheading="Empowering Digital Growth Through Technology"
             description="At Ziostech Solutions, we deliver scalable, reliable, and innovative digital solutions. Our mission is to help businesses leverage technology effectively to accelerate growth, streamline operations, and stay ahead of the competition."
             isPrimaryButton={true}
-            primaryText="Our Services"
-            primaryhref="/pages/services/development"
-            isSecondaryButton={true}
-            secondaryText="Contact Us"
-            secondaryhref="#contact-section"
+            primaryButtonText="Get Started"
+            primaryhref="#contact-section"
+            primaryButtonIcon={<FaArrowRight />}
           />
         </div>
       </div>
       <AboutCompanySection />
-      
+
       {/* === OUR TEAM SECTION === */}
       <section className="py-24 bg-[#0f0f0f] text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">

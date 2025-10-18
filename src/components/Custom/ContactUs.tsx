@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -17,7 +17,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Sectionheading from "./Sectionheading";
-import { Mail, Phone, MapPin, Clock, Send, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Globe } from "lucide-react";
+import { Spinner } from "@/components/ui/spinner";
+import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 const contactFormSchema = z.object({
   fullName: z.string().min(3, "Please enter your full name"),
@@ -42,8 +45,8 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   contactInfo = {
-    email: "ceo.office@ziostechsolutions.com",
-    phone: "+91 92778-01590",
+    email: "team@ziostechsolutions.com",
+    phone: "+91 9277801590",
     address:
       "H.No - 104A, Vinayakpur, Kanpur Nagar, Uttar Pradesh, India 208024, IN",
     website: "www.ziostechsolutions.com",
@@ -62,10 +65,46 @@ export default function ContactSection({
     },
   });
 
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = async (data: ContactFormValues) => {
-    console.log("Form Data:", data);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    form.reset();
+    setLoading(true);
+
+    const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const YOUR_PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+    const templateParams = {
+      from_name: data.fullName,
+      from_email: data.email,
+      from_phone: data.phone,
+      from_company: data.company,
+      subject: data.subject || "No subject",
+      message: data.message,
+      to_name: "Aditya Singh",
+      to_email: "ziostechdirector2024@gmail.com",
+    };
+
+    try {
+      await emailjs.send(
+        YOUR_SERVICE_ID!,
+        YOUR_TEMPLATE_ID!,
+        templateParams,
+        YOUR_PUBLIC_KEY
+      );
+
+      toast("Message sent successfully!", {
+        description: "We will get back to you shortly.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast("Oops! Something went wrong.", {
+        description: "Please try again later.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactCards = [
@@ -109,7 +148,6 @@ export default function ContactSection({
           />
         </div>
 
-        {/* Unified Box */}
         <Card className="overflow-hidden border border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-2xl rounded-3xl">
           <CardContent className="p-0">
             <div className="grid grid-cols-1 lg:grid-cols-3">
@@ -133,7 +171,6 @@ export default function ContactSection({
                             {item.title}
                           </h4>
 
-                          {/* ✅ Make only website clickable */}
                           {item.title === "Visit Us" ? (
                             <a
                               href={`https://${item.value}`}
@@ -260,10 +297,15 @@ export default function ContactSection({
 
                     <Button
                       type="submit"
-                      className="w-full md:w-auto bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg flex items-center gap-2 transition-transform hover:scale-105"
+                      disabled={loading}
+                      className="w-full md:w-auto bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg flex items-center gap-2 transition-transform hover:scale-105 hover:cursor-pointer"
                     >
-                      <Send className="w-5 h-5" />
-                      Submit Inquiry
+                      {loading ? (
+                        <Spinner className="w-5 h-5" />
+                      ) : (
+                        <Send className="w-5 h-5" />
+                      )}
+                      {loading ? "Sending..." : "Submit Inquiry"}
                     </Button>
                   </form>
                 </Form>

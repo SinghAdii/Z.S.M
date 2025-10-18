@@ -43,6 +43,12 @@ const FEATURES: Feature[] = [
     title: "Proven Track Record Across Industries",
     short: "Verified deliveries across Finance, Healthcare, Retail and more.",
   },
+  {
+    id: 6,
+    title: "Client Centric Partnership for Long Term Growth",
+    short:
+      "Beyond project delivery, we collaborate as technology partners ensuring sustained success and innovation for your business.",
+  },
 ];
 
 const INDUSTRIES = [
@@ -117,7 +123,7 @@ export default function WhyChooseAndIndustriesEnhanced() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="relative"
             >
-              <Card className="h-full bg-white/60 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700 backdrop-blur-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="h-full bg-background border border-slate-100 dark:border-slate-700 backdrop-blur-md hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="py-2">
                   <div className="flex items-start gap-4">
                     <div

@@ -57,7 +57,6 @@ import {
   FaReact,
   FaShopify,
   FaWordpress,
-
 } from "react-icons/fa";
 
 import {
@@ -103,49 +102,26 @@ import {
   SiPostman,
 } from "react-icons/si";
 
-import {
-  PiOpenAiLogo,
-  PiLighthouse,
-} from "react-icons/pi";
+import { PiOpenAiLogo, PiLighthouse } from "react-icons/pi";
 
-import { 
-  BiPowerOff 
-} from "react-icons/bi";
+import { BiPowerOff } from "react-icons/bi";
 
-import {
-  AiOutlinePython
-} from "react-icons/ai";
+import { AiOutlinePython } from "react-icons/ai";
 
-import {
-  GrMysql
-} from "react-icons/gr";
+import { GrMysql } from "react-icons/gr";
 
-import {
-  CiGrid31
-} from "react-icons/ci";
+import { CiGrid31 } from "react-icons/ci";
 
-import {
-  TbBrandCypress,
-} from "react-icons/tb";
-
-
+import { TbBrandCypress } from "react-icons/tb";
 
 import {
   TbBrandAdobeXd,
   TbBrandAdobePhotoshop,
   TbBrandAdobeIllustrator,
-  TbBrandAdobeAftereffects,
   TbBrandAdobeIndesign,
 } from "react-icons/tb";
 
-import {
-  SiAdobeaftereffects,
-  SiAdobeindesign,
-  SiAdobephotoshop,
-  SiAdobexd,
-} from "react-icons/si";
-
-
+import { SiAdobeaftereffects } from "react-icons/si";
 
 import { IconApi, IconBrandAzure, IconMagnetOff } from "@tabler/icons-react";
 
@@ -227,7 +203,7 @@ export const works = [
       "Reliable patient info handling",
     ],
     domain: "Web Development",
-    href: "/case-studies/sunrise-diagnostic-services",
+    href: "/pages/projects#sunrise-diagnostic-services",
     testimonialName: "Sandeep Yadav",
   },
   {
@@ -242,7 +218,7 @@ export const works = [
       "Ongoing website maintenance",
     ],
     domain: "Web Development",
-    href: "/case-studies/saurabh-visionary-ventures",
+    href: "/pages/projects#saurabh-visionary-ventures",
     testimonialName: "MWO Raghubh Singh",
   },
   {
@@ -257,7 +233,7 @@ export const works = [
       "Exceptional healthcare delivery",
     ],
     domain: "Web Development",
-    href: "/case-studies/avni-hospital",
+    href: "/pages/projects#avni-hospital",
     testimonialName: "Narendra Singh",
   },
   {
@@ -272,7 +248,7 @@ export const works = [
       "Reliable healthcare services",
     ],
     domain: "Web Development",
-    href: "/case-studies/ekta-janch-kendra",
+    href: "/pages/projects#ekta-janch-kendra",
     testimonialsData: "",
   },
   {
@@ -287,7 +263,22 @@ export const works = [
       "Streamlined operations",
     ],
     domain: "Web Development",
-    href: "/case-studies/medicity-hospital-unnao",
+    href: "/pages/projects#medicity-hospital-unnao",
+    testimonialsData: "",
+  },
+  {
+    imgSrc: projectimg2,
+    title: "Medicity Hospital, Unnao",
+    description:
+      "Medicity Hospital uses our system for efficient doctor, patient, and staff management.",
+    points: [
+      "Doctor, patient & staff data management",
+      "Improved coordination",
+      "Enhanced record accuracy",
+      "Streamlined operations",
+    ],
+    domain: "Web Development",
+    href: "/pages/projects#medicity-hospital-unnao",
     testimonialsData: "",
   },
 ];
@@ -371,6 +362,86 @@ export const testimonialsData = [
     quote:
       "Ziostech Solutions played a pivotal role in our digital transformation. Their strategic approach, technical expertise, and commitment to excellence resulted in a robust and scalable platform.",
   },
+];
+
+// 🌅 Sunrise Diagnostic Services
+export const sunriseOverview =
+  "A secure, user-friendly diagnostic service website that simplifies test booking and patient profile management.";
+export const sunriseGoal =
+  "To develop a reliable digital platform enabling online diagnostics bookings, profile management, and system maintenance.";
+export const sunriseChallenges = [
+  "Handling sensitive medical data securely",
+  "Ensuring smooth booking experience for patients",
+  "Maintaining system reliability and uptime",
+];
+export const sunriseSolution = [
+  "Built a secure web platform using React and Node.js",
+  "Integrated encrypted database for patient records",
+  "Set up automated maintenance and uptime monitoring",
+];
+
+// Saurabh Visionary Ventures
+export const saurabhOverview =
+  "A coaching institute website highlighting courses, experienced faculty, and success stories for prospective students.";
+export const saurabhGoal =
+  "To create an engaging, informative web presence for the institute to attract students and showcase achievements.";
+export const saurabhChallenges = [
+  "Presenting large volumes of course data effectively",
+  "Ensuring easy navigation across multiple sections",
+  "Maintaining consistent branding and design",
+];
+export const saurabhSolution = [
+  "Developed with Next.js for performance and SEO",
+  "Added structured course and faculty sections",
+  "Implemented a dynamic CMS for easy updates",
+];
+
+// Avni Hospital
+export const avniOverview =
+  "A modern hospital website designed to streamline patient interaction and improve service accessibility.";
+export const avniGoal =
+  "To enhance digital accessibility for patients by providing information and service access through an optimized website.";
+export const avniChallenges = [
+  "Organizing complex healthcare data effectively",
+  "Ensuring fast access across devices",
+  "Implementing secure patient interaction points",
+];
+export const avniSolution = [
+  "Developed using React for responsive UI",
+  "Optimized backend APIs for fast load times",
+  "Integrated secure HTTPS and authentication layers",
+];
+
+// Ekta Janch Kendra
+export const ektaOverview =
+  "A healthcare diagnostic center website providing booking, profile management, and maintenance functionalities.";
+export const ektaGoal =
+  "To deliver a dependable healthcare service portal with profile handling and regular maintenance support.";
+export const ektaChallenges = [
+  "Maintaining real-time availability data",
+  "Designing a simple yet functional patient interface",
+  "Ensuring long-term reliability and support",
+];
+export const ektaSolution = [
+  "Created an intuitive booking and profile system",
+  "Used Node.js backend with optimized REST APIs",
+  "Added regular maintenance and monitoring scripts",
+];
+
+// Medicity Hospital (Unnao)
+export const medicityOverview =
+  "A hospital management system for doctors, patients, and staff — improving coordination and record handling.";
+export const medicityGoal =
+  "To develop a full-scale hospital management solution with efficient data management and streamlined operations.";
+export const medicityChallenges = [
+  "Integrating multiple user roles (doctor, patient, staff)",
+  "Maintaining accurate and synchronized records",
+  "Ensuring data security and scalability",
+];
+export const medicitySolution = [
+  "Built a modular management dashboard using React",
+  "Integrated PostgreSQL for relational data handling",
+  "Deployed on AWS for scalability and performance",
 ];
 
 export const developmentSteps = [
@@ -588,9 +659,7 @@ export const cloudSteps = [
 
 export const cloudTechStack = {
   providers: [
-    { name: "AWS", 
-      icon: FaAws, 
-      desc: "Compute & Cloud Infrastructure" },
+    { name: "AWS", icon: FaAws, desc: "Compute & Cloud Infrastructure" },
     {
       name: "Microsoft Azure",
       icon: IconBrandAzure,
@@ -907,7 +976,8 @@ const aiIntegrationSteps = [
         <div className="flex items-center gap-2 mt-2">
           <CheckCircle className="text-blue-500 w-4" />
           <p className="text-sm text-gray-500">
-            Establishing robust CI/CD pipelines for automated, reliable rollouts.
+            Establishing robust CI/CD pipelines for automated, reliable
+            rollouts.
           </p>
         </div>
       </>
@@ -934,18 +1004,21 @@ const aiIntegrationSteps = [
         </div>
       </>
     ),
-    icon:  <Cog className="w-8 h-8 text-blue-500" />,
+    icon: <Cog className="w-8 h-8 text-blue-500" />,
   },
 ];
 
 const aiTechStack = [
   { name: "OpenAI", icon: PiOpenAiLogo, desc: "LLMs & APIs" },
-  { name: "Hugging Face", icon: SiHuggingface, desc: "Transformers & Model Hub" },
+  {
+    name: "Hugging Face",
+    icon: SiHuggingface,
+    desc: "Transformers & Model Hub",
+  },
   { name: "TensorFlow", icon: SiTensorflow, desc: "Training & Serving" },
   { name: "PyTorch", icon: SiPytorch, desc: "Research & Production" },
 ];
 export { aiIntegrationSteps, aiTechStack };
-
 
 const bigDataSteps = [
   {
@@ -1090,15 +1163,15 @@ const dataVisSteps = [
         </div>
       </>
     ),
-    icon: <BarChart2 className="w-8 h-8 text-blue-500" />
+    icon: <BarChart2 className="w-8 h-8 text-blue-500" />,
   },
 ];
 
 const dataVisTechStack = [
   { name: "Tableau", icon: SiTableau, desc: "Data Visualization" },
   { name: "Power BI", icon: BiPowerOff, desc: "Business Analytics" },
-  { name: "Python", icon: AiOutlinePython , desc: "Data Analysis" },
-  { name: "SQL", icon: GrMysql , desc: "Database Querying" },
+  { name: "Python", icon: AiOutlinePython, desc: "Data Analysis" },
+  { name: "SQL", icon: GrMysql, desc: "Database Querying" },
   { name: "D3.js", icon: CiGrid31, desc: "Interactive Visuals" },
 ];
 export { dataVisSteps, dataVisTechStack };
@@ -1154,7 +1227,8 @@ const uiuxSteps = [
         <div className="flex items-center gap-2 mt-2">
           <CheckCircle className="text-blue-500 w-4" />
           <p className="text-sm text-gray-500">
-            From logos to color schemes, we ensure consistency across all elements.
+            From logos to color schemes, we ensure consistency across all
+            elements.
           </p>
         </div>
       </>
@@ -1166,10 +1240,26 @@ const uiuxSteps = [
 const uiuxTechStack = [
   { name: "Figma", icon: FaFigma, desc: "Design & Prototyping" },
   { name: "Adobe XD", icon: TbBrandAdobeXd, desc: "Prototyping & Design" },
-  { name: "Adobe Photoshop", icon: TbBrandAdobePhotoshop, desc: "Image Editing" },
-  { name: "Adobe Illustrator", icon: TbBrandAdobeIllustrator, desc: "Graphic Design" },
-  { name: "Adobe After Effects", icon: SiAdobeaftereffects, desc: "Video Editing" },
-  { name: "Adobe Premiere Pro", icon: SiAdobepremierepro, desc: "Video Editing" },
+  {
+    name: "Adobe Photoshop",
+    icon: TbBrandAdobePhotoshop,
+    desc: "Image Editing",
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: TbBrandAdobeIllustrator,
+    desc: "Graphic Design",
+  },
+  {
+    name: "Adobe After Effects",
+    icon: SiAdobeaftereffects,
+    desc: "Video Editing",
+  },
+  {
+    name: "Adobe Premiere Pro",
+    icon: SiAdobepremierepro,
+    desc: "Video Editing",
+  },
   { name: "Adobe Indesign", icon: TbBrandAdobeIndesign, desc: "Layout Design" },
 ];
 export { uiuxSteps, uiuxTechStack };
@@ -1216,13 +1306,14 @@ const testingSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We conduct performance tests to evaluate your application's speed,
-          responsiveness, and stability under various conditions.
+          {`We conduct performance tests to evaluate your application's speed,
+          responsiveness, and stability under various conditions.`}
         </p>
         <div className="flex items-center gap-2 mt-2">
           <CheckCircle className="text-blue-500 w-4" />
           <p className="text-sm text-gray-500">
-            Utilizing tools like Lighthouse and JMeter for comprehensive analysis.
+            Utilizing tools like Lighthouse and JMeter for comprehensive
+            analysis.
           </p>
         </div>
       </>
@@ -1233,8 +1324,12 @@ const testingSteps = [
 
 const testingTechStack = [
   { name: "Selenium", icon: SiSelenium, desc: "Web browser automation" },
-  { name: "Cypress", icon: TbBrandCypress , desc: "Modern end-to-end testing" },
-  { name: "Jest / Vitest", icon: SiJest , desc: "JavaScript & component testing" },
+  { name: "Cypress", icon: TbBrandCypress, desc: "Modern end-to-end testing" },
+  {
+    name: "Jest / Vitest",
+    icon: SiJest,
+    desc: "JavaScript & component testing",
+  },
   { name: "JMeter", icon: SiApachejmeter, desc: "Performance & load testing" },
   { name: "Postman", icon: SiPostman, desc: "API testing and automation" },
   { name: "Lighthouse", icon: PiLighthouse, desc: "Web performance auditing" },

@@ -3,13 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Sectionheading from "./Sectionheading";
+import Link from "next/link";
 
 type PreviousWork = {
   imgSrc: StaticImageData;
   title: string;
   description: string;
   points: string[];
-  link?: string;
+  link?: string; // External live link (opens in new tab)
+  href?: string; // Internal page route (navigates within app)
 };
 
 export default function PreviousWorkSection({
@@ -24,7 +26,7 @@ export default function PreviousWorkSection({
           <Sectionheading
             topic="Our Work"
             title="Projects That Speak for Themselves"
-            description=" Take a look at some of the projects we've delivered for our clients."
+            description="Take a look at some of the projects we've delivered for our clients."
           />
         </div>
 
@@ -41,13 +43,16 @@ export default function PreviousWorkSection({
                   className="w-full h-48 px-2 object-cover rounded-t-lg"
                 />
               </CardHeader>
+
               <CardContent className="pt-4">
                 <CardTitle className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
                   {work.title}
                 </CardTitle>
+
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
                   {work.description}
                 </p>
+
                 <ul className="space-y-2 mb-4">
                   {work.points.map((point, idx) => (
                     <li key={idx} className="flex items-start">
@@ -58,17 +63,35 @@ export default function PreviousWorkSection({
                     </li>
                   ))}
                 </ul>
-                {work.link && (
-                  <Button asChild variant="outline" className="w-full">
-                    <a
-                      href={work.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+
+                <div className="flex flex-col sm:flex-row gap-2">
+                  {/* External Project Button */}
+                  {work.link && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="flex-1 border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-zinc-800"
                     >
-                      View Project
-                    </a>
-                  </Button>
-                )}
+                      <a
+                        href={work.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Project
+                      </a>
+                    </Button>
+                  )}
+
+                  {/* Internal Details Button */}
+                  {work.href && (
+                    <Button
+                      asChild
+                      className="flex-1 bg-blue-500 hover:bg-blue-600 text-white"
+                    >
+                      <Link href={work.href}>View Details</Link>
+                    </Button>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}

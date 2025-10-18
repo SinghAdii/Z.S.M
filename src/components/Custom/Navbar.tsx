@@ -223,8 +223,8 @@ export default function Navbar() {
 
           <Button
             onClick={() => navigate.push("#contact-section")}
-            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md cursor-pointer bg-gradient-to-r from-blue-600 to-blue-400 
-            hover:from-blue-700 hover:to-blue-500 hover:shadow-lg transition-transform duration-200 hover:scale-105"
+            className="rounded-lg text-white px-5 py-2 text-sm font-semibold shadow-md cursor-pointer bg-gradient-to-r from-orange-500 to-blue-500
+             hover:shadow-lg transition-transform duration-200 hover:scale-105"
           >
             Contact Us
           </Button>
@@ -332,8 +332,8 @@ export default function Navbar() {
                     setMenuOpen(false);
                     navigate.push("./pages/contact");
                   }}
-                  className="block rounded-2xl w-fit px-5 py-2 text-white text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-400 
-                  hover:from-blue-700 hover:to-blue-500 mt-2"
+                  className="block rounded-2xl w-fit px-5 py-2 text-white text-sm font-semibold bg-gradient-to-r from-orange-500 to-blue-500
+                   mt-2"
                 >
                   Contact Us
                 </Button>
