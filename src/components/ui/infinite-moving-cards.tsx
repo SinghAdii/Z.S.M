@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 
 export const InfiniteMovingCards = ({
@@ -15,22 +15,33 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
-    img?: string; // added optional image
+    img?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
 
-  useEffect(() => {
-    addAnimation();
-  }, []);
+  const getDirection = useCallback(() => {
+    if (!containerRef.current) return;
+    containerRef.current.style.setProperty(
+      "--animation-direction",
+      direction === "left" ? "forwards" : "reverse"
+    );
+  }, [direction]);
 
-  function addAnimation() {
+  const getSpeed = useCallback(() => {
+    if (!containerRef.current) return;
+    const duration =
+      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+    containerRef.current.style.setProperty("--animation-duration", duration);
+  }, [speed]);
+
+  const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
       scrollerContent.forEach((item) => {
@@ -42,22 +53,11 @@ export const InfiniteMovingCards = ({
       getSpeed();
       setStart(true);
     }
-  }
+  }, [getDirection, getSpeed]);
 
-  const getDirection = () => {
-    if (!containerRef.current) return;
-    containerRef.current.style.setProperty(
-      "--animation-direction",
-      direction === "left" ? "forwards" : "reverse"
-    );
-  };
-
-  const getSpeed = () => {
-    if (!containerRef.current) return;
-    const duration =
-      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
-    containerRef.current.style.setProperty("--animation-duration", duration);
-  };
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
 
   return (
     <div
@@ -81,7 +81,6 @@ export const InfiniteMovingCards = ({
             className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-6 py-6 md:w-[400px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
           >
             <blockquote className="flex flex-col gap-4">
-              {/* Profile */}
               {item.img && (
                 <div className="flex items-center gap-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
@@ -102,8 +101,6 @@ export const InfiniteMovingCards = ({
                   </div>
                 </div>
               )}
-
-              {/* Quote */}
               <p className="text-sm text-zinc-800 dark:text-zinc-100 leading-6">
                 {item.quote}
               </p>

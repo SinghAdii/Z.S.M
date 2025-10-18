@@ -100,7 +100,7 @@ export default function ContactSection({
       form.reset();
     } catch (error) {
       toast("Oops! Something went wrong.", {
-        description: "Please try again later.",
+        description: `Please try again later,${error}`,
       });
     } finally {
       setLoading(false);
