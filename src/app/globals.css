@@ -149,6 +149,11 @@
   }
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
     var(--animation-direction, forwards) linear infinite;
