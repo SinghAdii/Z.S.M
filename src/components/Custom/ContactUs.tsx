@@ -45,7 +45,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   contactInfo = {
-    email: "team@ziostechsolutions.com",
+    email: "ceo.office@ziostechsolutions.com",
     phone: "+91 9277801590",
     address:
       "H.No - 104A, Vinayakpur, Kanpur Nagar, Uttar Pradesh, India 208024, IN",

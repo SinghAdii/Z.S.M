@@ -6,9 +6,24 @@ import GlobalPageLoader from "@/components/Custom/GlobalPageLoader";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "Ziostechsolutions",
-  description:
-    "Innovative software development company delivering custom web, mobile, and enterprise solutions.",
+  title: "Ziostechsolutions | Empowers Digital Growth Through Innovation",
+  description: `Ziostech Solution delivers expert IT consulting, staffing, web & app development, and AI integration services to help businesses grow and innovate.
+      Transforming Ideas into Scalable, Intelligent Solutions
+      At Ziostech Solution, we combine technology, talent, and innovation to help businesses thrive in the digital era.
+    From strategic IT consulting to full-scale platform development and AI integration, we empower organizations to grow smarter, faster, and stronger.
+    `,
+  keywords: [
+    "IT staffing company",
+    "Hire dedicated developers",
+    "IT project outsourcing",
+    "Contract staffing solutions",
+    "Remote developer support",
+    "Custom software development services",
+    "IT consulting and solutions",
+    "Recruitment agency for IT",
+    "On-demand IT developers",
+    "Outsourced IT support services",
+  ],
 };
 
 export default function RootLayout({

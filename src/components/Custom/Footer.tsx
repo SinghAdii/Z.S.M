@@ -221,7 +221,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
               href="mailto:ceo@ziostechsolutions.com"
               className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
-              ceo@ziostechsolutions.com
+              ceo.office@ziostechsolutions.com
             </a>
           </div>
           <div>
