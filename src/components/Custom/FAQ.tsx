@@ -12,19 +12,19 @@ import { CircleCheck } from "lucide-react";
 
 export const faqs = [
   {
-    question: "What services does Ziostech Solution provide?",
-    answer: `Ziostech Solution offers a complete range of IT consulting, staffing, and technology services designed to help businesses innovate and scale.
+    question: "What services does Ziostech Solutions provide?",
+    answer: `Ziostech Solutions offers a complete range of IT consulting, staffing, and technology services designed to help businesses innovate and scale.
 Our key offerings include Platform Services, Web & App Development, CMS and E-commerce Solutions, Cloud Services, UI/UX Design, Testing, Big Data Services, Data Visualization, DataOps, and AI Integration.
 We also provide custom software development and end-to-end digital transformation consulting for enterprises and startups.`,
   },
   {
-    question: "What kind of software solutions can Ziostech Solution build?",
+    question: "What kind of software solutions can Ziostech Solutions build?",
     answer: `We build custom software solutions tailored to meet your business needs from web applications, mobile apps, and enterprise platforms to AI-powered tools and cloud-based systems.
 Whether you need an e-commerce platform, data analytics dashboard, or workflow automation system, our team can design, develop, and deploy scalable solutions using the latest technologies.`,
   },
   {
-    question: "What industries does Ziostech Solution specialize in?",
-    answer: `Ziostech Solution works across a diverse range of industries, including:
+    question: "What industries does Ziostech Solutions specialize in?",
+    answer: `Ziostech Solutions works across a diverse range of industries, including:
 * Information Technology and Software
 * Finance and Banking
 * Retail and E-commerce
@@ -54,7 +54,7 @@ We choose the tech stack based on your project’s goals, scalability needs, and
   },
   {
     question: "What are the engagement models available for businesses?",
-    answer: `Ziostech Solution offers flexible engagement and collaboration models to suit every business type:
+    answer: `Ziostech Solutions offers flexible engagement and collaboration models to suit every business type:
 * Dedicated Team Model: Hire a full-time development team for ongoing projects.
 * Fixed-Price Model: Ideal for clearly defined projects with set timelines and budgets.
 * Time & Material Model: Pay based on actual work hours and evolving requirements.
@@ -62,7 +62,7 @@ We choose the tech stack based on your project’s goals, scalability needs, and
   },
   {
     question: "Why should you choose Ziostech Solution?",
-    answer: `You should choose Ziostech Solution because we combine innovation, expertise, and reliability to deliver results that matter.
+    answer: `You should choose Ziostech Solutions because we combine innovation, expertise, and reliability to deliver results that matter.
 * We provide end-to-end IT consulting and development services
 * We have a skilled team of certified engineers and designers
 * We ensure quality, scalability, and security in every project
@@ -86,7 +86,7 @@ We prioritize user experience, performance, and scalability at every step, ensur
   },
   {
     question: "Do you offer app maintenance and support services?",
-    answer: `Yes. Ziostech Solution provides ongoing maintenance and post-launch support to ensure your applications remain secure, updated, and high-performing.
+    answer: `Yes. Ziostech Solutions provides ongoing maintenance and post-launch support to ensure your applications remain secure, updated, and high-performing.
 Our support includes bug fixes, performance optimization, system upgrades, and feature enhancements so your business continues running smoothly without interruption.`,
   },
 ];
