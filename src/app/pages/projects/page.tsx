@@ -16,6 +16,7 @@ import {
   ektaGoal,
   ektaOverview,
   ektaSolution,
+  homePageFAQ,
   medicityChallenges,
   medicityGoal,
   medicityOverview,
@@ -126,7 +127,7 @@ export default function page() {
       />
       <WhyChooseUs />
       <Testimonials />
-      <FAQ />
+      <FAQ faqs={homePageFAQ} />
       <ContactUs />
     </>
   );
