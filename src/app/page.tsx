@@ -8,10 +8,13 @@ import {
   ContactUs,
   WhyChooseUs,
   FAQ,
+  IntroductionSection,
+  KeyFeatures,
 } from "@/components/Custom/custom_components.exports";
 import {
   cardData,
   features,
+  homePageFAQ,
   statsData,
   works,
 } from "../components/Custom/Data.js";
@@ -36,8 +39,8 @@ export default function Home() {
         </div>
       </div>
       <Solutions
-        title="Custom IT Solutions for Your Business."
-        description="Tailored systems, secure operations, and predictable delivery — we help teams modernize infrastructure and ship reliable software that supports growth."
+        title="Custom IT Solutions for Your Business"
+        description="Tailored systems, secure operations, and predictable delivery we help teams modernize infrastructure and ship reliable software that supports growth."
         features={features}
         cards={cardData}
         stats={statsData}
@@ -48,7 +51,7 @@ export default function Home() {
       <Previousworks works={works} />
       <WhyChooseUs />
       <Testimonials />
-      <FAQ />
+      <FAQ faqs={homePageFAQ} />
       <ContactUs />
     </>
   );

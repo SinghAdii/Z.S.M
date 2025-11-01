@@ -20,7 +20,7 @@ const FEATURES: Feature[] = [
   {
     id: 1,
     title: "End-to-End Digital Expertise",
-    short: "From discovery to deployment — we craft full lifecycle solutions.",
+    short: "From discovery to deployment we craft full lifecycle solutions.",
   },
   {
     id: 2,
@@ -31,12 +31,12 @@ const FEATURES: Feature[] = [
   {
     id: 3,
     title: "Scalable, Secure, and Future-Ready Solutions",
-    short: "Built with security-first architecture and horizontal scalability.",
+    short: "Built with security first architecture and horizontal scalability.",
   },
   {
     id: 4,
     title: "Focus on Innovation and Business Value",
-    short: "We prioritize measurable impact — not just shiny tech.",
+    short: "We prioritize measurable impact not just shiny tech.",
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export default function WhyChooseAndIndustriesEnhanced() {
   return (
     <section
       aria-labelledby="why-choose-heading"
-      className="relative py-16 sm:py-24 lg:py-28 px-6 bg-gradient-to-b from-white/60 dark:from-slate-900/60 to-transparent"
+      className="relative py-16 sm:py-24 lg:py-28 px-6"
     >
       {/* Container */}
       <div className="mx-auto max-w-7xl">
@@ -123,14 +123,14 @@ export default function WhyChooseAndIndustriesEnhanced() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="relative"
             >
-              <Card className="h-full bg-background border border-slate-100 dark:border-slate-700 backdrop-blur-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="h-full bg-background border border-slate-100 dark:border-white/20 backdrop-blur-md hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="py-2">
                   <div className="flex items-start gap-4">
                     <div
                       className={cn(
                         "flex-shrink-0 w-12 h-12 rounded-lg grid place-items-center shadow-sm",
                         "bg-gradient-to-br from-white/60 dark:from-slate-700/30 to-transparent",
-                        "border border-slate-100 dark:border-slate-700"
+                        "border border-slate-100 dark:border-white/20"
                       )}
                       aria-hidden
                     >
@@ -165,7 +165,7 @@ export default function WhyChooseAndIndustriesEnhanced() {
 
         {/* Transformation callout */}
         <div className="mt-10">
-          <div className="rounded-xl border border-slate-100 dark:border-slate-700 bg-gradient-to-r from-white/40 dark:from-slate-800/40 to-transparent p-6 backdrop-blur-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="rounded-xl border border-slate-100 dark:border-white/20 bg-gradient-to-r from-white/40 dark:from-slate-800/40 to-transparent p-6 backdrop-blur-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h4 className="text-lg font-semibold capitalize text-slate-900 dark:text-slate-100">
                 We deliver transformation
@@ -213,7 +213,7 @@ export default function WhyChooseAndIndustriesEnhanced() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: idx * 0.05 }}
                 >
-                  <div className="flex items-center gap-3 p-3 rounded-lg border border-slate-100 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 p-3 rounded-lg border border-slate-100 dark:dark:border-white/20 bg-white/50 dark:bg-slate-800/50 hover:shadow-md transition-shadow">
                     <div className="w-9 h-9 rounded-md grid place-items-center bg-gradient-to-br from-white/60 dark:from-slate-700/30">
                       <span className="w-6 h-6 inline-grid place-items-center rounded-md bg-slate-100 dark:bg-slate-900 text-orange-500 dark:text-orange-500 font-semibold text-xs">
                         {idx + 1}

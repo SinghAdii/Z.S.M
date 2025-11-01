@@ -199,7 +199,7 @@ export default function AboutCompanySection() {
               Why Choose Us
             </h3>
             <p className="max-w-3xl mx-auto text-slate-600 dark:text-slate-300 leading-relaxed">
-              We don’t just build solutions — we build relationships. Our
+              We don’t just build solutions we build relationships. Our
               customer-centric approach ensures every project aligns with your
               vision and business goals. With a proven record of innovation and
               excellence, Ziostech Solutions stands as your trusted partner in

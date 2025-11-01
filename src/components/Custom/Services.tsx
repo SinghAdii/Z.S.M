@@ -44,14 +44,25 @@ import {
 } from "react-icons/si";
 import { FaAws, FaMicrosoft } from "react-icons/fa";
 import { useTheme } from "next-themes";
+import { JSX } from "react";
 
-export default function ServicesSection() {
+interface Service {
+  title: string;
+  href?: string;
+  description: string;
+  icon?: JSX.Element;
+  techs?: { icon: React.ReactNode; color: string }[];
+}
+
+export default function ServicesSection({
+  services,
+}: {
+  services?: Service[];
+}) {
   const { theme } = useTheme();
-
-  // theme-based adaptive colors
   const themedColor = theme === "dark" ? "#60a5fa" : "#3b82f6";
 
-  const services = [
+  const defaultServices: Service[] = [
     {
       title: "Full-Stack Development",
       href: "/pages/services/development",
@@ -60,7 +71,10 @@ export default function ServicesSection() {
       icon: <IconDeviceLaptop size={28} />,
       techs: [
         { icon: <SiReact />, color: themedColor },
-        { icon: <SiNextdotjs className="dark:text-white text-black" /> },
+        {
+          icon: <SiNextdotjs className="dark:text-white text-black" />,
+          color: "",
+        },
         { icon: <SiPython />, color: "#3776AB" },
       ],
     },
@@ -85,7 +99,10 @@ export default function ServicesSection() {
       techs: [
         { icon: <SiDocker />, color: "#2496ED" },
         { icon: <SiKubernetes />, color: "#326CE5" },
-        { icon: <SiNextdotjs className="dark:text-white text-black" /> },
+        {
+          icon: <SiNextdotjs className="dark:text-white text-black" />,
+          color: "",
+        },
       ],
     },
     {
@@ -190,6 +207,9 @@ export default function ServicesSection() {
     },
   ];
 
+  const activeServices =
+    services && services.length > 0 ? services : defaultServices;
+
   return (
     <section
       id="services"
@@ -205,7 +225,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
+          {activeServices.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
@@ -231,52 +251,58 @@ function ServiceCard({
 }: {
   title: string;
   description: string;
-  href: string;
+  href?: string;
   icon: React.ReactNode;
   techs?: { icon: React.ReactNode; color: string }[];
 }) {
-  return (
-    <Link href={href} aria-label={`Learn more about ${title}`}>
-      <Card
-        className={cn(
-          "relative overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
-        )}
-      >
-        {/* Glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-blue-500/0 to-blue-500/0 group-hover:via-blue-500/10 group-hover:to-blue-500/20 transition-all duration-500 rounded-xl" />
+  const CardContent = (
+    <Card
+      className={cn(
+        "relative overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
+      )}
+    >
+      {/* Glow effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-blue-500/0 to-blue-500/0 group-hover:via-blue-500/10 group-hover:to-blue-500/20 transition-all duration-500 rounded-xl" />
 
-        <CardHeader className="relative z-10 flex flex-col items-start space-y-3">
-          <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
-            {icon}
+      <CardHeader className="relative z-10 flex flex-col items-start space-y-3">
+        <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
+          {icon}
+        </div>
+
+        <CardTitle className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          {title}
+        </CardTitle>
+
+        <CardDescription className="text-zinc-600 dark:text-zinc-400">
+          {description}
+        </CardDescription>
+
+        {techs && (
+          <div className="flex space-x-3 mt-2">
+            {techs.map((tech, i) => (
+              <span
+                key={i}
+                className="text-xl transition-transform duration-200 hover:scale-110"
+                style={{
+                  color: tech.color,
+                  filter:
+                    "drop-shadow(0 0 1px rgba(0,0,0,0.1)) drop-shadow(0 0 2px rgba(0,0,0,0.05))",
+                }}
+              >
+                {tech.icon}
+              </span>
+            ))}
           </div>
+        )}
+      </CardHeader>
+    </Card>
+  );
 
-          <CardTitle className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-            {title}
-          </CardTitle>
-
-          <CardDescription className="text-zinc-600 dark:text-zinc-400">
-            {description}
-          </CardDescription>
-
-          {techs && (
-            <div className="flex space-x-3 mt-2">
-              {techs.map((tech, i) => (
-                <span
-                  key={i}
-                  className="text-xl transition-transform duration-200 hover:scale-110"
-                  style={{
-                    color: tech.color,
-                    filter:
-                      "drop-shadow(0 0 1px rgba(0,0,0,0.1)) drop-shadow(0 0 2px rgba(0,0,0,0.05))",
-                  }}
-                >
-                  {tech.icon}
-                </span>
-              ))}
-            </div>
-          )}
-        </CardHeader>
-      </Card>
+  return href ? (
+    <Link href={href} aria-label={`Learn more about ${title}`}>
+      {CardContent}
     </Link>
+  ) : (
+    <div>{CardContent}</div>
   );
 }
