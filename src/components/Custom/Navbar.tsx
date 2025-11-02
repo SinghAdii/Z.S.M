@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { FaSun, FaMoon } from "react-icons/fa";
-import logo from "@/assets/images/ziostech_logo.png";
+import { logo } from "@/assets/images/images.export.js";
 
 const NAV_ITEMS = [
   { title: "Home", href: "/", description: "Welcome, Overview, Landing" },

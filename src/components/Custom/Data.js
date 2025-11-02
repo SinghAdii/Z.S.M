@@ -66,7 +66,7 @@ import {
   Raj,
   Hannah,
   aakriti,
-} from "../../assets/images/images.export.js";
+} from "@/assets/images/images.export.js";
 
 import {
   FaAndroid,

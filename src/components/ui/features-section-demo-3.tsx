@@ -138,7 +138,7 @@ export const SkeletonThree = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
           <Image
-            src="https://assets.aceternity.com/fireship.jpg"
+            src="https:/@/assets.aceternity.com/fireship.jpg"
             alt="header"
             width={800}
             height={800}
