@@ -180,8 +180,17 @@ export default function ContactSection({
                             >
                               {item.value}
                             </a>
+                          ) : item.title === "Email Us" ? (
+                            <a
+                              href={`mailto:${item.value}`}
+                              className="text-xs"
+                            >
+                              {item.value}
+                            </a>
+                          ) : item.title === "Call Us" ? (
+                            <a href={`tel:${item.value}`}>{item.value}</a>
                           ) : (
-                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                            <p className="text-sm text-gray-700 dark:text-gray-300">
                               {item.value}
                             </p>
                           )}
@@ -214,12 +223,12 @@ export default function ContactSection({
                         {
                           name: "fullName",
                           label: "Full Name",
-                          placeholder: "John Doe",
+                          placeholder: "Full Name",
                         },
                         {
                           name: "email",
                           label: "Email Address",
-                          placeholder: "john@example.com",
+                          placeholder: "email@example.com",
                         },
                         {
                           name: "company",
@@ -229,7 +238,7 @@ export default function ContactSection({
                         {
                           name: "phone",
                           label: "Phone",
-                          placeholder: "+1 234 567 8900",
+                          placeholder: "+91 234 567 8900",
                         },
                       ].map((field) => (
                         <FormField

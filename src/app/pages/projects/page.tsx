@@ -4,6 +4,7 @@ import {
   ContactUs,
   FAQ,
   Herosection,
+  Previousworks,
   Testimonials,
   WhyChooseUs,
 } from "@/components/Custom/custom_components.exports";
@@ -16,6 +17,10 @@ import {
   ektaGoal,
   ektaOverview,
   ektaSolution,
+  fairyChallenges,
+  fairyGoal,
+  fairyOverview,
+  fairySolution,
   homePageFAQ,
   medicityChallenges,
   medicityGoal,
@@ -72,8 +77,19 @@ export default function page() {
         />
       </div>
 
+      <Previousworks works={works} />
+
       <CaseStudy
         project={works[0]}
+        overview={fairyOverview}
+        goal={fairyGoal}
+        challenges={fairyChallenges}
+        solution={fairySolution}
+        id="fairy-of-fortune"
+      />
+
+      <CaseStudy
+        project={works[1]}
         overview={sunriseOverview}
         goal={sunriseGoal}
         challenges={sunriseChallenges}
@@ -83,7 +99,7 @@ export default function page() {
       />
 
       <CaseStudy
-        project={works[1]}
+        project={works[2]}
         overview={saurabhOverview}
         goal={saurabhGoal}
         challenges={saurabhChallenges}
@@ -95,7 +111,7 @@ export default function page() {
       {/*  Avni Hospital */}
 
       <CaseStudy
-        project={works[2]}
+        project={works[3]}
         overview={avniOverview}
         goal={avniGoal}
         challenges={avniChallenges}
@@ -107,7 +123,7 @@ export default function page() {
       {/* Ekta Janch Kendra */}
 
       <CaseStudy
-        project={works[3]}
+        project={works[4]}
         overview={ektaOverview}
         goal={ektaGoal}
         challenges={ektaChallenges}
@@ -118,13 +134,14 @@ export default function page() {
       {/*  Medicity Hospital (Unnao) */}
 
       <CaseStudy
-        project={works[4]}
+        project={works[5]}
         overview={medicityOverview}
         goal={medicityGoal}
         challenges={medicityChallenges}
         solution={medicitySolution}
         id="medicity-hospital-unnao"
       />
+
       <WhyChooseUs />
       <Testimonials />
       <FAQ faqs={homePageFAQ} />

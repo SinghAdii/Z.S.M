@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
             quote: t.quote,
             name: t.name,
             title: t.title,
-            img: t.img.src,
+            img: t.img,
           }))}
           direction="right"
           speed="normal"

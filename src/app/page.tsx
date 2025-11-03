@@ -8,8 +8,6 @@ import {
   ContactUs,
   WhyChooseUs,
   FAQ,
-  IntroductionSection,
-  KeyFeatures,
 } from "@/components/Custom/custom_components.exports";
 import {
   cardData,

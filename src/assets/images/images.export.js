@@ -4,6 +4,7 @@ export const projectimg2 = "/assets/images/medicityHospital.jpg";
 export const projectimg3 = "/assets/images/sunrise.jpg";
 export const projectimg4 = "/assets/images/saurabh_visionary.jpg";
 export const projectimg5 = "/assets/images/avni hospital.jpg";
+export const projectimg6 = "/assets/images/fairy-of-fortune.jpg";
 export const sandeep = "/assets/images/sandeep.jpg";
 export const CarlosMendez = "/assets/images/CarlosMendez.jpeg";
 export const Raghubh = "/assets/images/RajPatel.jpg";

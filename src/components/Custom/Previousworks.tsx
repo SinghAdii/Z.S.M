@@ -1,12 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Sectionheading from "./Sectionheading";
 import Link from "next/link";
 
 type PreviousWork = {
-  imgSrc: StaticImageData;
+  imgSrc: string;
   title: string;
   description: string;
   points: string[];

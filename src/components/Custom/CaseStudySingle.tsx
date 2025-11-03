@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,15 +26,15 @@ export default function CaseStudy({
   project: {
     title: string;
     domain?: string;
-    imgSrc: StaticImageData;
-    liveUrl?: string;
+    imgSrc: string;
+    href?: string;
   };
   overview: string;
   goal: string;
   challenges: string[];
   solution: string[];
   testimonial?: {
-    img: StaticImageData;
+    img: string;
     name: string;
     title: string;
     quote: string;
@@ -102,12 +102,12 @@ export default function CaseStudy({
                 className="w-full aspect-[4/3] object-cover"
                 priority
               />
-              {project.liveUrl && (
+              {project.href && (
                 <div className="p-6">
                   <Button
                     size="lg"
                     className="w-32 text-white bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 rounded-full group cursor-pointer"
-                    onClick={() => window.open(project.liveUrl, "_blank")}
+                    onClick={() => window.open(project.href, "_blank")}
                   >
                     Visit Live
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

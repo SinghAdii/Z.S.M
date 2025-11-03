@@ -66,6 +66,7 @@ import {
   Raj,
   Hannah,
   aakriti,
+  projectimg6,
 } from "@/assets/images/images.export.js";
 
 import {
@@ -260,6 +261,21 @@ export const statsData = [
 
 export const works = [
   {
+    imgSrc: projectimg6,
+    title: "Fairy of Fortune",
+    description:
+      "Fairy of Fortune is a digital platform empowering rural women to start and grow their businesses online.",
+    points: [
+      "Web & App development",
+      "Secure data system",
+      "Admin dashboard",
+      "Scalable architecture",
+    ],
+    domain: "Web & App Development",
+    href: "/pages/projects#fairy-of-fortune",
+    testimonialName: "",
+  },
+  {
     imgSrc: projectimg3,
     title: "Sunrise Diagnostic Services",
     description:
@@ -278,7 +294,7 @@ export const works = [
     imgSrc: projectimg4,
     title: "Saurabh Visionary Ventures",
     description:
-      "Saurabh Visionary Ventures, a coaching center, features a website showcasing courses, faculty, and success stories.",
+      "Saurabh Visionary Ventures, A Coaching website showcasing courses, faculty, and success stories.",
     points: [
       "Course & faculty showcase",
       "Success stories section",
@@ -317,21 +333,6 @@ export const works = [
     ],
     domain: "Web Development",
     href: "/pages/projects#ekta-janch-kendra",
-    testimonialsData: "",
-  },
-  {
-    imgSrc: projectimg2,
-    title: "Medicity Hospital, Unnao",
-    description:
-      "Medicity Hospital uses our system for efficient doctor, patient, and staff management.",
-    points: [
-      "Doctor, patient & staff data management",
-      "Improved coordination",
-      "Enhanced record accuracy",
-      "Streamlined operations",
-    ],
-    domain: "Web Development",
-    href: "/pages/projects#medicity-hospital-unnao",
     testimonialsData: "",
   },
   {
@@ -510,6 +511,26 @@ export const medicitySolution = [
   "Built a modular management dashboard using React",
   "Integrated PostgreSQL for relational data handling",
   "Deployed on AWS for scalability and performance",
+];
+
+export const fairyOverview =
+  "A digital empowerment platform designed to help rural women start, manage, and grow their businesses online through an integrated website and mobile app.";
+
+export const fairyGoal =
+  "To create a scalable, secure, and accessible digital ecosystem that supports women entrepreneurs with business tools, data management, and growth insights.";
+
+export const fairyChallenges = [
+  "Building a unified experience across mobile platforms",
+  "Ensuring secure user data handling for multiple user roles",
+  "Designing an intuitive admin dashboard for efficient management",
+  "Developing a scalable architecture to support long term platform growth",
+];
+
+export const fairySolution = [
+  "Developed a responsive mobile app",
+  "Implemented secure authentication and encrypted data storage",
+  "Built an admin dashboard for real time business insights and control",
+  "Designed a modular backend architecture for scalability and easy feature expansion",
 ];
 
 export const developmentSteps = [
