@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Web & Mobile Application Development Services for Digital Growth | Ziostech Solutions",
     description:
       "Build fast, secure, and scalable web & mobile application development with Ziostech Solutions. Transform your business with custom software development solutions tailored to your goals.",
-    url: "https://ziostechsolutions.com/pages/services/development",
+    url: "https://ziostechsolutions.com/services/development",
     type: "website",
   },
 };

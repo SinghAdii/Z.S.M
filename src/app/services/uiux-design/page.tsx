@@ -1,4 +1,4 @@
-// filepath: src/app/pages/services/uiux-design/page.jsx
+// filepath: src/app/services/uiux-design/page.jsx
 "use client";
 import React from "react";
 import {

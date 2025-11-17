@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Data Visualization Services Company | Ziostech Solutions",
     description:
       "Transform raw data into clear, interactive visuals with Ziostech’s data visualization services. Make confident, data-driven decisions for your business.",
-    url: "https://ziostechsolutions.com/pages/services/data-visualisation",
+    url: "https://ziostechsolutions.com/services/data-visualisation",
     type: "website",
   },
 };

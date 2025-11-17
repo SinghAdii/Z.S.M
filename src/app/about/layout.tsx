@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "About Ziostech Solutions | Empowering Digital Transformation",
     description:
       "Learn more about Ziostech Solutions — your trusted partner for software development, IT consulting, and digital innovation.",
-    url: "https://ziostechsolutions.com/pages/about",
+    url: "https://ziostechsolutions.com/about",
     type: "website",
   },
 };

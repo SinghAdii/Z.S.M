@@ -9,9 +9,9 @@ module.exports = {
     let priority = 0.7;
 
     if (path === "/") priority = 1.0;
-    else if (path.startsWith("/pages/services")) priority = 0.8;
-    else if (path === "/pages/projects") priority = 0.8;
-    else if (path === "/pages/about") priority = 0.8;
+    else if (path.startsWith("/services")) priority = 0.8;
+    else if (path === "/projects") priority = 0.8;
+    else if (path === "/about") priority = 0.8;
     return {
       loc: path,
       changefreq: config.changefreq,

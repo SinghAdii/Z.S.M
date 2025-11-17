@@ -32,7 +32,7 @@ export default function Home() {
             isPrimaryButton={true}
             isSecondaryButton={true}
             primaryhref="#contact-section"
-            secondaryhref="/pages/services/development"
+            secondaryhref="/services/development"
           />
         </div>
       </div>

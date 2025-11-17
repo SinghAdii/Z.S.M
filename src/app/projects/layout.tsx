@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Our Projects & Case Studies | Ziostech Solutions",
     description:
       "See Ziostech Solutions’ portfolio of client projects across web, mobile, and cloud platforms — delivering scalable, high-performance software solutions.",
-    url: "https://ziostechsolutions.com/pages/projects",
+    url: "https://ziostechsolutions.com/projects",
     type: "website",
   },
 };

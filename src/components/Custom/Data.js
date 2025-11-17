@@ -272,7 +272,7 @@ export const works = [
       "Scalable architecture",
     ],
     domain: "Web & App Development",
-    href: "/pages/projects#fairy-of-fortune",
+    href: "/projects#fairy-of-fortune",
     testimonialName: "",
   },
   {
@@ -287,7 +287,7 @@ export const works = [
       "Reliable patient info handling",
     ],
     domain: "Web Development",
-    href: "/pages/projects#sunrise-diagnostic-services",
+    href: "/projects#sunrise-diagnostic-services",
     testimonialName: "Sandeep Yadav",
   },
   {
@@ -302,7 +302,7 @@ export const works = [
       "Ongoing website maintenance",
     ],
     domain: "Web Development",
-    href: "/pages/projects#saurabh-visionary-ventures",
+    href: "/projects#saurabh-visionary-ventures",
     testimonialName: "MWO Raghubh Singh",
   },
   {
@@ -317,7 +317,7 @@ export const works = [
       "Exceptional healthcare delivery",
     ],
     domain: "Web Development",
-    href: "/pages/projects#avni-hospital",
+    href: "/projects#avni-hospital",
     testimonialName: "Narendra Singh",
   },
   {
@@ -332,7 +332,7 @@ export const works = [
       "Reliable healthcare services",
     ],
     domain: "Web Development",
-    href: "/pages/projects#ekta-janch-kendra",
+    href: "/projects#ekta-janch-kendra",
     testimonialsData: "",
   },
   {
@@ -347,7 +347,7 @@ export const works = [
       "Streamlined operations",
     ],
     domain: "Web Development",
-    href: "/pages/projects#medicity-hospital-unnao",
+    href: "/projects#medicity-hospital-unnao",
     testimonialsData: "",
   },
 ];

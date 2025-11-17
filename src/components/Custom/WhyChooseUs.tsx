@@ -102,7 +102,7 @@ export default function WhyChooseAndIndustriesEnhanced() {
               Contact Sales
             </Button>
             <Button
-              onClick={() => navigate.push("/pages/projects")}
+              onClick={() => navigate.push("/projects")}
               variant="outline"
               size="lg"
               className="rounded-full cursor-pointer border-slate-200 dark:border-slate-700"

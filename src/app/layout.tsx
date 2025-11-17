@@ -7,6 +7,9 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Ziostechsolutions | Empowers Digital Growth Through Innovation",
+  icons: {
+    icon: "/favicon.ico",
+  },
   description: `Ziostech Solution delivers expert IT consulting, staffing, web & app development, and AI integration services to help businesses grow and innovate.
       Transforming Ideas into Scalable, Intelligent Solutions
       At Ziostech Solution, we combine technology, talent, and innovation to help businesses thrive in the digital era.

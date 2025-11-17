@@ -65,7 +65,7 @@ export default function ServicesSection({
   const defaultServices: Service[] = [
     {
       title: "Full-Stack Development",
-      href: "/pages/services/development",
+      href: "/services/development",
       description:
         "From concept to deployment — we build fast, scalable, and maintainable web and mobile applications.",
       icon: <IconDeviceLaptop size={28} />,
@@ -80,7 +80,7 @@ export default function ServicesSection({
     },
     {
       title: "Cloud Services",
-      href: "/pages/services/cloud-service",
+      href: "/services/cloud-service",
       description:
         "Empowering your business with secure, scalable cloud infrastructures across major providers.",
       icon: <IconCloud size={28} />,
@@ -92,7 +92,7 @@ export default function ServicesSection({
     },
     {
       title: "Platform Engineering",
-      href: "/pages/services/platform-service",
+      href: "/services/platform-service",
       description:
         "Design, build, and maintain your SaaS or enterprise platforms with high availability and low latency.",
       icon: <IconLayoutDashboard size={28} />,
@@ -107,7 +107,7 @@ export default function ServicesSection({
     },
     {
       title: "E-commerce & CMS",
-      href: "/pages/services/cms-e-commerce",
+      href: "/services/cms-e-commerce",
       description:
         "Building custom online stores and CMS experiences that convert visitors into loyal customers.",
       icon: <IconShoppingBag size={28} />,
@@ -118,7 +118,7 @@ export default function ServicesSection({
     },
     {
       title: "Containerization & DevOps",
-      href: "/pages/services/contanerization-service",
+      href: "/services/contanerization-service",
       description:
         "Streamline your CI/CD pipelines with containerized environments and automated deployments.",
       icon: <IconBoxSeam size={28} />,
@@ -129,7 +129,7 @@ export default function ServicesSection({
     },
     {
       title: "UI/UX Design",
-      href: "/pages/services/uiux-design",
+      href: "/services/uiux-design",
       description:
         "Crafting intuitive, beautiful, and data-driven design systems for web and mobile interfaces.",
       icon: <IconPalette size={28} />,
@@ -140,7 +140,7 @@ export default function ServicesSection({
     },
     {
       title: "Testing & QA",
-      href: "/pages/services/testing-services",
+      href: "/services/testing-services",
       description:
         "Ensuring reliability through automation testing, bug tracking, and performance benchmarking.",
       icon: <IconBug size={28} />,
@@ -151,7 +151,7 @@ export default function ServicesSection({
     },
     {
       title: "Big Data & Analytics",
-      href: "/pages/services/big-data",
+      href: "/services/big-data",
       description:
         "Unlock insights from data lakes and warehouses using modern data analytics tools.",
       icon: <IconDatabase size={28} />,
@@ -162,7 +162,7 @@ export default function ServicesSection({
     },
     {
       title: "AI & Automation",
-      href: "/pages/services/ai-integration",
+      href: "/services/ai-integration",
       description:
         "Integrate chatbots, predictive models, and generative AI to automate and innovate faster.",
       icon: <IconRobot size={28} />,
@@ -173,7 +173,7 @@ export default function ServicesSection({
     },
     {
       title: "Mobile App Development",
-      href: "/pages/services/development",
+      href: "/services/development",
       description:
         "Native and cross-platform mobile applications built with cutting-edge frameworks.",
       icon: <IconDeviceLaptop size={28} />,
@@ -185,7 +185,7 @@ export default function ServicesSection({
     },
     {
       title: "Data Visualization",
-      href: "/pages/services/data-visualisation",
+      href: "/services/data-visualisation",
       description:
         "Turn complex data into meaningful insights using interactive charts and dashboards.",
       icon: <IconChartBar size={28} />,
@@ -196,7 +196,7 @@ export default function ServicesSection({
     },
     {
       title: "Cybersecurity & Infrastructure",
-      href: "/pages/services/cybersecurity",
+      href: "/services/cybersecurity",
       description:
         "Advanced protection and monitoring to keep your digital assets secure and compliant.",
       icon: <IconShieldCheck size={28} />,

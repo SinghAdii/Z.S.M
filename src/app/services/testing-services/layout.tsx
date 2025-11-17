@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Web & Android App Testing Service Company | Ziostech Solutions",
     description:
       "We offer expert QA and testing services for Android and web apps — ensuring performance, security, and reliability.",
-    url: "https://ziostechsolutions.com/pages/services/testing-services",
+    url: "https://ziostechsolutions.com/services/testing-services",
     type: "website",
   },
 };

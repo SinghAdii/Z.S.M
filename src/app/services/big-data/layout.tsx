@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Big Data Warehouse Consulting Service Company | Ziostech Solutions",
     description:
       "Unlock the power of Big Data with Ziostech Solutions — offering expert data warehouse consulting and scalable analytics solutions.",
-    url: "https://ziostechsolutions.com/pages/services/big-data",
+    url: "https://ziostechsolutions.com/services/big-data",
     type: "website",
   },
 };

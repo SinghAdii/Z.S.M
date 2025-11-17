@@ -109,7 +109,7 @@ export default function WhyChooseServicesSection({
               )}
               {ctaSecondary && (
                 <Button
-                  onClick={() => router.push("/pages/projects")}
+                  onClick={() => router.push("/projects")}
                   variant="outline"
                   size="lg"
                   className="rounded-full border-slate-200 dark:border-slate-700 cursor-pointer"

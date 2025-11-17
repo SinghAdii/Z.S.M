@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "UI UX Designing & Consulting Services | Ziostech Solutions",
     description:
       "Ziostech Solutions offers professional UI UX designing & consulting services to help businesses create seamless digital experiences and turn ideas into engaging products.",
-    url: "https://ziostechsolutions.com/pages/services/uiux-design",
+    url: "https://ziostechsolutions.com/services/uiux-design",
     type: "website",
   },
 };

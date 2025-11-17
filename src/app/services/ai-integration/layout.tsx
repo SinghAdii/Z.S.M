@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "AI Integration & Automation Services Company | Ziostech Solutions",
     description:
       "Empower your business with AI integration and automation services from Ziostech Solutions. Build intelligent, data-driven systems to accelerate growth.",
-    url: "https://ziostechsolutions.com/pages/services/ai-integration",
+    url: "https://ziostechsolutions.com/services/ai-integration",
     type: "website",
   },
 };

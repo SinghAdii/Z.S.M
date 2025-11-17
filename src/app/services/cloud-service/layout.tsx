@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Cloud Services & Cloud Migration Solutions | Ziostech Solutions",
     description:
       "Build fast, secure, scalable web & mobile application development with Ziostech Solutions. Transform your business with custom software development solutions to grow.",
-    url: "https://ziostechsolutions.com/pages/services/cloud-service",
+    url: "https://ziostechsolutions.com/services/cloud-service",
     type: "website",
   },
 };

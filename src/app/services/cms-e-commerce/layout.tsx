@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "E-Commerce Platforms & SaaS Solutions | Ziostech Solutions",
     description:
       "Build fast, secure online stores with Ziostech Solutions’ e-commerce platforms, software, and mobile app services.",
-    url: "https://ziostechsolutions.com/pages/services/cms-e-commerce",
+    url: "https://ziostechsolutions.com/services/cms-e-commerce",
     type: "website",
   },
 };

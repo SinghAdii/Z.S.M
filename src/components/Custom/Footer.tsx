@@ -31,7 +31,7 @@ const NAV_ITEMS: NavItem[] = [
       { title: "Home", href: "/", description: "Welcome, Overview, Landing" },
       {
         title: "Projects",
-        href: "/pages/projects",
+        href: "/projects",
         description: "Portfolio, Case Studies, Work",
       },
       { title: "About", href: "/about", description: "Company, Team, Story" },
@@ -42,52 +42,52 @@ const NAV_ITEMS: NavItem[] = [
     subItems: [
       {
         title: "Development",
-        href: "/pages/services/development",
+        href: "/services/development",
         description: "Web, Mobile, Software, Apps",
       },
       {
         title: "Cloud Services",
-        href: "/pages/services/cloud-service",
+        href: "/services/cloud-service",
         description: "AWS, Azure, Google Cloud, Hosting",
       },
       {
         title: "Platform Services",
-        href: "/pages/services/platform-service",
+        href: "/services/platform-service",
         description: "SaaS, PaaS, Enterprise Platforms",
       },
       {
         title: "CMS & E-commerce",
-        href: "/pages/services/cms-e-commerce",
+        href: "/services/cms-e-commerce",
         description: "WordPress, Shopify, Online Stores",
       },
       {
         title: "Containerisation Tools",
-        href: "/pages/services/contanerization-service",
+        href: "/services/contanerization-service",
         description: "Docker, Kubernetes, DevOps",
       },
       {
         title: "UI/UX Services",
-        href: "/pages/services/uiux-design",
+        href: "/services/uiux-design",
         description: "Design, Prototyping, User Experience",
       },
       {
         title: "Testing Services",
-        href: "/pages/services/testing-services",
+        href: "/services/testing-services",
         description: "QA, Automation, Manual Testing",
       },
       {
         title: "Big Data",
-        href: "/pages/services/big-data",
+        href: "/services/big-data",
         description: "Analytics, Data Processing, Hadoop",
       },
       {
         title: "Data Visualisation",
-        href: "/pages/services/data-visualisation",
+        href: "/services/data-visualisation",
         description: "Charts, Dashboards, Insights",
       },
       {
         title: "AI Integration",
-        href: "/pages/services/ai-integration",
+        href: "/services/ai-integration",
         description: "Machine Learning, Chatbots, Automation",
       },
     ],

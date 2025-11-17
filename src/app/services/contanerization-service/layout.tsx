@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Looking for Containerization Services to Grow Your Business? | Ziostech Solutions",
     description:
       "Ziostech Solutions offers enterprise-grade containerization services to help you containerize applications, modernize workloads, and deploy faster using advanced containerization tools.",
-    url: "https://ziostechsolutions.com/pages/services/contanerization-service",
+    url: "https://ziostechsolutions.com/services/contanerization-service",
     type: "website",
   },
 };
