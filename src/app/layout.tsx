@@ -11,9 +11,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   description: `Ziostech Solution delivers expert IT consulting, staffing, web & app development, and AI integration services to help businesses grow and innovate.
-      Transforming Ideas into Scalable, Intelligent Solutions
-      At Ziostech Solution, we combine technology, talent, and innovation to help businesses thrive in the digital era.
-    From strategic IT consulting to full-scale platform development and AI integration, we empower organizations to grow smarter, faster, and stronger.
+      Transforming Ideas into Scalable, Intelligent Solutions.
     `,
   keywords: [
     "IT staffing company",
