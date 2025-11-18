@@ -25,7 +25,7 @@ const NAV_ITEMS = [
     description: "Portfolio, Case Studies, Work",
   },
   {
-    title: "More Services",
+    title: "Our Services",
     description: "Explore our specialized service offerings",
     subItems: [
       {
