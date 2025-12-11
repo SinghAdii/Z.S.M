@@ -40,6 +40,8 @@ export default function PreviousWorkSection({
                 <Image
                   src={work.imgSrc}
                   alt={work.title}
+                  height={100}
+                  width={100}
                   className="w-full h-48 px-2 object-cover rounded-t-lg"
                 />
               </CardHeader>

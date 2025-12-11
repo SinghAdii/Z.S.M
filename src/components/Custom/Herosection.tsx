@@ -57,7 +57,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   const navigate = useRouter();
   return (
     <div
-      className="flex flex-col md:flex-row w-full justify-center items-center 
+      className="flex flex-col md:flex-row w-full justify-center items-center max-w-[90rem] mx-auto
       bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300"
     >
       {/* Left Section */}
@@ -186,6 +186,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Image
             src={heroImage}
             alt="Hero section image"
+            width={100}
+            height={100}
             className="w-full h-auto object-contain transition-colors"
           />
         </motion.div>

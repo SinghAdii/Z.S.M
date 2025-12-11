@@ -100,7 +100,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Logo & Social */}
         <div className="space-y-3">
-          <Image src={logo} alt="Company Logo" className="w-28 mb-1" />
+          <Image width={100} height={100} src={logo} alt="Company Logo" className="w-28 mb-1" />
           <h4 className="text-lg font-bold text-gray-900 dark:text-white">
             Ziostechsolutions Pvt. Ltd.
           </h4>
