@@ -35,12 +35,17 @@ const NAV_ITEMS: NavItem[] = [
         description: "Portfolio, Case Studies, Work",
       },
       {
+        title: "Products",
+        href: "/products",
+        description: "Explore Our Products",
+      },
+      {
         title: "Hire Developer",
         href: "/hire-developers",
         description: "Find top talent for your projects",
       },
       { title: "About", href: "/about", description: "Company, Team, Story" },
-      { title: "Blog", href: "/blog", description: "Insights, News, Updates" },
+      { title: "Blogs", href: "/blog", description: "Insights, News, Updates" },
     ],
   },
   {
@@ -108,7 +113,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
         <div className="space-y-3">
           <Image width={100} height={100} src={logo} alt="Company Logo" className="w-28 mb-1" />
           <h4 className="text-lg font-bold text-gray-900 dark:text-white">
-            Ziostechsolutions Pvt. Ltd.
+            Ziostech Solutions Pvt. Ltd.
           </h4>
           <p className="text-gray-600 dark:text-gray-400 text-sm">
             Innovating digital transformation with cutting-edge IT, AI, and

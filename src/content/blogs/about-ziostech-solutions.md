@@ -3,7 +3,7 @@ title: "Your Trusted IT Staffing and Software Development Partner | Ziostech Sol
 excerpt: "Ziostech Solutions is a leading IT staffing and software development company in Kanpur, delivering skilled talent, scalable software, and complete digital solutions for startups, enterprises, and global clients."
 date: "10-01-2025"
 author: "Ziostech Solutions"
-image: "/assets/images/ekta.png"
+image: "/assets/images/sunrise.jpg"
 category: "IT Solutions"
 tags:
   - "IT Staffing"

@@ -3,7 +3,7 @@ import {
     SpotlightBackground,
     ContactUs
 } from "@/components/Custom/custom_components.exports";
-import BlogContent from "@/components/Custom/BlogContent";
+import BlogContent from "@/components/Custom/Blog/BlogContent";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata = {

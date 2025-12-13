@@ -73,7 +73,7 @@ export default function Development() {
       <WhyChooseOurSerivces />
       <KeyFeatures
         benefits={Devbenefits}
-        heading="Key Features of Choosing ZiosTech Website and App Development"
+        heading="Key Features of Choosing ZiosTech solutions and App Development"
         intro="Partnering with ZiosTech means gaining a digital partner committed to your success:"
       />
       <FAQ faqs={DevelopmentFAQ} />

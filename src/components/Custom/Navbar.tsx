@@ -16,13 +16,25 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { logo } from "@/assets/images/images.export.js";
+import { FaLinkedin } from "react-icons/fa6";
 
 const NAV_ITEMS = [
   { title: "Home", href: "/", description: "Welcome, Overview, Landing" },
   {
-    title: "Projects",
-    href: "/projects",
-    description: "Portfolio, Case Studies, Work",
+    title: "Our Works",
+    description: "Explore our portfolio and products",
+    subItems: [
+      {
+        title: "Projects",
+        href: "/projects",
+        description: "Portfolio, Case Studies, Work",
+      },
+      {
+        title: "Products",
+        href: "/products",
+        description: "Explore Our Products",
+      },
+    ],
   },
   {
     title: "Our Services",
@@ -222,6 +234,13 @@ export default function Navbar() {
 
         {/* --- Right: Toggle + Contact --- */}
         <div className="hidden md:flex items-center gap-3">
+          <div className="lg:block hidden">
+            <a href={
+              "https://www.linkedin.com/company/ziostechsolutions/"
+            }
+              target="_blank"
+              rel="noreferrer"><FaLinkedin className="text-blue-500 border-r border-gray-200 pr-2" size={30} /></a>
+          </div>
           <motion.button
             onClick={toggleDarkMode}
             className="w-12 h-12 flex items-center justify-center rounded-lg text-gray-800 dark:text-yellow-400 cursor-pointer"
