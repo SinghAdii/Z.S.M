@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ziostechsolutions.com'),
-  title: "Ziostechsolutions | Empowers Digital Growth Through Innovation",
+  title: "Empowers Digital Growth Through Innovation | Ziostech Solutions ",
   icons: {
     icon: "/favicon.ico",
   },

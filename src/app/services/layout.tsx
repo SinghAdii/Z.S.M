@@ -6,7 +6,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ziostechsolutions | Empowers Digital Growth Through Innovation",
+  title: "Empowers Digital Growth Through Innovation | Ziostech Solutions",
   description: `At Ziostech Solution, we combine technology, talent, and innovation to help businesses thrive in the digital era.
     From strategic IT consulting to full-scale platform development and AI integration, we empower organizations to grow smarter, faster, and stronger.
     `,
