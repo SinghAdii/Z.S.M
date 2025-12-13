@@ -52,14 +52,15 @@ export default function PlatformServices() {
       <IntroductionSection
         title="Powerful Platform Services"
         rightTitle="Accelerate Your Digital Transformation"
-        subtitle="At ZiosTech Solutions, we provide platform services designed to make your business faster, smarter, and more scalable. Our expert team helps organizations build, deploy, and manage applications with cutting-edge Platform as a Service (PaaS) technologies. Whether you're a startup or a global enterprise, our solutions simplify complexity, reduce infrastructure costs, and enable innovation at speed"
+        subtitle="At ZiosTech Solutions, we provide platform services designed to make your business faster, smarter, and more scalable. Our expert team helps organizations build, deploy, and manage applications with cutting-edge Platform as a Service (PaaS) technologies. Whether you're a startup or a global enterprise, our solutions simplify complexity, reduce infrastructure costs, and enable innovation at speed.
+        We work with the latest PaaS platform as a service and cloud platform console technologies to deliver modern, secure, and flexible platforms for your applications, giving your business a strong foundation for growth."
         features={IntroPlatformFeatures}
       />
       <Services services={platformServices} />
       <Process
         steps={platformSteps}
         headingText="Our Platform Development Process"
-        subHeadingText="From architecture to deployment we build scalable cloud-ready platforms."
+        subHeadingText="Our streamlined process ensures minimal friction and maximum performance."
         topic="Platform Services"
         tagline="Modern, Modular & Maintainable"
       />
@@ -77,35 +78,35 @@ export default function PlatformServices() {
             id: 1,
             title: "Future-Ready PaaS",
             short:
-              "Scale effortlessly with advanced platform services designed for high performance and flexibility.",
+              "Scale effortlessly with advanced platform services.",
             badges: ["PaaS", "Scalable"],
           },
           {
             id: 2,
             title: "Seamless Integration",
             short:
-              "Experience smooth performance across multi-cloud and hybrid environments for unified operations.",
+              "Experience smooth performance across multi-cloud environments.",
             badges: ["Multi-Cloud", "Interoperability"],
           },
           {
             id: 3,
             title: "Secure & Compliant",
             short:
-              "Built-in encryption, compliance, and continuous monitoring ensure data integrity and reliability.",
+              "Built-in data protection and continuous monitoring.",
             badges: ["Security", "Compliance"],
           },
           {
             id: 4,
             title: "Faster Time to Market",
             short:
-              "Deploy applications in days instead of months with automated deployment pipelines.",
+              "Deploy apps in days instead of months.",
             badges: ["Agile", "Rapid Deployment"],
           },
           {
             id: 5,
             title: "Cost-Effective Solutions",
             short:
-              "Reduce overhead and optimize resources through intelligent infrastructure management.",
+              "Reduce overhead and eliminate unnecessary infrastructure costs.",
             badges: ["Efficiency", "Cost Optimization"],
           },
         ]}

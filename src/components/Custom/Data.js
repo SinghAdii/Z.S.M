@@ -19,6 +19,7 @@ import {
   FileSearch,
   Gauge,
   GitMerge,
+  Icon,
   Layers,
   LayoutDashboard,
   LifeBuoy,
@@ -192,6 +193,7 @@ import {
   IconUsersGroup,
   IconVector,
   IconWorldWww,
+  IconServer,
 } from "@tabler/icons-react";
 
 export const features = [
@@ -706,12 +708,11 @@ export const cloudSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We start by{" "}
+          We analyze your{" "}
           <span className="text-orange-500 font-semibold">
-            evaluating your existing infrastructure
+            current infrastructure and identify migration opportunities
           </span>{" "}
-          and identifying migration opportunities for improved performance and
-          cost efficiency.
+          for better efficiency.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -728,11 +729,11 @@ export const cloudSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          Our experts create a{" "}
+          Our team{" "}
           <span className="text-orange-500 font-semibold">
-            secure and scalable cloud architecture plan
+            builds a detailed plan
           </span>{" "}
-          tailored to your workloads, compliance needs, and business goals.
+          for secure and scalable cloud architecture.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -752,10 +753,9 @@ export const cloudSteps = [
         <p className="text-base text-gray-600 dark:text-gray-400">
           We execute{" "}
           <span className="text-orange-500 font-semibold">
-            seamless cloud migration
+            Applications and data are transferred smoothly
           </span>{" "}
-          with zero downtime — transferring applications, data, and workloads
-          efficiently.
+          without disrupting your operations.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -772,11 +772,11 @@ export const cloudSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          Continuous{" "}
+          we Continuously{" "}
           <span className="text-orange-500 font-semibold">
-            performance monitoring and resource optimization
+            monitor performance, manage resources, and enhance
           </span>{" "}
-          to enhance speed, reliability, and cost-efficiency.
+           system speed.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -795,10 +795,9 @@ export const cloudSteps = [
         <p className="text-base text-gray-600 dark:text-gray-400">
           Our{" "}
           <span className="text-orange-500 font-semibold">
-            cloud experts provide 24/7 monitoring, updates, and security
-            management
+            experts provide 24/7 assistance to ensure
           </span>{" "}
-          to keep your environment running flawlessly.
+          your cloud remains secure and up to date.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -844,7 +843,7 @@ export const platformSteps = [
         <p className="text-base text-gray-600 dark:text-gray-400">
           We start by{" "}
           <span className="text-orange-500 font-semibold">
-            understanding your goals, scalability needs, and technical landscape
+            Understand your goals, requirements, and scalability needs.
           </span>{" "}
           to lay the foundation for a successful build.
         </p>
@@ -1106,12 +1105,11 @@ export const containerSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We begin with a{" "}
+          We conduct a{" "}
           <span className="text-orange-500 font-semibold">
-            comprehensive audit of your applications
+            full audit of your applications, dependencies, and infrastructure
           </span>{" "}
-          and infrastructure to evaluate containerization readiness and
-          dependencies.
+          readiness.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1128,12 +1126,11 @@ export const containerSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          Our specialists craft a{" "}
+          Our experts create a{" "}
           <span className="text-orange-500 font-semibold">
-            tailored containerization roadmap
+            detailed roadmap
           </span>{" "}
-          defining tools, workflows, and best practices aligned with your
-          business goals.
+          outlining tools, workflows, and best practices.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1155,8 +1152,7 @@ export const containerSteps = [
           <span className="text-orange-500 font-semibold">
             containerize applications
           </span>{" "}
-          and perform rigorous testing to ensure compatibility, performance, and
-          scalability across environments.
+          and configure environments, and test for compatibility and performance.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1173,11 +1169,11 @@ export const containerSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We implement{" "}
+          We deploy{" "}
           <span className="text-orange-500 font-semibold">
-            Kubernetes or Docker Swarm orchestration
+            Kubernetes or Docker Swarm to manage
           </span>{" "}
-          to automate scaling, updates, and load balancing across containers.
+          scaling, updates, and load balancing.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1195,9 +1191,9 @@ export const containerSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We apply{" "}
+          We take care of{" "}
           <span className="text-orange-500 font-semibold">
-            continuous monitoring, vulnerability scans, and performance tuning
+          Continuous monitoring and vulnerability scans
           </span>{" "}
           to ensure secure and optimized containerized environments.
         </p>
@@ -1216,11 +1212,11 @@ export const containerSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We manage{" "}
+          We handle{" "}
           <span className="text-orange-500 font-semibold">
-            end-to-end deployment and continuous support
+            end-to-end deployment and provide continuous support
           </span>{" "}
-          to maintain container performance, reliability, and scalability.
+          to maintain efficiency and reliability.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1676,15 +1672,15 @@ export { dataVisTechStack };
 
 export const uiuxSteps = [
   {
-    title: "Discovery & Strategy",
+    title: "Discovery and Strategy",
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We start by{" "}
+          We begin by{" "}
           <span className="text-orange-500 font-semibold">
             understanding your goals, target users, and competitors
           </span>{" "}
-          through UX research, workshops, and stakeholder interviews.
+          through UX research and stakeholder discussions.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1702,11 +1698,11 @@ export const uiuxSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We define{" "}
+          We organize and structure{" "}
           <span className="text-orange-500 font-semibold">
-            logical structure and navigation flow
+            content logically to enhance
           </span>{" "}
-          to ensure intuitive access to content and seamless user journeys.
+          clarity and ease of navigation.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1723,9 +1719,9 @@ export const uiuxSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We craft{" "}
+           We visualize{" "}
           <span className="text-orange-500 font-semibold">
-            interactive wireframes and prototypes
+            core design concepts
           </span>{" "}
           to visualize the user experience before development begins.
         </p>
@@ -1744,11 +1740,11 @@ export const uiuxSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          Our designers create{" "}
+          We create{" "}
           <span className="text-orange-500 font-semibold">
-            high-fidelity, visually stunning interfaces
+            high-fidelity designs
           </span>{" "}
-          that embody your brand identity and engage users effectively.
+          that reflect your brand and user expectations.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1765,12 +1761,11 @@ export const uiuxSteps = [
     description: (
       <>
         <p className="text-base text-gray-600 dark:text-gray-400">
-          We gather{" "}
+          We collect{" "}
           <span className="text-orange-500 font-semibold">
             real user feedback
           </span>{" "}
-          to identify friction points and optimize the experience through
-          iteration.
+          to identify opportunities for refinement.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1789,9 +1784,9 @@ export const uiuxSteps = [
         <p className="text-base text-gray-600 dark:text-gray-400">
           After launch, we provide{" "}
           <span className="text-orange-500 font-semibold">
-            continuous monitoring and iterative improvements
+            performance and provide 
           </span>{" "}
-          to maintain peak usability and engagement.
+          ongoing design improvements.
         </p>
         <div className="flex gap-2 mt-2 items-center">
           <CheckCircle className="text-blue-500 w-4" />
@@ -1995,40 +1990,46 @@ export const IntroDevfeatures = [
 
 export const DevServices = [
   {
-    title: "Custom Built Solutions",
+    title: "Website & App Strategy & Planning",
     description:
-      "Tailored web and mobile applications crafted to align perfectly with your unique business objectives and workflow.",
+      "Roadmap creation to align technology with business goals.",
     icon: <BiDesktop size={28} />,
   },
   {
-    title: "Scalable Architecture",
+    title: "UI/UX Design & Prototyping",
     description:
-      "Built with modern frameworks and cloud infrastructure to seamlessly handle growth and high traffic demands.",
+      "Intuitive, user-centered designs that enhance engagement.",
     icon: <IconCloud size={28} />,
   },
   {
-    title: "Cross Platform Expertise",
+    title: "Custom Web Software Development",
     description:
-      "Develop once and deploy across devices with optimized experiences for web, iOS, and Android platforms.",
+      "Tailored web apps built for performance and security.",
     icon: <IconLayoutDashboard size={28} />,
   },
   {
-    title: "Agile Delivery",
+    title: "Custom Mobile Application Development",
     description:
-      "Accelerated development cycles with transparent communication, continuous integration, and early feedback loops.",
+      "Android, iOS, and cross-platform mobile apps.",
     icon: <IconBoxSeam size={28} />,
   },
   {
-    title: "SEO and Speed Optimized",
+    title: "E-commerce Development Solutions",
     description:
-      "Every project is built for performance, responsiveness, and discoverability to enhance user engagement and visibility.",
+      "Fully functional and conversion-optimized stores.",
     icon: <IconChartBar size={28} />,
   },
   {
-    title: "End to End Support",
+    title: "API Integration & Automation",
     description:
-      "From ideation to deployment and beyond, we provide comprehensive support, monitoring, and maintenance.",
+      " Smooth data flow between systems and services.",
     icon: <IconShieldCheck size={28} />,
+  },
+  {
+    title: "Performance Optimization & Maintenance",
+    description:
+      " Continuous improvements for peak efficiency.",
+    icon: <IconServer size={28} />,
   },
 ];
 
@@ -2036,32 +2037,32 @@ export const Devbenefits = [
   {
     title: "Full Stack Expertise",
     description:
-      "Comprehensive web, mobile, and backend development under one roof for seamless execution.",
+      "Web, mobile, and backend solutions in one place.",
   },
   {
     title: "Skilled Developers",
     description:
-      "Our experienced engineers work with the latest frameworks and tools to deliver reliable, scalable solutions.",
+      "Experienced in modern frameworks and tools.",
   },
   {
     title: "Cost Effective Development",
     description:
-      "We optimize resources and processes to provide maximum value and faster time to market.",
+      "Optimized resources for better ROI.",
   },
   {
     title: "User Centric Design",
     description:
-      "Our design first approach ensures intuitive and engaging interfaces that enhance user experience and retention.",
+      "Clean, engaging UI/UX to boost retention.",
   },
   {
     title: "Secure and Reliable Solutions",
     description:
-      "Built using best in class security practices and tested for performance, reliability, and data protection.",
+      "Built with best-in-class security practices.",
   },
   {
     title: "Proven Results",
     description:
-      "Trusted by startups and enterprises alike, we deliver consistent, measurable results that drive growth.",
+      "Trusted by startups and enterprises alike for long-term success.",
   },
 ];
 
@@ -2125,31 +2126,31 @@ export const cloudServices = [
   {
     title: "Cloud Migration Services",
     description:
-      "Seamlessly move your applications, data, and workloads to the cloud with minimal downtime and maximum efficiency.",
+      "We help you move your applications, data, and workloads to the cloud securely and efficiently. Our migration process minimizes downtime and maximizes performanc.",
     icon: <IconCloudUpload size={28} />,
   },
   {
     title: "Managed Cloud Services",
     description:
-      "Let us handle the monitoring, updates, and optimization of your cloud environment while you focus on innovation and growth.",
+      "Focus on business innovation while we manage your cloud environment. Our services include monitoring, optimization, and regular updates for uninterrupted performanc.",
     icon: <IconServerCog size={28} />,
   },
   {
     title: "Cloud Architecture & Consulting",
     description:
-      "Our certified cloud architects design robust, cost-effective architectures tailored for scalability, performance, and reliability.",
+      "Our certified experts design smart, cost-efficient architectures that ensure long-term scalability and reliabilit.",
     icon: <IconLayersIntersect size={28} />,
   },
   {
     title: "Multi-Cloud Management",
     description:
-      "Manage all your AWS, Azure, and Google Cloud accounts in one unified dashboard for simplified control and automation.",
+      "Simplify complex operations by managing all your cloud accounts through a single MultCloud dashboard. This enables better synchronization, automation, and data contro.",
     icon: <IconSettingsAutomation size={28} />,
   },
   {
     title: "Cloud Security & Compliance",
     description:
-      "Safeguard your cloud infrastructure with encryption, identity access control, and compliance with global standards.",
+      "We implement robust encryption, monitoring, and compliance frameworks to protect sensitive data and meet global industry standard.",
     icon: <IconShieldCheck size={28} />,
   },
 ];
@@ -2158,27 +2159,27 @@ export const cloudbenefits = [
   {
     title: "Improved Efficiency",
     description:
-      "Simplify workflows and accelerate access to critical data across teams and systems for better productivity.",
+      "Simplified workflows and faster data access.",
   },
   {
     title: "Enhanced Security",
     description:
-      "Protect sensitive business information with advanced encryption, monitoring, and access management.",
+      "Advanced encryption and access control to protect business data.",
   },
   {
     title: "Business Agility",
     description:
-      "Scale resources and adapt to market changes quickly with flexible, cloud-native infrastructure.",
+      "Quickly adapt to changing market needs with flexible cloud setups.",
   },
   {
     title: "Reduced Downtime",
     description:
-      "Ensure smooth and continuous business operations with optimized cloud performance and automated recovery.",
+      "Optimized cloud performance ensures smooth business continuity.",
   },
   {
     title: "Future-Ready Infrastructure",
     description:
-      "Build an innovative foundation ready for AI, automation, and future digital transformation needs.",
+      "Designed for innovation and long-term digital success.",
   },
 ];
 
@@ -2228,83 +2229,89 @@ export const platformServices = [
   {
     title: "Application Platform Integration",
     description:
-      "Seamlessly connect and orchestrate tools, APIs, and services across your technology ecosystem for maximum interoperability.",
+      "Seamlessly connect tools and services across your ecosystem.",
     icon: <IconApps size={28} />,
   },
   {
     title: "PaaS Deployment & Management",
     description:
-      "Deploy, scale, and optimize your applications on high-performance cloud environments built for agility and reliability.",
+      "Scalable and optimized environments for faster performance.",
     icon: <IconServerCog size={28} />,
   },
   {
     title: "Cloud Storage as a Service",
     description:
-      "Secure, redundant, and globally accessible storage solutions designed for data integrity, speed, and compliance.",
+      "Secure, redundant, and reliable storage solutions for all your data.",
     icon: <IconCloudDataConnection size={28} />,
   },
   {
     title: "Microservices & Containerization",
     description:
-      "Simplify complex architectures and improve scalability using modern container tools and microservice-based design.",
+      "Simplify complex architectures using modern container tools.",
     icon: <IconBoxMultiple size={28} />,
   },
   {
     title: "Automation & Monitoring",
     description:
-      "Stay proactive with real-time monitoring, predictive analytics, and automated alerts that keep your systems running smoothly.",
+      "Real-time tracking, proactive alerts, and predictive maintenance.",
     icon: <IconRobot size={28} />,
   },
+  {
+    title: "Custom Platform Development",
+    description:
+      "We don’t just provide a service, we build a digital backbone for your business.",
+    icon: <IconRobot size={28} />,
+  }
 ];
 
 export const PlatformBenefits = [
   {
     title: "End-to-End Platform Expertise",
     description:
-      "From setup to scaling, our experts handle every layer of your platform infrastructure to ensure peak performance.",
+      "We manage every layer from setup to scaling.",
   },
   {
     title: "Custom PaaS Solutions",
     description:
-      "Every platform is tailored to your unique business goals and workflows for maximum efficiency and alignment.",
+      "Tailored for your unique business model.",
   },
   {
     title: "High Availability",
     description:
-      "Our fault-tolerant systems and redundant architecture ensure consistent uptime and uninterrupted business operations.",
+      "Fault-tolerant systems for uninterrupted performance.",
   },
   {
     title: "Faster Innovation",
     description:
-      "Accelerate development with pre-built APIs, integrated services, and continuous delivery pipelines.",
+      "Use pre-built APIs and services to reduce development time.",
   },
   {
     title: "Global Scalability",
     description:
-      "Deploy, expand, and optimize your platform anywhere in the world with enterprise-grade PaaS infrastructure.",
+      "Deploy and grow anywhere with powerful p aa s infrastructure.",
   },
 ];
 
 export const PlatformFAQ = [
   {
     question: "What are platform services?",
-    answer: `Platform services are cloud-based solutions that let businesses build, deploy, and manage applications without maintaining on-premise hardware or infrastructure — also known as Platform as a Service (PaaS).`,
+    answer: `Platform services are cloud-based solutions that let businesses build, deploy, and manage applications without maintaining hardware or infrastructure also known as Platform as a Service (PaaS).`,
   },
   {
     question: "How does PaaS differ from traditional hosting?",
-    answer: `Unlike traditional hosting, PaaS handles server provisioning, scaling, and deployment automatically, saving time and reducing operational complexity.`,
+    answer: `Unlike traditional hosting, PaaS handles server management, scaling, and deployment automatically, saving both time and operational costs.`,
   },
   {
     question: "Is cloud storage included in platform services?",
-    answer: `Yes. Our PaaS offering includes secure, redundant, and globally accessible cloud storage solutions with built-in encryption and data protection.`,
+    answer: `Yes. We provide cloud storage as a service with built-in security, redundancy, and global accessibility.`,
   },
   {
     question: "What industries can benefit from PaaS?",
-    answer: `Our PaaS solutions are ideal for startups, SaaS providers, fintech organizations, and enterprises looking to modernize legacy systems.`,
+    answer: `Our PaaS solutions are ideal for startups, SaaS providers, fintech companies, and enterprises modernizing legacy system.`,
   },
   {
     question: "How secure is your platform?",
-    answer: `Our infrastructure includes enterprise-grade encryption, continuous monitoring, and compliance support to protect your applications and data at every level.`,
+    answer: `Our infrastructure is built with enterprise-grade security, compliance support, and continuous monitoring to protect your data at every level.`,
   },
 ];
 
@@ -2335,31 +2342,31 @@ export const EcommerceServices = [
   {
     title: "E-Commerce Website Development",
     description:
-      "Develop high-performance websites using platforms like Shopify, WooCommerce, Magento, or fully custom frameworks tailored to your goals.",
+      "Build responsive, high-performance websites using top platforms like Shopify, WooCommerce, Magento, and custom frameworks tailored to your goals.",
     icon: <IconShoppingBag size={28} />,
   },
   {
     title: "E-Commerce Mobile App Development",
     description:
-      "Reach customers anywhere with fast, responsive Android, iOS, and hybrid e-commerce applications for smooth shopping experiences.",
+      "Reach customers anywhere with Android, iOS, and hybrid e-commerce mobile applications that deliver smooth, high-speed performance.",
     icon: <IconDeviceMobile size={28} />,
   },
   {
     title: "E-Commerce SaaS Solutions",
     description:
-      "Simplify operations with cloud-based Software-as-a-Service platforms that include hosting, security, and maintenance.",
+      "Simplify your operations with cloud-based E-Commerce Software-as-a-Service (SaaS) complete with hosting, maintenance, and security.",
     icon: <IconCloudCog size={28} />,
   },
   {
     title: "Platform Customization & Integration",
     description:
-      "Connect your e-commerce platform with ERP, CRM, payment gateways, and logistics systems for fully automated workflows.",
+      "Seamlessly connect your e-commerce system with ERP, CRM, payment gateways, and logistics tools to automate workflows.",
     icon: <IconPlugConnected size={28} />,
   },
   {
     title: "Maintenance & Optimization",
     description:
-      "Ensure top performance with 24/7 monitoring, bug fixes, updates, and optimization for speed and security.",
+      "Get 24/7 monitoring, bug fixing, and performance tuning to keep your online store secure and optimized at all times.",
     icon: <IconSettingsAutomation size={28} />,
   },
 ];
@@ -2368,55 +2375,55 @@ export const EcommerceBenefits = [
   {
     title: "Faster Time to Market",
     description:
-      "Launch your online store quickly using pre-built SaaS frameworks and streamlined deployment processes.",
+      " Pre-built SaaS frameworks speed up deployment.",
   },
   {
     title: "Scalability",
     description:
-      "Easily expand with new products, categories, or vendors as your business grows and customer demand increases.",
+      "Easily add new products, categories, or vendors as you grow.",
   },
   {
     title: "Cost Efficiency",
     description:
-      "Reduce infrastructure and maintenance costs through automation, cloud hosting, and managed services.",
+      "Cloud hosting and automation reduce operational costs.",
   },
   {
     title: "Enhanced User Experience",
     description:
-      "Engage visitors with intuitive UI/UX design that improves navigation, conversions, and retention.",
+      "Intuitive UI/UX boosts engagement and conversion.",
   },
   {
     title: "Data Security & Compliance",
     description:
-      "Protect your customers and transactions with robust encryption, secure payment gateways, and regulatory compliance.",
+      "Encrypted transactions and compliance-ready platforms.",
   },
   {
     title: "24/7 Expert Support",
     description:
-      "Access round-the-clock technical support from our experienced e-commerce specialists whenever you need assistance.",
+      "Continuous assistance from our e-commerce experts.",
   },
 ];
 
 export const EcommerceFAQ = [
   {
     question: "What are e-commerce platforms?",
-    answer: `E-commerce platforms are software systems that allow businesses to build, manage, and operate online stores with ease, handling everything from inventory to checkout.`,
+    answer: `E-commerce platforms are software systems that allow you to build, manage, and run online stores efficiently.`,
   },
   {
     question: "What is E-Commerce Software as a Service (SaaS)?",
-    answer: `E-Commerce SaaS is a cloud-based model where hosting, maintenance, and updates are managed by your provider—allowing you to focus entirely on sales and growth.`,
+    answer: `It’s a cloud-based solution where all hosting, updates, and maintenance are handled by your provider; so you focus only on sales.`,
   },
   {
     question: "Do you provide E-Commerce mobile application development?",
-    answer: `Yes. We build Android, iOS, and hybrid mobile applications that integrate seamlessly with your online store for a unified shopping experience across devices.`,
+    answer: `Yes, we build ecommerce mobile applications for both Android and iOS to reach customers anywher.`,
   },
   {
-    question: "Can you integrate my store with ERP, CRM, or payment gateways?",
-    answer: `Absolutely. We offer complete platform integration services connecting your e-commerce solution with ERP, CRM, logistics, and payment systems for automated operations.`,
+    question: "How do your ecommerce website developers ensure performance?",
+    answer: `Our developers use the latest technologies and SEO best practices to build fast-loading, high-conversion website.`,
   },
   {
-    question: "How secure are your e-commerce platforms?",
-    answer: `Security is our top priority. All solutions include SSL encryption, secure payment processing, and compliance with global data protection standards.`,
+    question: "Can you customize my existing ecommerce services website?",
+    answer: `Absolutely. We specialize in integrating and customizing all major e-commerce platforms and plugin.`,
   },
 ];
 
@@ -2442,37 +2449,37 @@ export const containerServices = [
   {
     title: "Application Containerization for Seamless Deployment",
     description:
-      "We containerize existing applications with minimal code changes, optimizing configurations and dependencies for consistent, reliable performance using Docker, Kubernetes, or OpenShift.",
+      "We containerize your existing applications without requiring major code changes. Our team evaluates dependencies, optimizes configurations, and deploys applications using Docker, Kubernetes, and OpenShift for consistent and reliable performance.",
     icon: <IconBoxMultiple size={28} />,
   },
   {
     title: "Tailored Containerization Strategy & Consulting",
     description:
-      "Our experts design customized containerization roadmaps, helping you select the right tools and deployment model aligned with your technical and business objectives.",
+      "We help you choose the right containerization tools, plan your deployment roadmap, and build an implementation strategy that aligns with your technical and business objectives.",
     icon: <IconTopologyStar3 size={28} />,
   },
   {
     title: "Intelligent Container Orchestration & Lifecycle Management",
     description:
-      "Deploy, manage, and automate container orchestration using Kubernetes or Docker Swarm for scaling, updates, and workload balancing across environments.",
+      "Our specialists deploy and manage orchestration tools such as Kubernetes and Docker Swarm, ensuring automated scaling, deployment, and load balancing across your entire environmen.",
     icon: <IconDeviceAnalytics size={28} />,
   },
   {
     title: "Cloud-Native Application Development",
     description:
-      "Build new, cloud-native applications designed specifically for containerized environments—ensuring maximum agility, reliability, and speed.",
+      "We design and develop new applications specifically built for containerized ecosystems, providing greater agility, resilience, and performance across hybrid or multi-cloud infrastructure.",
     icon: <IconCloudCog size={28} />,
   },
   {
-    title: "Streamlined CI/CD Integration",
+    title: "Streamlined CI/CD Integration for Faster Delivery",
     description:
-      "Accelerate delivery with automated Continuous Integration and Deployment pipelines that integrate seamlessly with your containerized environment.",
+      "Our experts implement Continuous Integration and Continuous Deployment pipelines that integrate with your containerized environment to enable faster, automated, and reliable software releases.",
     icon: <IconSettingsAutomation size={28} />,
   },
   {
     title: "Container Security & Proactive Monitoring",
     description:
-      "Protect your systems with vulnerability scanning, continuous monitoring, and compliance frameworks that keep your containers secure and optimized.",
+      "Security is embedded in every stage of our process. We conduct vulnerability scans, continuous monitoring, and compliance checks to ensure your containerized systems remain safe and efficient.",
     icon: <IconShieldCheck size={28} />,
   },
 ];
@@ -2481,56 +2488,56 @@ export const ContainerBenefits = [
   {
     title: "Faster Deployment",
     description:
-      "Roll out updates, patches, and new versions quickly with minimal downtime using efficient containerized workflows.",
+      "Launch updates and patches quickly with minimal downtime.",
   },
   {
     title: "Enhanced Scalability",
     description:
-      "Scale applications dynamically based on demand while maintaining consistent performance across environments.",
+      "Scale applications based on real-time demand.",
   },
   {
     title: "Platform Independence",
     description:
-      "Run containers seamlessly across any environment—on-premise, hybrid, or cloud—for maximum flexibility.",
+      "Deploy containers across any environment, cloud, or on-premises.",
   },
   {
     title: "Improved Resource Utilization",
     description:
-      "Optimize infrastructure usage and reduce operational costs by efficiently allocating compute resources.",
+      "Optimize compute power and reduce infrastructure costs.",
   },
   {
     title: "Simplified Maintenance",
     description:
-      "Update, roll back, or redeploy applications easily without affecting the rest of your environment.",
+      "Update or roll back applications easily.",
   },
   {
     title: "Increased Security",
     description:
-      "Achieve better compliance and risk control with isolated environments and integrated vulnerability scanning.",
+      "Container isolation ensures better compliance and risk contro.",
   },
   {
     title: "DevOps Friendly",
     description:
-      "Integrate seamlessly with CI/CD pipelines and DevOps workflows for faster, more reliable releases.",
+      "Seamlessly integrates with CI/CD and DevOps pipelines for continuous delivery.",
   },
 ];
 
 export const ContainerFAQ = [
   {
     question: "What are containerization tools, and which ones do you use?",
-    answer: `Containerization tools enable packaging, deploying, and managing applications in isolated environments. At ZiosTech Solutions, we specialize in Docker, Kubernetes, OpenShift, and Amazon ECS—selecting the right one for your infrastructure and goals.`,
+    answer: `Containerization tools are platforms that allow you to package and manage applications within containers. At Ziostech Solution, we primarily use Docker, Kubernetes, OpenShift, and Amazon ECS, depending on your business and infrastructure requirements.`,
   },
   {
     question: "Can you help containerize legacy applications?",
-    answer: `Yes. We modernize legacy systems by containerizing them without rewriting the entire codebase, improving scalability, portability, and performance.`,
+    answer: `Yes. Our experts specialize in modernizing legacy applications by containerizing them without rewriting the entire codebase, ensuring better scalability, performance, and maintenance.`,
   },
   {
     question: "How does containerization improve DevOps and CI/CD workflows?",
-    answer: `Containerization ensures consistent environments across development, testing, and production—enabling faster, error-free deployments and smoother CI/CD pipelines.`,
+    answer: `Containerization enables consistent environments across development, testing, and production, allowing teams to deploy faster and minimize compatibility issues.`,
   },
   {
     question: "Do you offer ongoing support and monitoring after deployment?",
-    answer: `Absolutely. ZiosTech Solutions provides continuous support, monitoring, and optimization to keep your containerized systems secure, efficient, and cost-effective.`,
+    answer: `Absolutely. Ziostech Solution provides continuous support, monitoring, and optimization to ensure your containerized systems remain efficient, secure, and cost-effective.`,
   },
 ];
 
@@ -2556,37 +2563,37 @@ export const UIDesignServices = [
   {
     title: "UI/UX Design Strategy and Consulting",
     description:
-      "We merge design thinking with business strategy to create scalable, data-backed UI/UX solutions that align with your brand’s long-term vision and goals.",
+      "We bring together design thinking and business strategy to create scalable and goal-driven UI/UX solutions. Our consultants align user experience goals with your brand vision, defining a strategic roadmap that ensures long-term product success.",
     icon: <IconDeviceDesktopAnalytics size={28} />,
   },
   {
     title: "User Interface (UI) Design",
     description:
-      "Our designers craft modern, visually appealing interfaces using Figma, Adobe XD, and Sketch — ensuring seamless navigation and engagement across devices.",
+      "Our designers craft visually stunning interfaces that balance creativity and usability. Using tools like Figma, Adobe XD, and Sketch, we create cohesive designs that ensure smooth navigation and engaging experiences across platforms.",
     icon: <IconVector size={28} />,
   },
   {
     title: "UX Research and Data-Driven Analysis",
     description:
-      "Through interviews, usability testing, and data analysis, we uncover user behaviors and insights that guide impactful, intuitive design decisions.",
+      "We conduct extensive research to understand user needs and market expectations. From user interviews to usability testing, our insights help you make informed design decisions and create meaningful digital journeys.",
     icon: <IconReportAnalytics size={28} />,
   },
   {
     title: "User Experience (UX) Design",
     description:
-      "We map and optimize every user journey touchpoint to create smooth, rewarding experiences that enhance satisfaction and conversion rates.",
+      "We focus on optimizing every step of the user journey. Our UX experts map interactions to create intuitive, seamless, and rewarding digital experiences that enhance user satisfaction and conversion rate.",
     icon: <IconUsersGroup size={28} />,
   },
   {
     title: "Product Design and Interactive Prototyping",
     description:
-      "We bring ideas to life with high-fidelity, interactive prototypes that simulate real experiences — enabling faster validation and refinement.",
+      "Our designers bring concepts to life through interactive prototypes. These simulate real-world experiences, allowing you to validate and refine your product design before development.",
     icon: <IconTools size={28} />,
   },
   {
-    title: "Enterprise UI/UX Consulting",
+    title: "Enterprise UI/UX Consulting for Large-Scale Platforms",
     description:
-      "For large-scale or SaaS platforms, we deliver advanced consulting that ensures consistency, scalability, and accessibility across all digital products.",
+      "For enterprises and SaaS platforms, we provide advanced UI/UX consulting that integrates accessibility, design systems, and scalability; ensuring consistent brand identity and future-ready experience.",
     icon: <IconBuildingSkyscraper size={28} />,
   },
 ];
@@ -2595,52 +2602,52 @@ export const UIDesignBenefits = [
   {
     title: "Human-Centered Design Approach",
     description:
-      "Every decision is informed by real user behavior, empathy, and accessibility insights.",
+      "Every design decision is informed by empathy and user insight.",
   },
   {
     title: "Increased Conversions and Retention",
     description:
-      "Engaging interfaces reduce user drop-offs and encourage long-term loyalty.",
+      "Well-designed interfaces reduce drop-offs and enhance engagement.",
   },
   {
     title: "Brand Consistency Across Platforms",
     description:
-      "Ensure a unified and professional design identity across web, mobile, and enterprise platforms.",
+      "Unified visuals across web and mobile touchpoints.",
   },
   {
     title: "Faster Development Cycles",
     description:
-      "Reusable design systems speed up production and minimize rework during development.",
+      "Our design systems accelerate production and reduce rework.",
   },
   {
     title: "Scalable and Future-Ready Designs",
     description:
-      "Our modular approach ensures designs can evolve seamlessly as your business grows.",
+      "Optimized for adaptability and long-term performance.",
   },
   {
     title: "Improved Accessibility",
     description:
-      "We design for inclusivity, meeting modern accessibility standards and enhancing user reach.",
+      " We ensure designs are inclusive and compliant with modern accessibility standards.",
   },
 ];
 
 export const UIDesignFAQ = [
   {
     question: "What is UI/UX designing, and why is it important?",
-    answer: `UI focuses on a product’s visual design, while UX focuses on usability and interaction. Together, they ensure digital experiences are intuitive, efficient, and enjoyable — helping businesses retain customers and grow faster.`,
+    answer: `UI UX designing focuses on how a digital product looks (UI) and how it feels to use (UX). It improves usability, accessibility, and satisfaction. We help businesses retain customers and grow faster.`,
   },
   {
     question: "How does Ziostech approach UX research?",
-    answer: `We conduct surveys, user interviews, and usability testing to analyze behaviors and identify pain points. These insights guide our design process to create user-friendly digital experiences.`,
+    answer: `We use a structured UX research methodology involving surveys, user interviews, usability testing, and data analysis. Our user experience researchers identify pain points and behaviors that guide the design process.`,
   },
   {
     question:
       "Do you offer UI/UX consulting along with business strategy services?",
-    answer: `Yes. Ziostech combines design consulting with strategic business insights to ensure your product experience aligns perfectly with your growth and transformation goals.`,
+    answer: `Yes. Ziostech Solution uniquely combines UI UX design consulting with business and strategy consulting to ensure design aligns with your overall digital transformation goals.`,
   },
   {
     question: "Which tools do you use for UI/UX designing?",
-    answer: `We use industry-leading tools including Figma, Adobe XD, Sketch, and InVision for prototyping, collaboration, and high-fidelity design creation.`,
+    answer: `We use industry-standard tools such as Figma, Adobe XD, Sketch, and InVision to create interactive, high-fidelity designs that bring ideas to life.`,
   },
 ];
 
@@ -2665,22 +2672,137 @@ export const IntroQATestingFeatures = [
 export const QATestingServices = [
   {
     title: "Android App Testing",
-    description:
-      "Comprehensive Android testing across real devices and OS versions. Our QA engineers focus on performance, compatibility, and security for maximum reliability.",
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
+          We perform{" "}
+          <span className="text-orange-500 font-semibold">
+            end-to-end Android app testing
+          </span>{" "}
+          across real devices and Android versions. Our QA engineers focus on app functionality, performance, and security.
+        </p>
+        <div className="space-y-2 mt-3">
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Functional and Regression Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Compatibility and UI/UX Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Performance and Load Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Security and Compliance Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Automated and Manual Testing</span>
+            </p>
+          </div>
+        </div>
+      </>
+    ),
     icon: <IconDeviceMobile size={28} />,
   },
   {
     title: "Web App Testing",
-    description:
-      "Ensure your website or SaaS platform performs flawlessly across browsers and devices. We validate every interaction, feature, and design component for consistent behavior.",
-
-    icon: <IconWorldWww size={28} />,
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
+          Your{" "}
+          <span className="text-orange-500 font-semibold">
+            website or SaaS platform
+          </span>{" "}
+          deserves to run flawlessly across all browsers. Our web app testing ensures that every feature, interaction, and layout works exactly as intended.
+        </p>
+        <div className="space-y-2 mt-3">
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Browser & Device Compatibility Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">End-to-End Functional Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Accessibility and SEO Validation</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">API and Integration Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Responsive Design Validation</span>
+            </p>
+          </div>
+        </div>
+      </>
+    ),
+      icon: <IconWorldWww size={28} />,
   },
   {
     title: "Software System Testing",
-    description:
-      "We test complex software systems under real-world scenarios, validating integration, scalability, and reliability to ensure top-tier performance.",
-
+    description: (
+      <>
+        <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
+          Our {" "}
+          <span className="text-orange-500 font-semibold">
+            software system testing
+          </span>{" "}
+          verifies that all components of your application integrate and perform perfectly under real-world conditions.
+        </p>
+        <div className="space-y-2 mt-3">
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Integration & Interface Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Load and Stress Testing</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Scalability & Reliability Validation</span>
+            </p>
+          </div>
+          <div className="flex gap-2 items-start">
+            <CheckCircle className="text-blue-500 w-4 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-gray-700 dark:text-gray-300">Continuous Integration (CI/CD) Testing</span>
+            </p>
+          </div>
+        </div>
+      </>
+    ),
     icon: <IconBinaryTree2 size={28} />,
   },
 ];
@@ -2722,27 +2844,27 @@ export const QATestingFAQ = [
   {
     question: "What is Android app testing?",
     answer:
-      "Android app testing ensures your app functions smoothly on all Android devices and OS versions while maintaining top performance, security, and usability.",
+      "Android app testing ensures that your mobile app works correctly on all Android devices and OS versions while maintaining speed, functionality, and security.",
   },
   {
     question: "How long does testing take?",
     answer:
-      "Depending on project complexity, Android or web app testing typically takes 1–4 weeks, including regression, load, and performance testing phases.",
+      "Depending on the complexity, web and Android app testing usually takes 1–4 weeks, including regression and performance testing.",
   },
   {
     question: "Which tools do you use for testing?",
     answer:
-      "We use leading tools such as Selenium, Appium, TestComplete, JMeter, and BrowserStack for automated and manual testing accuracy.",
+      "We use Selenium, Appium, TestComplete, JMeter, and BrowserStack to deliver accurate and comprehensive QA results.",
   },
   {
     question: "Why is QA testing important?",
     answer:
-      "QA testing helps prevent product failures, improve customer satisfaction, and reduce long-term costs by detecting issues early in development.",
+      "QA testing helps prevent product failures, improves customer satisfaction, and saves costs by identifying issues early in the development cycle.",
   },
   {
     question: "Do you offer automated testing?",
     answer:
-      "Yes. We offer both manual and automated testing to ensure comprehensive coverage, faster delivery, and consistent performance validation.",
+      "Yes. We offer both manual and automated testing to achieve faster delivery, better coverage, and consistent results across releases.",
   },
 ];
 
@@ -2768,31 +2890,31 @@ export const DataWarehouseServices = [
   {
     title: "Data Warehouse Consulting",
     description:
-      "Our consultants analyze your data systems and business goals to design efficient, scalable, and consistent data warehouse architectures optimized for analytics and performance.",
+      "Our consultants analyze your existing data systems and business goals to design an efficient data warehouse architecture. We ensure scalability, consistency, and accuracy across all your data pipelines.",
     icon: <IconDatabase size={28} />,
   },
   {
     title: "Data Integration and ETL Services",
     description:
-      "We build robust ETL pipelines that automate data extraction, transformation, and loading across multiple systems, ensuring real-time data reliability for analytics and decision-making.",
+      "We develop robust ETL (Extract, Transform, Load) frameworks that automate data movement from multiple sources into a unified system. This ensures data reliability and real-time availability for analytics.",
     icon: <IconServerCog size={28} />,
   },
   {
     title: "Data Modeling and Optimization",
     description:
-      "We develop optimized data models and schemas to improve query performance, data storage efficiency, and reporting accuracy across your organization.",
+      "Our team creates optimized data models that improve data storage efficiency, query performance, and analytics speed. We focus on designing flexible and future-ready data warehouse solutions.",
     icon: <IconChartHistogram size={28} />,
   },
   {
     title: "Data Governance and Security",
     description:
-      "Our team enforces strict governance policies, access controls, and encryption standards to keep your data protected and compliant with global security norms.",
+      "Data privacy and compliance are top priorities. We implement best practices in governance, role-based access, and monitoring to ensure your data remains protected and compliant with global standards.",
     icon: <IconShieldLock size={28} />,
   },
   {
     title: "Big Data Consulting",
     description:
-      "We help businesses leverage big data architecture for predictive analytics, automation, and performance optimization — turning massive datasets into valuable insights.",
+      "From planning your data warehouse architecture to enabling predictive analytics, we help you leverage big data consulting to gain deeper insights and unlock business growth opportunities.",
     icon: <IconCloudDataConnection size={28} />,
   },
 ];
@@ -2834,28 +2956,28 @@ export const DataWarehouseFAQ = [
   {
     question: "What is data warehouse consulting?",
     answer:
-      "Data warehouse consulting helps organizations design and implement structured, centralized systems that consolidate information from multiple sources for faster reporting and analytics.",
+      "Data warehouse consulting helps businesses design and implement structured data systems that consolidate information from multiple sources, making analysis and reporting easier and faster.",
   },
   {
     question: "Why do businesses need data warehouse solutions?",
     answer:
-      "Data warehouse solutions centralize business data, improve reporting accuracy, and support better decision-making by creating a single source of truth.",
+      "A data warehouse solution centralizes your business data, improves reporting accuracy, and supports better decision-making by providing a single source of truth.",
   },
   {
     question: "How long does it take to build a data warehouse?",
     answer:
-      "Depending on project complexity, a complete data warehouse setup typically takes 4–12 weeks, covering design, integration, and testing phases.",
+      "Depending on complexity and data volume, a full data warehouse implementation typically takes 4–12 weeks, including design, integration, and testing.",
   },
   {
     question:
       "What’s the difference between a data warehouse and big data architecture?",
     answer:
-      "A data warehouse stores structured data for analytics, while big data architecture handles massive structured and unstructured datasets for predictive and real-time insights.",
+      "A data warehouse stores structured data for analytics, while big data architecture handles large volumes of structured and unstructured data for predictive and real-time analytics.",
   },
   {
     question: "Do you offer ongoing support and maintenance?",
     answer:
-      "Yes. Ziostech Solutions provides continuous optimization, monitoring, and maintenance to ensure your data warehouse evolves with your business needs.",
+      "Yes, Ziostech Solutions provides continuous monitoring, optimization, and support to ensure your data warehouse operates efficiently and evolves with your business needs.",
   },
 ];
 
@@ -2881,31 +3003,31 @@ export const dataVisualizationServices = [
   {
     title: "Custom Dashboard Development",
     description:
-      "We design intuitive, real-time dashboards using industry-leading visualization tools to display KPIs, trends, and business metrics for informed decision-making.",
+      "We design intuitive dashboards using top visualization tools that display real-time KPIs and business metrics.",
     icon: <IconDeviceAnalytics size={28} />,
   },
   {
     title: "Big Data Visualization",
     description:
-      "Our scalable frameworks help visualize and manage large datasets efficiently, enabling faster analytics and performance monitoring.",
+      "Our team helps manage and visualize large data sets using scalable frameworks for faster insights and performance monitoring.",
     icon: <IconChartCandle size={28} />,
   },
   {
     title: "Data Integration and Preparation",
     description:
-      "We connect multiple data sources into one unified view, ensuring accuracy, consistency, and reliability across your analytics ecosystem.",
+      "We connect multiple data sources into one unified view, ensuring accuracy and consistency across your reports.",
     icon: <IconDatabaseImport size={28} />,
   },
   {
     title: "Data Analytics and Reporting",
     description:
-      "Ziostech transforms your business data into dynamic reports and visual summaries that empower teams to make data-driven decisions with confidence.",
+      "Ziostech transforms your business data into dynamic reports and summaries to support data-driven decision-making.",
     icon: <IconReportAnalytics size={28} />,
   },
   {
     title: "Visualization Consulting and Strategy",
     description:
-      "We provide expert consulting on best practices, tools, and design strategies to ensure your visualizations communicate data effectively and support long-term growth.",
+      "We guide businesses on the best visualization practices, tools, and frameworks to align data presentation with strategic goals.",
     icon: <IconAdjustmentsAlt size={28} />,
   },
 ];
@@ -2947,27 +3069,27 @@ export const DataVisualizationFAQ = [
   {
     question: "What is data visualization and why is it important?",
     answer:
-      "Data visualization converts complex datasets into graphical formats, making it easier to identify trends, patterns, and insights that support better business decisions.",
+      "Data visualization converts complex data into graphical formats, making it easier to identify trends, patterns, and insights for better business decisions.",
   },
   {
     question: "Which tools do you use for data visualization?",
     answer:
-      "We use Power BI, Tableau, Google Data Studio, Qlik, and other advanced visualization platforms depending on client needs and technology stack.",
+      "Ziostech Solutions works with Power BI, Tableau, Google Data Studio, Qlik, and other advanced visualization platforms.",
   },
   {
     question: "Can you integrate multiple data sources into one dashboard?",
     answer:
-      "Yes. We specialize in integrating data from multiple systems into a unified dashboard for a complete view of your business performance.",
+      "Yes, our visualization experts specialize in data integration, combining information from multiple systems into a unified dashboard.",
   },
   {
     question: "Do you offer cloud-based data visualization solutions?",
     answer:
-      "Absolutely. We deliver both on-premises and cloud-based visualization solutions tailored to your infrastructure and security requirements.",
+      "Absolutely. We provide both cloud and on-premises visualization solutions depending on your business infrastructure.",
   },
   {
     question: "What industries benefit most from data visualization?",
     answer:
-      "Every data-driven industry — including finance, healthcare, retail, manufacturing, and education — can leverage visualization to improve analytics and reporting.",
+      "Every data-driven industry like finance, healthcare, retail, education, and manufacturing benefits from improved visualization and analytics.",
   },
 ];
 

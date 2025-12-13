@@ -49,7 +49,7 @@ import { JSX } from "react";
 interface Service {
   title: string;
   href?: string;
-  description: string;
+  description: string | React.ReactNode;
   icon?: JSX.Element;
   techs?: { icon: React.ReactNode; color: string }[];
 }
@@ -250,7 +250,7 @@ function ServiceCard({
   techs,
 }: {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   href?: string;
   icon: React.ReactNode;
   techs?: { icon: React.ReactNode; color: string }[];
@@ -273,9 +273,9 @@ function ServiceCard({
           {title}
         </CardTitle>
 
-        <CardDescription className="text-zinc-600 dark:text-zinc-400">
+        <div className="text-sm text-zinc-600 dark:text-zinc-400">
           {description}
-        </CardDescription>
+        </div>
 
         {techs && (
           <div className="flex space-x-3 mt-2">

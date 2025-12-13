@@ -20,7 +20,7 @@ interface UiUxIntroProps {
 export default function UiUxIntroRedesigned({
   title = "UI/UX Designing and Consulting Services",
   rightTitle = "Transform Digital Experiences and Drive Business Growth",
-  subtitle = "At Ziostech Solution, we blend creativity, research, and strategy to deliver innovative UI/UX design and consulting services that help businesses elevate their digital presence. Whether you’re building a new platform or redesigning an existing one, our goal is to create intuitive, visually appealing, and high-performing products that connect meaningfully with users.",
+  subtitle = "At Ziostech Solution, we blend creativity, research, and strategy to deliver innovative UI/UX design and consulting services that help businesses elevate their digital presence. Whether you’re building a new platform or redesigning an existing one, our goal is to create intuitive, visually appealing, and high-performing products that connect meaningfully with users. Our experts combine design thinking, UX research, and consulting to ensure your digital products look stunning, perform seamlessly, and deliver measurable business impact. Transforming Business Ideas into Human-Centered Digital Design Experiences. In the modern digital landscape, users expect effortless, intuitive, and enjoyable interactions. At Ziostech Solution, we go beyond visuals. We focus on understanding human behavior, analyzing market dynamics, and aligning every design element with your business goals. Our team creates responsive, user-friendly digital interfaces for websites, mobile apps, and enterprise platforms that enhance user satisfaction, improve retention, and strengthen your brand reputation.",
   features = [
     {
       icon: PenTool,

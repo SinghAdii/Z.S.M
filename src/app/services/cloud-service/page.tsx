@@ -78,42 +78,42 @@ export default function CloudServices() {
             id: 1,
             title: "End-to-End Expertise",
             short:
-              "From migration to management, we handle every stage of your cloud journey with precision and reliability.",
+              "From migration to management, we handle every phase of your cloud journey.",
             badges: ["Migration", "Management"],
           },
           {
             id: 2,
             title: "Certified Cloud Architects",
             short:
-              "Our certified professionals specialize in AWS, Azure, GCP, and hybrid cloud infrastructures.",
+              " Our professionals are trained in AWS, Azure, and hybrid cloud environments.",
             badges: ["AWS", "Azure", "Hybrid Cloud"],
           },
           {
             id: 3,
             title: "High Security Standards",
             short:
-              "We implement multi-layered protection, encryption, and compliance-driven processes for data safety.",
+              " We use multi-layered protection and compliance-driven processes.",
             badges: ["Security", "Compliance"],
           },
           {
             id: 4,
             title: "Cost Optimization",
             short:
-              "Smart cloud architecture and resource management reduce operational costs while improving ROI.",
+              "Smart cloud architecture reduces operational costs and improves ROI.",
             badges: ["Efficiency", "Cost-Effective"],
           },
           {
             id: 5,
             title: "Scalability and Performance",
             short:
-              "Easily expand your infrastructure to meet business demands without downtime or disruption.",
+              "Easily expand your cloud capacity as your business grows.",
             badges: ["Elastic Scaling", "High Performance"],
           },
           {
             id: 6,
             title: "Continuous Support",
             short:
-              "Proactive monitoring and 24/7 support ensure consistent uptime, stability, and peace of mind.",
+              "Our proactive monitoring ensures consistent uptime and reliability.",
             badges: ["24/7 Monitoring", "Reliability"],
           },
         ]}

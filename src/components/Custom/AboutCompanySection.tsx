@@ -5,6 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function AboutCompanySection() {
   const coreValues = [
@@ -28,15 +34,15 @@ export default function AboutCompanySection() {
   ];
 
   const services = [
-    "IT Staffing and Consulting",
-    "Platform Services",
-    "Web & App Development",
-    "CMS and E-commerce Platforms",
-    "Cloud Services",
-    "UI/UX Design",
-    "Testing Services",
-    "Big Data and DataOps",
-    "AI Integration and Data Visualization",
+    "IT Staffing and Consulting -> Skilled technology talent for your growth.",
+    "Platform Services -> Complete digital development and deployment.",
+    "Web & App Development -> Custom, scalable digital solutions.",
+    "CMS and E-commerce Platforms -> Secure, intuitive online platforms.",
+    "Cloud Services -> Agile and scalable cloud transformation.",
+    "UI/UX Design -> Intuitive and visually appealing experiences.",
+    "Testing Services -> Reliability, security, and seamless performance.",
+    "Big Data and DataOps -> Transform data into actionable insights.",
+    "AI Integration and Data Visualization -> Intelligent automation for smarter decisions.",
   ];
 
   return (
@@ -84,9 +90,7 @@ export default function AboutCompanySection() {
               business value.
             </p>
             <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-              Our team of passionate technologists, designers, and strategists
-              brings deep expertise across IT staffing, consulting, cloud
-              computing, AI integration, and full-stack digital platforms.
+              Our team of passionate technologists, designers, and strategists bring together deep expertise across multiple domains, from IT staffing and consulting to end-to-end platform services like web and app development, cloud computing, AI integration, and data-driven intelligence.
             </p>
           </div>
           <Card className="bg-white/60 dark:bg-[#111]/60 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-md">
@@ -115,9 +119,8 @@ export default function AboutCompanySection() {
               Our Mission
             </h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              To transform ideas into impactful digital realities. We empower
-              businesses through technology innovation, strategic consulting,
-              and world-class execution to ensure long-term growth and success.
+              Our mission is simple: to transform ideas into impactful digital realities. We strive to empower businesses through technology innovation, strategic consulting, and world-class execution that ensures long-term growth and success.
+
             </p>
           </Card>
 
@@ -170,20 +173,45 @@ export default function AboutCompanySection() {
         {/* === WHAT WE DO === */}
         <div className="text-center">
           <h3 className="text-3xl font-bold mb-6">What We Do</h3>
-          <p className="max-w-3xl mx-auto text-slate-600 dark:text-slate-300 mb-8">
+          <p className="max-w-3xl mx-auto text-slate-600 dark:text-slate-300 mb-10">
             We combine creativity, technology, and strategy to deliver results
             that matter.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {services.map((srv, i) => (
-              <span
-                key={i}
-                className="px-5 py-2 rounded-full text-sm font-medium border border-slate-300 dark:border-white/20 bg-white/50 dark:bg-[#111]/60 hover:border-blue-500 dark:hover:border-orange-500 transition-colors"
-              >
-                {srv}
-              </span>
-            ))}
-          </div>
+          <TooltipProvider delayDuration={200}>
+            <div className="flex flex-wrap justify-center gap-3">
+              {services.map((srv, i) => {
+                const [title, description] = srv.split(" -> ").map(s => s.trim());
+                return (
+                  <Tooltip key={i}>
+                    <TooltipTrigger asChild>
+                      <button
+                        className={cn(
+                          "px-4 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ease-in-out",
+                          "border-2 bg-white dark:bg-[#111] border-slate-300 dark:border-slate-700",
+                          "text-slate-700 dark:text-slate-300",
+                          "hover:border-orange-500 dark:hover:border-blue-500 hover:bg-orange-50 dark:hover:bg-blue-500/10",
+                          "hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(249,115,22,0.2)] dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+                        )}
+                      >
+                        {title}
+                      </button>
+                    </TooltipTrigger>
+                    <TooltipContent 
+                      side="top" 
+                      sideOffset={12}
+                      className="rounded-xl border-2 border-orange-500 bg-orange-500 text-white p-0 shadow-xl"
+                    >
+                      <div className="px-4 py-3 max-w-xs">
+                        <p className="text-sm font-medium leading-relaxed">
+                          {description}
+                        </p>
+                      </div>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </TooltipProvider>
         </div>
 
         {/* === WHY CHOOSE US === */}
@@ -199,11 +227,7 @@ export default function AboutCompanySection() {
               Why Choose Us
             </h3>
             <p className="max-w-3xl mx-auto text-slate-600 dark:text-slate-300 leading-relaxed">
-              We don’t just build solutions we build relationships. Our
-              customer-centric approach ensures every project aligns with your
-              vision and business goals. With a proven record of innovation and
-              excellence, Ziostech Solutions stands as your trusted partner in
-              digital transformation.
+              We don’t just build solutions we build relationships. Our customer-centric approach ensures every project aligns with your vision, business goals, and technical requirements. With a proven record of innovation and excellence, Ziostech Solution stands as a trusted partner in your digital journey.
             </p>
           </div>
         </motion.div>

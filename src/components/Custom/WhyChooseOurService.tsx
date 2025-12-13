@@ -32,41 +32,41 @@ export default function WhyChooseServicesSection({
   features = [
     {
       id: 1,
-      title: "Custom Solutions",
-      short: "Tailored custom software development to fit your business model.",
+      title: "Custom-Built Solutions",
+      short: "Tailored web and app development for your unique business model.",
       badges: ["Tailored", "Business-Ready"],
     },
     {
       id: 2,
       title: "Scalable Architecture",
-      short: "Designed for future growth without costly rebuilds.",
+      short: "Designed to handle future growth seamlessly.",
       badges: ["Future-Proof", "High Availability"],
     },
     {
       id: 3,
       title: "Cross-Platform Development",
-      short: "Build once, deploy seamlessly on multiple platforms.",
+      short: "Build once, deploy across devices.",
       badges: ["Web", "Mobile", "Cloud"],
     },
     {
       id: 4,
-      title: "Faster Time to Market",
+      title: "Agile Delivery",
       short:
-        "Agile delivery approach for quick launches and continuous iterations.",
+        "Faster time to market with iterative development cycles.",
       badges: ["Agile", "Rapid Delivery"],
     },
     {
       id: 5,
-      title: "SEO & Performance Optimized",
+      title: "SEO & Speed Optimized",
       short:
-        "High speed, responsive, and search-engine-friendly digital experiences.",
+        "Every website and app is fast, responsive, and search-engine-friendly.",
       badges: ["SEO", "Performance"],
     },
     {
       id: 6,
       title: "End-to-End Support",
       short:
-        "From ideation to maintenance, we handle every stage of your product lifecycle.",
+        "From ideation to launch and maintenance, we handle it all.",
       badges: ["Full Lifecycle", "Support"],
     },
   ],
