@@ -34,7 +34,13 @@ const NAV_ITEMS: NavItem[] = [
         href: "/projects",
         description: "Portfolio, Case Studies, Work",
       },
+      {
+        title: "Hire Developer",
+        href: "/hire-developers",
+        description: "Find top talent for your projects",
+      },
       { title: "About", href: "/about", description: "Company, Team, Story" },
+      { title: "Blog", href: "/blog", description: "Insights, News, Updates" },
     ],
   },
   {

@@ -2308,6 +2308,11 @@ export const PlatformFAQ = [
   },
 ];
 
+
+// Blog Data - Now sourced from markdown files in src/content/blogs/
+// See src/lib/blog.ts for blog data utilities
+
+
 export const IntroEcommerceFeatures = [
   {
     icon: ShoppingCart,
