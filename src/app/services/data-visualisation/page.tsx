@@ -51,7 +51,9 @@ export default function DataVisualizationServices() {
       />
       <IntroductionSection
         title="Data Visualization Services Company"
-        subtitle="Transform complex datasets into clear, actionable insights with Ziostech Solutions’ Data Visualization Services. We help businesses turn raw data into visually engaging dashboards and reports that simplify decision-making and enhance data understanding."
+        subtitle="Transform complex datasets into clear, actionable insights with Ziostech Solutions’ Data Visualization Services. We help businesses turn raw data into visually engaging dashboards and reports that simplify decision-making and enhance data understanding. Our team designs customized visualization solutions that empower organizations to identify trends, monitor performance, and communicate insights effectively across all levels. Whether it’s for operations, strategy, or analytics, Ziostech ensures your data tells a meaningful story.
+At Ziostech Solutions, our approach blends technical precision with visual clarity. Delivering data visualization that is insightful, interactive, and easy to interpret.
+"
         features={IntroDataVisualizationFeatures}
       />
       <Services services={dataVisualizationServices} />
@@ -76,37 +78,44 @@ export default function DataVisualizationServices() {
             id: 1,
             title: "Expertise Across Tools",
             short:
-              "Our team is skilled in Power BI, Tableau, and modern visualization frameworks to deliver impactful dashboards.",
+              "Skilled professionals in Power BI, Tableau, and modern visualization frameworks.",
             badges: ["Power BI", "Tableau", "Modern Tools"],
           },
           {
             id: 2,
             title: "Data-Centric Approach",
             short:
-              "We focus on turning your data into meaningful visual stories that drive decision-making and business growth.",
+              "Focused on transforming information into actionable insights.",
             badges: ["Data-Driven", "Insights"],
           },
           {
             id: 3,
             title: "Scalable Solutions",
             short:
-              "Our visualization solutions are designed to scale effortlessly as your data and business expand.",
+              "Designed to grow alongside your data and business expansion.",
             badges: ["Scalable", "Future-Ready"],
           },
           {
             id: 4,
             title: "Collaborative Process",
             short:
-              "We maintain transparent communication and use agile methods to ensure smooth delivery at every stage.",
+              "Transparent communication and agile delivery at every stage.",
             badges: ["Agile", "Collaborative"],
           },
           {
             id: 5,
             title: "Proven Results",
             short:
-              "Trusted by global organizations for reliable, high-performance visualization and reporting systems.",
+              " Trusted by organizations across industries for reliable data visualization and reporting.",
             badges: ["Reliable", "Enterprise-Grade"],
           },
+          {
+            id: 6,
+            title: "Business Impact Focused",
+            short:
+              "Ziostech Solutions ensures that your data visualization initiatives support smarter business operations and measurable outcomes.",
+            badges: [" Business Impact", "Smarter Decisions"],
+          }
         ]}
       />
       <KeyFeatures

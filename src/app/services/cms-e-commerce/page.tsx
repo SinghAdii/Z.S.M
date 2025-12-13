@@ -53,8 +53,7 @@ export default function CMSEcommerce() {
         title=" Scalable E-Commerce Platforms for Modern Businesses"
         features={IntroEcommerceFeatures}
         subtitle="In today’s digital-first world, customers expect seamless and secure shopping experiences across every device. Many businesses face challenges with outdated systems, slow websites, and limited integrations that reduce sales and customer satisfaction.
-          At ZiosTech Solutions, we help businesses overcome these challenges with powerful E-Commerce Platforms and Software-as-a-Service (SaaS) solutions
-          "
+At ZiosTech Solutions, we help businesses overcome these challenges with powerful E-Commerce Platforms and Software-as-a-Service (SaaS) solutions. Our expert team builds fast, secure, and scalable online stores that boost engagement, conversions, and growth. If you need a simple retail site or a full-scale multi-vendor marketplace."
       />
       <Services services={EcommerceServices} />
       <Process

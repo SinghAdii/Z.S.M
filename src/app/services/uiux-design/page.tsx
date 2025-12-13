@@ -72,35 +72,35 @@ export default function UIUXDesign() {
             id: 1,
             title: "Certified UI/UX Experts",
             short:
-              "Work with experienced designers and usability specialists who blend creativity with proven design strategies.",
+              "Our team includes experienced designers and researchers with proven industry success.",
             badges: ["Certified Experts", "Design Strategy"],
           },
           {
             id: 2,
             title: "Cross-Industry Expertise",
             short:
-              "From IT and finance to healthcare and e-commerce, our designs adapt to diverse audiences and use cases.",
+              "From IT and finance to healthcare and e-commerce, we understand diverse user needs.",
             badges: ["Multi-Industry", "User-Centric"],
           },
           {
             id: 3,
             title: "End-to-End Service Delivery",
             short:
-              "We manage every stage — from discovery and wireframing to testing and post-launch optimization.",
+              "We manage everything from discovery to post-launch optimization.",
             badges: ["Full Lifecycle", "Design to Launch"],
           },
           {
             id: 4,
             title: "Data-Driven Decision Making",
             short:
-              "Each design choice is guided by real analytics, research, and user feedback to improve engagement and performance.",
+              "Every design is backed by analytics and user research.",
             badges: ["Analytics", "User Research"],
           },
           {
             id: 5,
             title: "Flexible Engagement Models",
             short:
-              "Choose from tailored pricing and packages designed for startups, SMBs, and enterprises alike.",
+              "Tailored pricing and packages to suit startups, SMBs, and enterprises.",
             badges: ["Flexible Plans", "Scalable Solutions"],
           },
         ]}
