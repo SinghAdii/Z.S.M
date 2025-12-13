@@ -80,7 +80,27 @@ const NAV_ITEMS = [
       },
     ],
   },
-  { title: "About", href: "/about", description: "Company, Team, Story" },
+  {
+    title: "About",
+    description: "Company, Team, Story",
+    subItems: [
+      {
+        title: "About Us",
+        href: "/about",
+        description: "Company, Team, Story",
+      },
+      {
+        title: "Blog",
+        href: "/blog",
+        description: "Insights, News, Updates",
+      },
+    ],
+  },
+  {
+    title: "Hire Developer",
+    href: "/hire-developers",
+    description: "Find top talent for your projects",
+  },
 ];
 
 export default function Navbar() {
@@ -145,11 +165,10 @@ export default function Navbar() {
                     className="relative"
                   >
                     <button
-                      className={`flex items-center gap-1 text-md font-medium transition-colors ${
-                        hoveredDropdown === item.title
-                          ? "text-blue-600 dark:text-orange-500"
-                          : "text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-orange-500"
-                      }`}
+                      className={`flex items-center gap-1 text-md font-medium transition-colors ${hoveredDropdown === item.title
+                        ? "text-blue-600 dark:text-orange-500"
+                        : "text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-orange-500"
+                        }`}
                     >
                       {item.title}
                       <RiArrowDropDownLine className="text-xl" />
@@ -285,9 +304,8 @@ export default function Navbar() {
                       >
                         {item.title}
                         <RiArrowDropDownLine
-                          className={`text-xl transition-transform ${
-                            activeDropdown === item.title ? "rotate-180" : ""
-                          }`}
+                          className={`text-xl transition-transform ${activeDropdown === item.title ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
                       <AnimatePresence>

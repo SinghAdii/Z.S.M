@@ -6,6 +6,7 @@ import GlobalPageLoader from "@/components/Custom/GlobalPageLoader";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ziostechsolutions.com'),
   title: "Ziostechsolutions | Empowers Digital Growth Through Innovation",
   icons: {
     icon: "/favicon.ico",
