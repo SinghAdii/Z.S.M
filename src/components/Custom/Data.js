@@ -275,6 +275,7 @@ export const works = [
     ],
     domain: "Web & App Development",
     href: "/projects#fairy-of-fortune",
+    link: "https://play.google.com/store/apps/details?id=com.fortunefairy.app",
     testimonialName: "",
   },
   {
@@ -305,6 +306,7 @@ export const works = [
     ],
     domain: "Web Development",
     href: "/projects#saurabh-visionary-ventures",
+    link: "https://saurabhvision.in/",
     testimonialName: "MWO Raghubh Singh",
   },
   {

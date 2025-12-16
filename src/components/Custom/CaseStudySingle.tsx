@@ -28,6 +28,7 @@ export default function CaseStudy({
     domain?: string;
     imgSrc: string;
     href?: string;
+    link?: string;
   };
   overview: string;
   goal: string;
@@ -107,7 +108,7 @@ export default function CaseStudy({
                   <Button
                     size="lg"
                     className="w-32 text-white bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 rounded-full group cursor-pointer"
-                    onClick={() => window.open(project.href, "_blank")}
+                    onClick={() => window.open(project.link ?? project.href, "_blank")}
                   >
                     Visit Live
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

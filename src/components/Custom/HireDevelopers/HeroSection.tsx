@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, ChevronRight, Star } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronRight, Star, Calendar } from "lucide-react";
 
 export default function HeroSection() {
     return (
@@ -78,6 +78,15 @@ export default function HeroSection() {
                         >
                             Explore Expertise
                         </Button>
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="w-full sm:w-auto min-w-[200px] h-14 text-lg rounded-full border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/50 hover:bg-blue-100 dark:hover:bg-blue-900 backdrop-blur-sm text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200"
+                            onClick={() => document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" })}
+                        >
+                            Book a Strategy Call
+                            <Calendar className="ml-2 w-5 h-5" />
+                        </Button>
                     </motion.div>
 
                     {/* Benefits List */}
@@ -89,8 +98,7 @@ export default function HeroSection() {
                     >
                         {[
                             "100% IP Protection",
-                            "Timezone Aligned",
-                            "2-Week Risk-Free Trial"
+                            "Timezone Aligned"
                         ].map((benefit, i) => (
                             <div key={i} className="flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5 text-orange-500" />

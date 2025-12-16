@@ -65,7 +65,7 @@ export default function TrustSection() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <span className="text-orange-600 dark:text-orange-500 font-bold uppercase tracking-wider text-sm mb-4 block">
+                            <span className="text-orange-600 dark:text-orange-500 font-bold uppercase tracking-wider text-md mb-4 block">
                                 Why Choose Ziostech?
                             </span>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
