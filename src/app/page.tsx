@@ -18,6 +18,7 @@ import {
 } from "../components/Custom/Data.js";
 import React from "react";
 import { Hero_Section_Image } from "@/assets/images/images.export.js";
+import DisclaimerPopup from "@/components/Custom/DisclaimerPopup";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
       <Testimonials />
       <FAQ faqs={homePageFAQ} />
       <ContactUs />
+      <DisclaimerPopup />
     </>
   );
 }
